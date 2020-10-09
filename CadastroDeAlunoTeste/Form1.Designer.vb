@@ -64,6 +64,7 @@ Partial Class Form1
         Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
         Me.cmd_limpar = New System.Windows.Forms.Button()
         Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
+        Me.SkinManager1 = New Syncfusion.Windows.Forms.SkinManager(Me.components)
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -322,7 +323,7 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = true
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(21, 163)
+        Me.Label7.Location = New System.Drawing.Point(15, 163)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(19, 13)
         Me.Label7.TabIndex = 24
@@ -331,7 +332,7 @@ Partial Class Form1
         'num_id
         '
         Me.num_id.BackColor = System.Drawing.Color.HotPink
-        Me.num_id.Location = New System.Drawing.Point(46, 160)
+        Me.num_id.Location = New System.Drawing.Point(40, 160)
         Me.num_id.Name = "num_id"
         Me.num_id.Size = New System.Drawing.Size(120, 20)
         Me.num_id.TabIndex = 25
@@ -382,7 +383,7 @@ Partial Class Form1
         '
         Me.cmd_conectar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_conectar.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_conectar.Location = New System.Drawing.Point(631, 156)
+        Me.cmd_conectar.Location = New System.Drawing.Point(619, 151)
         Me.cmd_conectar.Name = "cmd_conectar"
         Me.cmd_conectar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_conectar.TabIndex = 29
@@ -404,7 +405,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.radio_sql)
         Me.GroupBox2.Controls.Add(Me.radio_oledb)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(310, 140)
+        Me.GroupBox2.Location = New System.Drawing.Point(304, 140)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(301, 42)
         Me.GroupBox2.TabIndex = 32
@@ -461,7 +462,7 @@ Partial Class Form1
         '
         Me.cmd_limpar.BackColor = System.Drawing.Color.White
         Me.cmd_limpar.ForeColor = System.Drawing.Color.Black
-        Me.cmd_limpar.Location = New System.Drawing.Point(172, 158)
+        Me.cmd_limpar.Location = New System.Drawing.Point(166, 158)
         Me.cmd_limpar.Name = "cmd_limpar"
         Me.cmd_limpar.Size = New System.Drawing.Size(132, 22)
         Me.cmd_limpar.TabIndex = 35
@@ -470,12 +471,17 @@ Partial Class Form1
         '
         'lbl_aviso
         '
-        Me.lbl_aviso.Location = New System.Drawing.Point(715, 142)
+        Me.lbl_aviso.Location = New System.Drawing.Point(709, 142)
         Me.lbl_aviso.Name = "lbl_aviso"
         Me.lbl_aviso.Size = New System.Drawing.Size(148, 42)
         Me.lbl_aviso.TabIndex = 36
         Me.lbl_aviso.Text = ""
         Me.lbl_aviso.Visible = false
+        '
+        'SkinManager1
+        '
+        Me.SkinManager1.Controls = Nothing
+        Me.SkinManager1.VisualTheme = Syncfusion.Windows.Forms.VisualTheme.Managed
         '
         'Form1
         '
@@ -483,7 +489,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(875, 347)
+        Me.ClientSize = New System.Drawing.Size(871, 347)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
         Me.Controls.Add(Me.Label10)
@@ -573,4 +579,5 @@ End Sub
     Friend WithEvents radio_oracle As RadioButton
     Friend WithEvents cmd_limpar As Button
     Friend WithEvents lbl_aviso As RichTextBox
+    Friend WithEvents SkinManager1 As Syncfusion.Windows.Forms.SkinManager
 End Class
