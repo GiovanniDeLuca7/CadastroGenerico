@@ -471,7 +471,7 @@ Partial Class Form1
         '
         'lbl_aviso
         '
-        Me.lbl_aviso.Location = New System.Drawing.Point(709, 142)
+        Me.lbl_aviso.Location = New System.Drawing.Point(710, 142)
         Me.lbl_aviso.Name = "lbl_aviso"
         Me.lbl_aviso.Size = New System.Drawing.Size(148, 42)
         Me.lbl_aviso.TabIndex = 36
