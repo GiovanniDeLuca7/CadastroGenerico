@@ -52,7 +52,7 @@ Public Class Form1
                 m_dbConn.Open()
             Else
                 lbl_aviso.Visible = true
-                lbl_aviso.Text = "Nenhuma conexão realizada"
+                lbl_aviso.Text = "Nenhuma conexão realizada :("
             End If
 
             Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
