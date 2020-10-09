@@ -460,6 +460,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.Cornsilk
         Me.ClientSize = New System.Drawing.Size(875, 347)
         Me.Controls.Add(Me.lbl_aviso)
