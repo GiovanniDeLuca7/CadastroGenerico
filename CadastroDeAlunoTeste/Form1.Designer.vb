@@ -63,7 +63,6 @@ Partial Class Form1
         Me.NovobancoDataSet = New CadastroDeAlunoTeste.novobancoDataSet()
         Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
         Me.cmd_limpar = New System.Windows.Forms.Button()
-        Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -468,15 +467,6 @@ Partial Class Form1
         Me.cmd_limpar.Text = "Limpar Campos"
         Me.cmd_limpar.UseVisualStyleBackColor = false
         '
-        'lbl_aviso
-        '
-        Me.lbl_aviso.Location = New System.Drawing.Point(715, 142)
-        Me.lbl_aviso.Name = "lbl_aviso"
-        Me.lbl_aviso.Size = New System.Drawing.Size(148, 42)
-        Me.lbl_aviso.TabIndex = 36
-        Me.lbl_aviso.Text = ""
-        Me.lbl_aviso.Visible = false
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -484,7 +474,6 @@ Partial Class Form1
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.ClientSize = New System.Drawing.Size(875, 347)
-        Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.cmd_editar)
@@ -572,5 +561,4 @@ End Sub
     Friend WithEvents Label10 As Label
     Friend WithEvents radio_oracle As RadioButton
     Friend WithEvents cmd_limpar As Button
-    Friend WithEvents lbl_aviso As RichTextBox
 End Class
