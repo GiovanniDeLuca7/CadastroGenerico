@@ -65,6 +65,7 @@ Partial Class Form1
         Me.cmd_limpar = New System.Windows.Forms.Button()
         Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
         Me.SkinManager1 = New Syncfusion.Windows.Forms.SkinManager(Me.components)
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -392,7 +393,7 @@ Partial Class Form1
         '
         'txt_gambiarra
         '
-        Me.txt_gambiarra.Location = New System.Drawing.Point(12, 334)
+        Me.txt_gambiarra.Location = New System.Drawing.Point(-2, 318)
         Me.txt_gambiarra.Name = "txt_gambiarra"
         Me.txt_gambiarra.Size = New System.Drawing.Size(100, 20)
         Me.txt_gambiarra.TabIndex = 30
@@ -483,13 +484,23 @@ Partial Class Form1
         Me.SkinManager1.Controls = Nothing
         Me.SkinManager1.VisualTheme = Syncfusion.Windows.Forms.VisualTheme.Managed
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(556, 93)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 37
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = true
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(871, 347)
+        Me.ClientSize = New System.Drawing.Size(870, 500)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
         Me.Controls.Add(Me.Label10)
@@ -580,4 +591,5 @@ End Sub
     Friend WithEvents cmd_limpar As Button
     Friend WithEvents lbl_aviso As RichTextBox
     Friend WithEvents SkinManager1 As Syncfusion.Windows.Forms.SkinManager
+    Friend WithEvents Button1 As Button
 End Class

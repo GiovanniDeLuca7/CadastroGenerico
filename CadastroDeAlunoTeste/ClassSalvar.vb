@@ -22,4 +22,9 @@ Public Class ClassSalvar
         esc_calc.Write(numero1 & " / " & numero2 & " = " & numero1/numero2 & vbCrLf)
         End Using
     End Sub
+
+   ' Public Shared Sub 
+            'End Sub
+
+
 End Class
