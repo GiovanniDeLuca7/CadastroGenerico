@@ -103,7 +103,7 @@
   <xs:element name="novobancoDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="novobancoDataSet" msprop:Generator_UserDSName="novobancoDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Projeto" msprop:Generator_TableClassName="ProjetoDataTable" msprop:Generator_TableVarName="tableProjeto" msprop:Generator_TablePropName="Projeto" msprop:Generator_RowDeletingName="ProjetoRowDeleting" msprop:Generator_RowChangingName="ProjetoRowChanging" msprop:Generator_RowEvHandlerName="ProjetoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProjetoRowDeleted" msprop:Generator_UserTableName="Projeto" msprop:Generator_RowChangedName="ProjetoRowChanged" msprop:Generator_RowEvArgName="ProjetoRowChangeEvent" msprop:Generator_RowClassName="ProjetoRow">
+        <xs:element name="Projeto" msprop:Generator_TableClassName="ProjetoDataTable" msprop:Generator_TableVarName="tableProjeto" msprop:Generator_RowChangedName="ProjetoRowChanged" msprop:Generator_TablePropName="Projeto" msprop:Generator_RowDeletingName="ProjetoRowDeleting" msprop:Generator_RowChangingName="ProjetoRowChanging" msprop:Generator_RowEvHandlerName="ProjetoRowChangeEventHandler" msprop:Generator_RowDeletedName="ProjetoRowDeleted" msprop:Generator_RowClassName="ProjetoRow" msprop:Generator_UserTableName="Projeto" msprop:Generator_RowEvArgName="ProjetoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Código" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCódigo" msprop:Generator_ColumnPropNameInRow="Código" msprop:Generator_ColumnPropNameInTable="CódigoColumn" msprop:Generator_UserColumnName="Código" type="xs:int" />
@@ -144,6 +144,7 @@
               </xs:element>
               <xs:element name="Numero1" msprop:Generator_ColumnVarNameInTable="columnNumero1" msprop:Generator_ColumnPropNameInRow="Numero1" msprop:Generator_ColumnPropNameInTable="Numero1Column" msprop:Generator_UserColumnName="Numero1" type="xs:int" minOccurs="0" />
               <xs:element name="Numero2" msprop:Generator_ColumnVarNameInTable="columnNumero2" msprop:Generator_ColumnPropNameInRow="Numero2" msprop:Generator_ColumnPropNameInTable="Numero2Column" msprop:Generator_UserColumnName="Numero2" type="xs:int" minOccurs="0" />
+              <xs:element name="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:long" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

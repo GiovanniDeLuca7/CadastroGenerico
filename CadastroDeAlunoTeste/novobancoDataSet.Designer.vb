@@ -299,6 +299,8 @@ Partial Public Class novobancoDataSet
         
         Private columnNumero2 As Global.System.Data.DataColumn
         
+        Private columnId As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -399,6 +401,14 @@ Partial Public Class novobancoDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property IdColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnId
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -435,9 +445,9 @@ Partial Public Class novobancoDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddProjetoRow(ByVal Nome As String, ByVal Animal As String, ByVal Idade As String, ByVal Genero As String, ByVal Estacao As String, ByVal Numero1 As Integer, ByVal Numero2 As Integer) As ProjetoRow
+        Public Overloads Function AddProjetoRow(ByVal Nome As String, ByVal Animal As String, ByVal Idade As String, ByVal Genero As String, ByVal Estacao As String, ByVal Numero1 As Integer, ByVal Numero2 As Integer, ByVal Id As Long) As ProjetoRow
             Dim rowProjetoRow As ProjetoRow = CType(Me.NewRow,ProjetoRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, Nome, Animal, Idade, Genero, Estacao, Numero1, Numero2}
+            Dim columnValuesArray() As Object = New Object() {Nothing, Nome, Animal, Idade, Genero, Estacao, Numero1, Numero2, Id}
             rowProjetoRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowProjetoRow)
             Return rowProjetoRow
@@ -474,6 +484,7 @@ Partial Public Class novobancoDataSet
             Me.columnEstacao = MyBase.Columns("Estacao")
             Me.columnNumero1 = MyBase.Columns("Numero1")
             Me.columnNumero2 = MyBase.Columns("Numero2")
+            Me.columnId = MyBase.Columns("Id")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -495,6 +506,8 @@ Partial Public Class novobancoDataSet
             MyBase.Columns.Add(Me.columnNumero1)
             Me.columnNumero2 = New Global.System.Data.DataColumn("Numero2", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnNumero2)
+            Me.columnId = New Global.System.Data.DataColumn("Id", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnId)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnCódigo}, true))
             Me.columnCódigo.AutoIncrement = true
             Me.columnCódigo.AutoIncrementSeed = -1
@@ -768,6 +781,21 @@ Partial Public Class novobancoDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Id() As Long
+            Get
+                Try 
+                    Return CType(Me(Me.tableProjeto.IdColumn),Long)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Id' in table 'Projeto' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableProjeto.IdColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsNomeNull() As Boolean
             Return Me.IsNull(Me.tableProjeto.NomeColumn)
         End Function
@@ -848,6 +876,18 @@ Partial Public Class novobancoDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetNumero2Null()
             Me(Me.tableProjeto.Numero2Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsIdNull() As Boolean
+            Return Me.IsNull(Me.tableProjeto.IdColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetIdNull()
+            Me(Me.tableProjeto.IdColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

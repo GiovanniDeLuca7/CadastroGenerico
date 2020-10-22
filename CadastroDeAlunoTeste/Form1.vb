@@ -10,6 +10,8 @@ Public Class Form1
     Private connString As String
     Private conn As IDbConnection = Nothing
     Private adapter As IDbDataAdapter = Nothing
+    Private m_dbHelper As IDBHelper
+    Private m_dbConn As IDbConnection
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'NovobancoDataSet.Projeto' table. You can move, or remove it, as needed.
@@ -19,51 +21,67 @@ Public Class Form1
         num_idade.Text = ""
     End Sub
 
-    Private m_dbHelper As IDBHelper
-    Private m_dbConn As IDbConnection
+    Private Function GetDatesetProject() As DataSet
+        Dim sql As String = "SELECT * FROM Projeto"
+
+        If radio_oledb.Checked Then
+            Dim oleDbHelper As New OleDBDbHelper
+            Dim conString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=T:\CadastroDeAlunoRef\CadastroDeAlunoTeste\bin\x86\Debug\novobanco.mdb"
+            m_dbHelper = oleDbHelper
+            m_dbConn = oleDbHelper.NewConnection(conString)
+            m_dbConn.Open()
+
+        ElseIf radio_sql.Checked Then
+            Dim sqlDbHelper As New SqlDbHelper
+            Dim conString = "Data Source=DB2012\SQLEXPRESS2008R2;Initial Catalog=novobanco;User ID=sa;Password=admin"
+            m_dbHelper = sqlDbHelper
+            m_dbConn = sqlDbHelper.NewConnection(conString)
+            m_dbConn.Open()
+
+        ElseIf radio_oracle.Checked Then
+            Dim oracleDbHelper As New MSOracleDbHelper
+            oracleDbHelper.QuotePrefix = """"
+            oracleDbHelper.QuoteSuffix = """"
+            Dim conString = "Data Source=(DESCRIPTION=(ADDRESS_LIST =(ADDRESS=(PROTOCOL=TCP) (HOST=DB2012) (PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=XE))); User Id=isoplan; Password=admin;"
+            oracleDbHelper.SetOracleDllDirectory("P:\vnetprojects2008\libs\instantclient_11_2")
+            m_dbHelper = oracleDbHelper
+            m_dbConn = oracleDbHelper.NewConnection(conString)
+            m_dbConn.Open()
+        Else
+            lbl_aviso.Visible = True
+            lbl_aviso.Text = "Nenhuma conexão realizada :("
+        End If
+
+        Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
+        Return ds
+    End Function
 
     Private Sub cmd_conectar_Click(sender As Object, e As EventArgs) Handles cmd_conectar.Click
         Try
-
-            Dim sql As String = "SELECT * FROM Projeto"
-
-            If radio_oledb.Checked Then
-                Dim oleDbHelper As New OleDBDbHelper
-                Dim conString = "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=T:\CadastroDeAlunoRef\CadastroDeAlunoTeste\bin\x86\Debug\novobanco.mdb"
-                m_dbHelper = oleDbHelper
-                m_dbConn = oleDbHelper.NewConnection(conString)
-                m_dbConn.Open()
-
-            ElseIf radio_sql.Checked Then
-                Dim sqlDbHelper As New SqlDbHelper
-                Dim conString = "Data Source=DB2012\SQLEXPRESS2008R2;Initial Catalog=novobanco;User ID=sa;Password=admin"
-                m_dbHelper = sqlDbHelper
-                m_dbConn = sqlDbHelper.NewConnection(conString)
-                m_dbConn.Open()
-
-            ElseIf radio_oracle.Checked Then
-                Dim oracleDbHelper As New MSOracleDbHelper
-                oracleDbHelper.QuotePrefix = """"
-                oracleDbHelper.QuoteSuffix = """"
-                Dim conString = "Data Source=(DESCRIPTION=(ADDRESS_LIST =(ADDRESS=(PROTOCOL=TCP) (HOST=DB2012) (PORT=1521))) (CONNECT_DATA=(SERVICE_NAME=XE))); User Id=isoplan; Password=admin;"
-                oracleDbHelper.SetOracleDllDirectory("P:\vnetprojects2008\libs\instantclient_11_2")
-                m_dbHelper = oracleDbHelper
-                m_dbConn = oracleDbHelper.NewConnection(conString)
-                m_dbConn.Open()
-            Else
-                lbl_aviso.Visible = True
-                lbl_aviso.Text = "Nenhuma conexão realizada :("
-            End If
-
-            Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
-
-
+            Dim ds As DataSet = GetDatesetProject()
             dgv_dados.DataSource = ds.Tables(0).DefaultView
-
             lbl_aviso.Text = ""
         Catch
             Console.WriteLine("Ocorreu um erro fatal... ")
         End Try
+    End Sub
+
+    Public Sub Relatorio()
+        Dim dsProj = New DataSetProjetoF
+        Dim dt = dsProj.Projeto
+         Dim dsdb As DataSet = GetDatesetProject() 
+        For Each drdb In dsdb.Tables(0).Rows
+            Dim drNew = dt.NewProjetoRow
+            drNew.Id = drdb("Id")
+            drNew.Nome = drdb("Nome")
+            drNew.Idade = drdb("Idade")
+            drNew.Genero = drdb("Genero")
+            drNew.Animal = drdb("Animal")
+            drNew.Estacao = drdb("Estacao")
+            drNew.Numero1 = drdb("Numero1")
+            drNew.Numero2 = drdb("Numero2")
+            dt.Rows.Add(drNew)
+        Next
     End Sub
 
     Private Sub cmd_novo_Click(sender As Object, e As EventArgs) Handles cmd_novo.Click
@@ -80,13 +98,9 @@ Public Class Form1
             End If
 
             Dim dsLido As DataSet
-
             Dim sql = "SELECT * FROM Projeto"
-
             dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
-
             Dim drLido = dsLido.Tables(0).NewRow()
-
             drLido("Nome") = txt_nome.Text
             drLido("Idade") = num_idade.Text
             drLido("Animal") = txt_animal.Text
@@ -134,15 +148,11 @@ Public Class Form1
             lbl_aviso.Visible = True
             lbl_aviso.Text = "Erro! O Id inserido já está sendo usado ou é inválido"
         End Try
-
     End Sub
 
     Private Sub cmd_deletar_Click(sender As Object, e As EventArgs) Handles cmd_deletar.Click
-
         Dim dsLido As DataSet
-
         Dim sql = "SELECT * FROM Projeto"
-
         dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
 
 
@@ -159,16 +169,13 @@ Public Class Form1
             m_dbHelper = OracleDbHelper
 
         End If
-
         sql = "DELETE FROM Projeto WHERE Id = @Id"
         Dim param7 = m_dbHelper.NewParameter("@Id", num_id.Text)
         Dim affected = m_dbHelper.ExecuteNonQuery(m_dbConn, CommandType.Text, sql, param7)
         cmd_conectar.PerformClick()
-
     End Sub
 
     Private Sub cmd_editar_Click(sender As Object, e As EventArgs) Handles cmd_editar.Click
-
         Try
             Dim dsLido As DataSet
 
@@ -249,7 +256,6 @@ Public Class Form1
             lbl_aviso.Visible = True
             lbl_aviso.Text = "Erro! ID não existente, selecione uma linha já criada!"
         End Try
-
     End Sub
 
     Private Sub cmd_cadastro_Click(sender As Object, e As EventArgs) Handles cmd_cadastro.Click
@@ -277,8 +283,6 @@ Public Class Form1
             lbl_aguardando.Visible = True
             lbl_aguardando.Text = "Insira os numeros antes!"
         End Try
-
-
     End Sub
 
     Private Sub cmd_limpar_Click(sender As Object, e As EventArgs) Handles cmd_limpar.Click
@@ -298,15 +302,9 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim genero As String = txt_gambiarra.Text
-        Dim texto As String = txt_nome.Text
-
-
         Dim sql = "SELECT * FROM Projeto"
         Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
         Dim result = From Projeto In ds.Tables(0).AsEnumerable() Where (Projeto.Field(Of String)("Genero") = "Feminino") Select New With {.Nome = Projeto.Field(Of String)("Nome"), .Animal = Projeto.Field(Of String)("Animal"), .Genero = Projeto.Field(Of String)("Genero"), .Idade = Projeto.Field(Of Integer)("Idade"), .Numero1 = Projeto.Field(Of Integer)("Numero1"), .Numero2 = Projeto.Field(Of Integer)("Numero2")}
-
-        
         Dim orders As DataTable = ds.Tables(0)
         Dim query =
         From dr In orders.AsEnumerable()
@@ -315,14 +313,10 @@ Public Class Form1
         Select dr
         dgv_dados.DataSource = ds.Tables(0).DefaultView
         lbl_aviso.Visible = False
-
-
-
         dgv_dados.DataSource = query.AsDataView()
 
     End Sub
 End Class
-
 
 'trocar sDBstr por conexao
 'cn por conexao
@@ -331,14 +325,4 @@ End Class
 'oDA por OleDbDataAdaptador
 'oDs por OleDbDataSetagem
 
-'até amanhã Filipe do futuro!
-'vai ser um dia melhor.....
-
-'eu ainda não acredito
-'não estao sendo dias melhores
-'tenho vontade de desistir.
-
-'uma parte de mim morreu
-'mas ainda estou vivo
-'melhor doq imaginaria que estaria
-
+'...

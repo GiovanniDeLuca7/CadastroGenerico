@@ -66,6 +66,8 @@ Partial Class Form1
         Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
         Me.SkinManager1 = New Syncfusion.Windows.Forms.SkinManager(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CrystalReportAccess1 = New CadastroDeAlunoTeste.CrystalReportAccess()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -472,9 +474,9 @@ Partial Class Form1
         '
         'lbl_aviso
         '
-        Me.lbl_aviso.Location = New System.Drawing.Point(710, 142)
+        Me.lbl_aviso.Location = New System.Drawing.Point(706, 142)
         Me.lbl_aviso.Name = "lbl_aviso"
-        Me.lbl_aviso.Size = New System.Drawing.Size(148, 42)
+        Me.lbl_aviso.Size = New System.Drawing.Size(154, 42)
         Me.lbl_aviso.TabIndex = 36
         Me.lbl_aviso.Text = ""
         Me.lbl_aviso.Visible = false
@@ -493,13 +495,26 @@ Partial Class Form1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = true
         '
+        'CrystalReportViewer1
+        '
+        Me.CrystalReportViewer1.ActiveViewIndex = 0
+        Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.CrystalReportViewer1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.CrystalReportViewer1.Location = New System.Drawing.Point(12, 344)
+        Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
+        Me.CrystalReportViewer1.ReportSource = Me.CrystalReportAccess1
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(848, 406)
+        Me.CrystalReportViewer1.TabIndex = 38
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(870, 347)
+        Me.ClientSize = New System.Drawing.Size(872, 763)
+        Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
@@ -592,4 +607,6 @@ End Sub
     Friend WithEvents lbl_aviso As RichTextBox
     Friend WithEvents SkinManager1 As Syncfusion.Windows.Forms.SkinManager
     Friend WithEvents Button1 As Button
+    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents CrystalReportAccess1 As CrystalReportAccess
 End Class
