@@ -59,15 +59,15 @@ Partial Class Form1
         Me.radio_oracle = New System.Windows.Forms.RadioButton()
         Me.cmd_editar = New System.Windows.Forms.Button()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ProjetoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.NovobancoDataSet = New CadastroDeAlunoTeste.novobancoDataSet()
-        Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
         Me.cmd_limpar = New System.Windows.Forms.Button()
         Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
         Me.SkinManager1 = New Syncfusion.Windows.Forms.SkinManager(Me.components)
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.CrystalReportAccess1 = New CadastroDeAlunoTeste.CrystalReportAccess()
+        Me.Crystal_1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
+        Me.ProjetoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.NovobancoDataSet = New CadastroDeAlunoTeste.novobancoDataSet()
+        Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -297,14 +297,14 @@ Partial Class Form1
         Me.dgv_dados.GridColor = System.Drawing.Color.LightSalmon
         Me.dgv_dados.Location = New System.Drawing.Point(12, 188)
         Me.dgv_dados.Name = "dgv_dados"
-        Me.dgv_dados.Size = New System.Drawing.Size(848, 150)
+        Me.dgv_dados.Size = New System.Drawing.Size(954, 150)
         Me.dgv_dados.TabIndex = 18
         '
         'cmd_novo
         '
         Me.cmd_novo.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_novo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_novo.Location = New System.Drawing.Point(661, 27)
+        Me.cmd_novo.Location = New System.Drawing.Point(661, 20)
         Me.cmd_novo.Name = "cmd_novo"
         Me.cmd_novo.Size = New System.Drawing.Size(132, 23)
         Me.cmd_novo.TabIndex = 20
@@ -315,7 +315,7 @@ Partial Class Form1
         '
         Me.cmd_deletar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_deletar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_deletar.Location = New System.Drawing.Point(661, 72)
+        Me.cmd_deletar.Location = New System.Drawing.Point(661, 65)
         Me.cmd_deletar.Name = "cmd_deletar"
         Me.cmd_deletar.Size = New System.Drawing.Size(132, 23)
         Me.cmd_deletar.TabIndex = 21
@@ -344,7 +344,7 @@ Partial Class Form1
         '
         Me.Label8.AutoSize = true
         Me.Label8.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label8.Location = New System.Drawing.Point(628, 56)
+        Me.Label8.Location = New System.Drawing.Point(628, 49)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(144, 13)
         Me.Label8.TabIndex = 26
@@ -354,7 +354,7 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = true
         Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(628, 13)
+        Me.Label9.Location = New System.Drawing.Point(628, 6)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(198, 13)
         Me.Label9.TabIndex = 19
@@ -386,7 +386,7 @@ Partial Class Form1
         '
         Me.cmd_conectar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_conectar.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_conectar.Location = New System.Drawing.Point(619, 151)
+        Me.cmd_conectar.Location = New System.Drawing.Point(619, 140)
         Me.cmd_conectar.Name = "cmd_conectar"
         Me.cmd_conectar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_conectar.TabIndex = 29
@@ -430,7 +430,7 @@ Partial Class Form1
         '
         Me.cmd_editar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_editar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_editar.Location = New System.Drawing.Point(661, 116)
+        Me.cmd_editar.Location = New System.Drawing.Point(661, 109)
         Me.cmd_editar.Name = "cmd_editar"
         Me.cmd_editar.Size = New System.Drawing.Size(132, 23)
         Me.cmd_editar.TabIndex = 33
@@ -441,25 +441,11 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = true
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label10.Location = New System.Drawing.Point(628, 100)
+        Me.Label10.Location = New System.Drawing.Point(628, 93)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(137, 13)
         Me.Label10.TabIndex = 34
         Me.Label10.Text = "Insira o Id que deseja editar"
-        '
-        'ProjetoBindingSource
-        '
-        Me.ProjetoBindingSource.DataMember = "Projeto"
-        Me.ProjetoBindingSource.DataSource = Me.NovobancoDataSet
-        '
-        'NovobancoDataSet
-        '
-        Me.NovobancoDataSet.DataSetName = "novobancoDataSet"
-        Me.NovobancoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ProjetoTableAdapter
-        '
-        Me.ProjetoTableAdapter.ClearBeforeFill = true
         '
         'cmd_limpar
         '
@@ -488,24 +474,40 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(547, 6)
+        Me.Button1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(619, 163)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = true
+        Me.Button1.Text = "Linq"
+        Me.Button1.UseVisualStyleBackColor = false
         '
-        'CrystalReportViewer1
+        'Crystal_1
         '
-        Me.CrystalReportViewer1.ActiveViewIndex = 0
-        Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.CrystalReportViewer1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.CrystalReportViewer1.Location = New System.Drawing.Point(12, 344)
-        Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
-        Me.CrystalReportViewer1.ReportSource = Me.CrystalReportAccess1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(848, 406)
-        Me.CrystalReportViewer1.TabIndex = 38
+        Me.Crystal_1.ActiveViewIndex = 0
+        Me.Crystal_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Crystal_1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Crystal_1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Crystal_1.Location = New System.Drawing.Point(12, 344)
+        Me.Crystal_1.Name = "Crystal_1"
+        Me.Crystal_1.ReportSource = Me.CrystalReportF1
+        Me.Crystal_1.Size = New System.Drawing.Size(954, 406)
+        Me.Crystal_1.TabIndex = 38
+        '
+        'ProjetoBindingSource
+        '
+        Me.ProjetoBindingSource.DataMember = "Projeto"
+        Me.ProjetoBindingSource.DataSource = Me.NovobancoDataSet
+        '
+        'NovobancoDataSet
+        '
+        Me.NovobancoDataSet.DataSetName = "novobancoDataSet"
+        Me.NovobancoDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ProjetoTableAdapter
+        '
+        Me.ProjetoTableAdapter.ClearBeforeFill = true
         '
         'Form1
         '
@@ -513,8 +515,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(872, 763)
-        Me.Controls.Add(Me.CrystalReportViewer1)
+        Me.ClientSize = New System.Drawing.Size(982, 763)
+        Me.Controls.Add(Me.Crystal_1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
@@ -607,6 +609,6 @@ End Sub
     Friend WithEvents lbl_aviso As RichTextBox
     Friend WithEvents SkinManager1 As Syncfusion.Windows.Forms.SkinManager
     Friend WithEvents Button1 As Button
-    Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
-    Friend WithEvents CrystalReportAccess1 As CrystalReportAccess
+    Friend WithEvents Crystal_1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents CrystalReportF1 As CrystalReportF
 End Class

@@ -114,21 +114,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AcessoGenerico.vb" />
-    <Compile Include="bancodedadosDataSet.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>bancodedadosDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ClassSalvar.vb" />
-    <Compile Include="CrystalReportAccess.vb">
+    <Compile Include="CrystalReportF.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReportAccess.rpt</DependentUpon>
+      <DependentUpon>CrystalReportF.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="DataSetProjetoF.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetProjetoF.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetProjetoF.vb">
       <DependentUpon>DataSetProjetoF.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.vb">
@@ -158,14 +156,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>novobancoDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="novobancoDataSet.vb">
+      <DependentUpon>novobancoDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CrystalReportAccess.rpt">
+    <EmbeddedResource Include="CrystalReportF.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReportAccess.vb</LastGenOutput>
+      <LastGenOutput>CrystalReportF.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -176,9 +178,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="bancodedadosDataSet.xsc">
-      <DependentUpon>bancodedadosDataSet.xsd</DependentUpon>
-    </None>
     <None Include="bancodedadosDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>bancodedadosDataSet.Designer.vb</LastGenOutput>

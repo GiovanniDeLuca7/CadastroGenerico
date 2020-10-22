@@ -19,9 +19,11 @@ Public Class Form1
         num_1.Text = ""
         num_2.Text = ""
         num_idade.Text = ""
+
+        Dim t As CadastroDeAlunoTeste.DataSetProjetoF
     End Sub
 
-    Private Function GetDatesetProject() As DataSet
+    Public Function GetDatasetProject() As DataSet
         Dim sql As String = "SELECT * FROM Projeto"
 
         If radio_oledb.Checked Then
@@ -58,8 +60,16 @@ Public Class Form1
 
     Private Sub cmd_conectar_Click(sender As Object, e As EventArgs) Handles cmd_conectar.Click
         Try
-            Dim ds As DataSet = GetDatesetProject()
+            Dim ds As DataSet = GetDatasetProject()
             dgv_dados.DataSource = ds.Tables(0).DefaultView
+
+            Dim m_rptDoc = New CrystalDecisions.CrystalReports.Engine.ReportDocument
+            m_rptDoc.Load("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\CrystalReportF.rpt", CrystalDecisions.[Shared].OpenReportMethod.OpenReportByDefault)
+
+            ds.Tables(0).TableName = "Projeto"
+            m_rptDoc.Database.Tables(0).SetDataSource(ds)
+            Crystal_1.ReportSource = m_rptDoc
+         
             lbl_aviso.Text = ""
         Catch
             Console.WriteLine("Ocorreu um erro fatal... ")
@@ -69,7 +79,7 @@ Public Class Form1
     Public Sub Relatorio()
         Dim dsProj = New DataSetProjetoF
         Dim dt = dsProj.Projeto
-         Dim dsdb As DataSet = GetDatesetProject() 
+        Dim dsdb As DataSet = GetDatasetProject()
         For Each drdb In dsdb.Tables(0).Rows
             Dim drNew = dt.NewProjetoRow
             drNew.Id = drdb("Id")
@@ -151,28 +161,34 @@ Public Class Form1
     End Sub
 
     Private Sub cmd_deletar_Click(sender As Object, e As EventArgs) Handles cmd_deletar.Click
-        Dim dsLido As DataSet
-        Dim sql = "SELECT * FROM Projeto"
-        dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
+        Try
+            Dim dsLido As DataSet
+            Dim sql = "SELECT * FROM Projeto"
+            dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
 
 
-        If radio_oledb.Checked Then
-            Dim oleDbHelper As New OleDBDbHelper
-            m_dbHelper = oleDbHelper
+            If radio_oledb.Checked Then
+                Dim oleDbHelper As New OleDBDbHelper
+                m_dbHelper = oleDbHelper
 
-        ElseIf radio_sql.Checked Then
-            Dim sqlDbHelper As New SqlDbHelper
-            m_dbHelper = sqlDbHelper
+            ElseIf radio_sql.Checked Then
+                Dim sqlDbHelper As New SqlDbHelper
+                m_dbHelper = sqlDbHelper
 
-        ElseIf radio_oracle.Checked Then
-            Dim OracleDbHelper As New MSOracleDbHelper
-            m_dbHelper = OracleDbHelper
+            ElseIf radio_oracle.Checked Then
+                Dim OracleDbHelper As New MSOracleDbHelper
+                m_dbHelper = OracleDbHelper
 
-        End If
-        sql = "DELETE FROM Projeto WHERE Id = @Id"
-        Dim param7 = m_dbHelper.NewParameter("@Id", num_id.Text)
-        Dim affected = m_dbHelper.ExecuteNonQuery(m_dbConn, CommandType.Text, sql, param7)
-        cmd_conectar.PerformClick()
+            End If
+            sql = "DELETE FROM Projeto WHERE Id = @Id"
+            Dim param7 = m_dbHelper.NewParameter("@Id", num_id.Text)
+            Dim affected = m_dbHelper.ExecuteNonQuery(m_dbConn, CommandType.Text, sql, param7)
+            cmd_conectar.PerformClick()
+
+        Catch
+            lbl_aviso.Visible = True
+            lbl_aviso.Text = "Erro! ID não existente, selecione uma linha já criada!"
+        End Try
     End Sub
 
     Private Sub cmd_editar_Click(sender As Object, e As EventArgs) Handles cmd_editar.Click
@@ -302,20 +318,25 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim sql = "SELECT * FROM Projeto"
-        Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
-        Dim result = From Projeto In ds.Tables(0).AsEnumerable() Where (Projeto.Field(Of String)("Genero") = "Feminino") Select New With {.Nome = Projeto.Field(Of String)("Nome"), .Animal = Projeto.Field(Of String)("Animal"), .Genero = Projeto.Field(Of String)("Genero"), .Idade = Projeto.Field(Of Integer)("Idade"), .Numero1 = Projeto.Field(Of Integer)("Numero1"), .Numero2 = Projeto.Field(Of Integer)("Numero2")}
-        Dim orders As DataTable = ds.Tables(0)
-        Dim query =
-        From dr In orders.AsEnumerable()
-        Where dr.Field(Of String)("Nome").Contains("l")
-        Order By dr("Genero").ToString()
-        Select dr
-        dgv_dados.DataSource = ds.Tables(0).DefaultView
-        lbl_aviso.Visible = False
-        dgv_dados.DataSource = query.AsDataView()
-
+        Try
+            Dim sql = "SELECT * FROM Projeto"
+            Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
+            Dim result = From Projeto In ds.Tables(0).AsEnumerable() Where (Projeto.Field(Of String)("Genero") = "Feminino") Select New With {.Nome = Projeto.Field(Of String)("Nome"), .Animal = Projeto.Field(Of String)("Animal"), .Genero = Projeto.Field(Of String)("Genero"), .Idade = Projeto.Field(Of Integer)("Idade"), .Numero1 = Projeto.Field(Of Integer)("Numero1"), .Numero2 = Projeto.Field(Of Integer)("Numero2")}
+            Dim orders As DataTable = ds.Tables(0)
+            Dim query =
+            From dr In orders.AsEnumerable()
+            Where dr.Field(Of String)("Nome").Contains("l")
+            Order By dr("Genero").ToString()
+            Select dr
+            dgv_dados.DataSource = ds.Tables(0).DefaultView
+            lbl_aviso.Visible = False
+            dgv_dados.DataSource = query.AsDataView()
+        Catch
+            lbl_aviso.Visible = True
+            lbl_aviso.Text = "Erro! Conecte-se ao banco de dados!"
+        End Try
     End Sub
+
 End Class
 
 'trocar sDBstr por conexao

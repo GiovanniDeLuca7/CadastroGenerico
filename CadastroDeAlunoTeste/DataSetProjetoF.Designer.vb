@@ -299,6 +299,8 @@ Partial Public Class DataSetProjetoF
         
         Private columnNumero2 As Global.System.Data.DataColumn
         
+        Private columnCódigo As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub New()
@@ -399,6 +401,14 @@ Partial Public Class DataSetProjetoF
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public ReadOnly Property CódigoColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCódigo
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -435,9 +445,9 @@ Partial Public Class DataSetProjetoF
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
-        Public Overloads Function AddProjetoRow(ByVal Id As String, ByVal Nome As String, ByVal Idade As Short, ByVal Animal As String, ByVal Estacao As String, ByVal Genero As String, ByVal Numero1 As Long, ByVal Numero2 As Long) As ProjetoRow
+        Public Overloads Function AddProjetoRow(ByVal Id As String, ByVal Nome As String, ByVal Idade As Short, ByVal Animal As String, ByVal Estacao As String, ByVal Genero As String, ByVal Numero1 As Long, ByVal Numero2 As Long, ByVal Código As String) As ProjetoRow
             Dim rowProjetoRow As ProjetoRow = CType(Me.NewRow,ProjetoRow)
-            Dim columnValuesArray() As Object = New Object() {Id, Nome, Idade, Animal, Estacao, Genero, Numero1, Numero2}
+            Dim columnValuesArray() As Object = New Object() {Id, Nome, Idade, Animal, Estacao, Genero, Numero1, Numero2, Código}
             rowProjetoRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowProjetoRow)
             Return rowProjetoRow
@@ -468,6 +478,7 @@ Partial Public Class DataSetProjetoF
             Me.columnGenero = MyBase.Columns("Genero")
             Me.columnNumero1 = MyBase.Columns("Numero1")
             Me.columnNumero2 = MyBase.Columns("Numero2")
+            Me.columnCódigo = MyBase.Columns("Código")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -489,6 +500,8 @@ Partial Public Class DataSetProjetoF
             MyBase.Columns.Add(Me.columnNumero1)
             Me.columnNumero2 = New Global.System.Data.DataColumn("Numero2", GetType(Long), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnNumero2)
+            Me.columnCódigo = New Global.System.Data.DataColumn("Código", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCódigo)
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -755,6 +768,21 @@ Partial Public Class DataSetProjetoF
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Property Código() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableProjeto.CódigoColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'Código' in table 'Projeto' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableProjeto.CódigoColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Function IsIdNull() As Boolean
             Return Me.IsNull(Me.tableProjeto.IdColumn)
         End Function
@@ -847,6 +875,18 @@ Partial Public Class DataSetProjetoF
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
         Public Sub SetNumero2Null()
             Me(Me.tableProjeto.Numero2Column) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Function IsCódigoNull() As Boolean
+            Return Me.IsNull(Me.tableProjeto.CódigoColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")>  _
+        Public Sub SetCódigoNull()
+            Me(Me.tableProjeto.CódigoColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     

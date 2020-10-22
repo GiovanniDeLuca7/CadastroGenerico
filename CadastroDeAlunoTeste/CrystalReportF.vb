@@ -18,7 +18,7 @@ Imports System
 Imports System.ComponentModel
 
 
-Public Class CrystalReportAccess
+Public Class CrystalReportF
     Inherits ReportClass
     
     Public Sub New()
@@ -27,7 +27,7 @@ Public Class CrystalReportAccess
     
     Public Overrides Property ResourceName() As String
         Get
-            Return "CrystalReportAccess.rpt"
+            Return "CrystalReportF.rpt"
         End Get
         Set
             'Do nothing
@@ -45,7 +45,7 @@ Public Class CrystalReportAccess
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "CadastroDeAlunoTeste.CrystalReportAccess.rpt"
+            Return "CadastroDeAlunoTeste.CrystalReportF.rpt"
         End Get
         Set
             'Do nothing
@@ -94,7 +94,7 @@ Public Class CrystalReportAccess
 End Class
 
 <System.Drawing.ToolboxBitmapAttribute(GetType(CrystalDecisions.[Shared].ExportOptions), "report.bmp")>  _
-Public Class CachedCrystalReportAccess
+Public Class CachedCrystalReportF
     Inherits Component
     Implements ICachedReport
     
@@ -136,7 +136,7 @@ Public Class CachedCrystalReportAccess
     End Property
     
     Public Overridable Function CreateReport() As CrystalDecisions.CrystalReports.Engine.ReportDocument Implements CrystalDecisions.ReportSource.ICachedReport.CreateReport
-        Dim rpt As CrystalReportAccess = New CrystalReportAccess()
+        Dim rpt As CrystalReportF = New CrystalReportF()
         rpt.Site = Me.Site
         Return rpt
     End Function
