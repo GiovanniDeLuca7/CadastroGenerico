@@ -322,7 +322,7 @@ Public Class Form1
         radio_oracle.Checked = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) 
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Try
             Dim sql = "SELECT * FROM Projeto"
             Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)

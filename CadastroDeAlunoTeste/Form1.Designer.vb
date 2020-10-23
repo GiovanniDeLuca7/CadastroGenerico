@@ -67,6 +67,7 @@ Partial Class Form1
         Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
         Me.Crystal_1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -498,6 +499,17 @@ Partial Class Form1
         Me.Crystal_1.TabIndex = 38
         Me.Crystal_1.Visible = false
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button2.Location = New System.Drawing.Point(619, 163)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 39
+        Me.Button2.Text = "Linq"
+        Me.Button2.UseVisualStyleBackColor = false
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -505,6 +517,7 @@ Partial Class Form1
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.ClientSize = New System.Drawing.Size(982, 763)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Crystal_1)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
@@ -599,4 +612,5 @@ End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents Crystal_1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReportF1 As CrystalReportF
+    Friend WithEvents Button2 As Button
 End Class
