@@ -5,6 +5,10 @@ Imports System.IO
 Imports System.Data.OleDb
 Imports System.Data.SqlClient
 Imports ApplicationBlocks.Data
+'fazer um design diferente no Crystal Reports
+'usar linha do codigo para fazer uma formula
+'ordenar as linhas po 
+
 
 Public Class Form1
     Private connString As String
