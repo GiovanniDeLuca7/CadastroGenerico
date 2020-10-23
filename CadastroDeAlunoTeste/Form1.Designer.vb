@@ -62,12 +62,11 @@ Partial Class Form1
         Me.cmd_limpar = New System.Windows.Forms.Button()
         Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
         Me.SkinManager1 = New Syncfusion.Windows.Forms.SkinManager(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Crystal_1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         Me.ProjetoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NovobancoDataSet = New CadastroDeAlunoTeste.novobancoDataSet()
         Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
+        Me.Crystal_1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -472,29 +471,6 @@ Partial Class Form1
         Me.SkinManager1.Controls = Nothing
         Me.SkinManager1.VisualTheme = Syncfusion.Windows.Forms.VisualTheme.Managed
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(619, 163)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 37
-        Me.Button1.Text = "Linq"
-        Me.Button1.UseVisualStyleBackColor = false
-        '
-        'Crystal_1
-        '
-        Me.Crystal_1.ActiveViewIndex = 0
-        Me.Crystal_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Crystal_1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Crystal_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Crystal_1.Location = New System.Drawing.Point(12, 344)
-        Me.Crystal_1.Name = "Crystal_1"
-        Me.Crystal_1.ReportSource = Me.CrystalReportF1
-        Me.Crystal_1.Size = New System.Drawing.Size(954, 406)
-        Me.Crystal_1.TabIndex = 38
-        '
         'ProjetoBindingSource
         '
         Me.ProjetoBindingSource.DataMember = "Projeto"
@@ -509,6 +485,19 @@ Partial Class Form1
         '
         Me.ProjetoTableAdapter.ClearBeforeFill = true
         '
+        'Crystal_1
+        '
+        Me.Crystal_1.ActiveViewIndex = 0
+        Me.Crystal_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Crystal_1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Crystal_1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Crystal_1.Location = New System.Drawing.Point(12, 344)
+        Me.Crystal_1.Name = "Crystal_1"
+        Me.Crystal_1.ReportSource = Me.CrystalReportF1
+        Me.Crystal_1.Size = New System.Drawing.Size(954, 406)
+        Me.Crystal_1.TabIndex = 38
+        Me.Crystal_1.Visible = false
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -517,7 +506,6 @@ Partial Class Form1
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.ClientSize = New System.Drawing.Size(982, 763)
         Me.Controls.Add(Me.Crystal_1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
         Me.Controls.Add(Me.Label10)

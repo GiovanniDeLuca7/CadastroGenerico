@@ -75,6 +75,7 @@ Public Class Form1
             Crystal_1.ReportSource = m_rptDoc
          
             lbl_aviso.Text = ""
+            Crystal_1.Visible = true
         Catch
             Console.WriteLine("Ocorreu um erro fatal... ")
         End Try
@@ -321,7 +322,7 @@ Public Class Form1
         radio_oracle.Checked = False
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) 
         Try
             Dim sql = "SELECT * FROM Projeto"
             Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
@@ -340,7 +341,6 @@ Public Class Form1
             lbl_aviso.Text = "Erro! Conecte-se ao banco de dados!"
         End Try
     End Sub
-
 End Class
 
 'trocar sDBstr por conexao
