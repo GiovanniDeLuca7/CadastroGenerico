@@ -289,7 +289,7 @@ Public Class Form1
         Dim id As String = num_id.Text
         Dim genero As String = txt_gambiarra.Text
         ClassSalvar.Salvar(texto, genero, idade, animal, estacao, id)
-        Shell("NotePad.Exe ""T:\CadastroDeAlunoRef\CadastroDeAlunoTeste\bin\x86\Debugsalvo.txt""", 1)
+        Shell("NotePad.Exe ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Debugsalvo.txt""", 1)
     End Sub
 
     Private Sub cmd_calcular_Click(sender As Object, e As EventArgs) Handles cmd_calcular.Click
@@ -299,7 +299,7 @@ Public Class Form1
             Dim numero1 As Integer = num_1.Text
             Dim numero2 As Integer = num_2.Text
             ClassSalvar.Calculadora(numero1, numero2)
-            Shell("NotePad.Exe ""T:\CadastroDeAlunoRef\CadastroDeAlunoTeste\bin\x86\Debugcalc.txt""", 1)
+            Shell("NotePad.Exe ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Debugcalc.txt""", 1)
         Catch
             lbl_aguardando.Visible = True
             lbl_aguardando.Text = "Insira os numeros antes!"
