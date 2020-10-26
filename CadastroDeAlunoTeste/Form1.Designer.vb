@@ -268,6 +268,7 @@ Partial Class Form1
         '
         Me.num_2.BackColor = System.Drawing.Color.HotPink
         Me.num_2.Location = New System.Drawing.Point(132, 40)
+        Me.num_2.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_2.Name = "num_2"
         Me.num_2.Size = New System.Drawing.Size(120, 20)
         Me.num_2.TabIndex = 15
@@ -276,6 +277,7 @@ Partial Class Form1
         '
         Me.num_1.BackColor = System.Drawing.Color.HotPink
         Me.num_1.Location = New System.Drawing.Point(6, 40)
+        Me.num_1.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_1.Name = "num_1"
         Me.num_1.Size = New System.Drawing.Size(120, 20)
         Me.num_1.TabIndex = 0
