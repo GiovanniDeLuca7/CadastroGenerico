@@ -65,9 +65,9 @@ Partial Class Form1
         Me.ProjetoBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.NovobancoDataSet = New CadastroDeAlunoTeste.novobancoDataSet()
         Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Crystal_1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
-        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -102,7 +102,7 @@ Partial Class Form1
         '
         'txt_nome
         '
-        Me.txt_nome.BackColor = System.Drawing.Color.HotPink
+        Me.txt_nome.BackColor = System.Drawing.Color.Lavender
         Me.txt_nome.ForeColor = System.Drawing.SystemColors.WindowText
         Me.txt_nome.Location = New System.Drawing.Point(104, 6)
         Me.txt_nome.Name = "txt_nome"
@@ -121,7 +121,7 @@ Partial Class Form1
         '
         'num_idade
         '
-        Me.num_idade.BackColor = System.Drawing.Color.HotPink
+        Me.num_idade.BackColor = System.Drawing.Color.Lavender
         Me.num_idade.Location = New System.Drawing.Point(104, 38)
         Me.num_idade.Name = "num_idade"
         Me.num_idade.Size = New System.Drawing.Size(45, 20)
@@ -129,7 +129,7 @@ Partial Class Form1
         '
         'txt_animal
         '
-        Me.txt_animal.BackColor = System.Drawing.Color.HotPink
+        Me.txt_animal.BackColor = System.Drawing.Color.Lavender
         Me.txt_animal.Location = New System.Drawing.Point(158, 69)
         Me.txt_animal.Name = "txt_animal"
         Me.txt_animal.Size = New System.Drawing.Size(100, 20)
@@ -158,7 +158,7 @@ Partial Class Form1
         'radio_masc
         '
         Me.radio_masc.AutoSize = true
-        Me.radio_masc.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.radio_masc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.radio_masc.Location = New System.Drawing.Point(83, 101)
         Me.radio_masc.Name = "radio_masc"
         Me.radio_masc.Size = New System.Drawing.Size(73, 17)
@@ -170,7 +170,7 @@ Partial Class Form1
         'radio_fem
         '
         Me.radio_fem.AutoSize = true
-        Me.radio_fem.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.radio_fem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
         Me.radio_fem.Location = New System.Drawing.Point(162, 101)
         Me.radio_fem.Name = "radio_fem"
         Me.radio_fem.Size = New System.Drawing.Size(67, 17)
@@ -182,7 +182,7 @@ Partial Class Form1
         'radio_outro
         '
         Me.radio_outro.AutoSize = true
-        Me.radio_outro.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.radio_outro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
         Me.radio_outro.Location = New System.Drawing.Point(235, 101)
         Me.radio_outro.Name = "radio_outro"
         Me.radio_outro.Size = New System.Drawing.Size(51, 17)
@@ -203,7 +203,7 @@ Partial Class Form1
         '
         'cb_estacao
         '
-        Me.cb_estacao.BackColor = System.Drawing.Color.HotPink
+        Me.cb_estacao.BackColor = System.Drawing.Color.Lavender
         Me.cb_estacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_estacao.FormattingEnabled = true
         Me.cb_estacao.Items.AddRange(New Object() {"Primavera", "Verão", "Outono", "Inverno"})
@@ -266,7 +266,7 @@ Partial Class Form1
         '
         'num_2
         '
-        Me.num_2.BackColor = System.Drawing.Color.HotPink
+        Me.num_2.BackColor = System.Drawing.Color.Lavender
         Me.num_2.Location = New System.Drawing.Point(132, 40)
         Me.num_2.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_2.Name = "num_2"
@@ -275,7 +275,7 @@ Partial Class Form1
         '
         'num_1
         '
-        Me.num_1.BackColor = System.Drawing.Color.HotPink
+        Me.num_1.BackColor = System.Drawing.Color.Lavender
         Me.num_1.Location = New System.Drawing.Point(6, 40)
         Me.num_1.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_1.Name = "num_1"
@@ -336,7 +336,7 @@ Partial Class Form1
         '
         'num_id
         '
-        Me.num_id.BackColor = System.Drawing.Color.HotPink
+        Me.num_id.BackColor = System.Drawing.Color.Lavender
         Me.num_id.Location = New System.Drawing.Point(40, 160)
         Me.num_id.Name = "num_id"
         Me.num_id.Size = New System.Drawing.Size(120, 20)
@@ -488,6 +488,17 @@ Partial Class Form1
         '
         Me.ProjetoTableAdapter.ClearBeforeFill = true
         '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.MidnightBlue
+        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
+        Me.Button2.Location = New System.Drawing.Point(619, 163)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 39
+        Me.Button2.Text = "Linq"
+        Me.Button2.UseVisualStyleBackColor = false
+        '
         'Crystal_1
         '
         Me.Crystal_1.ActiveViewIndex = 0
@@ -500,17 +511,6 @@ Partial Class Form1
         Me.Crystal_1.Size = New System.Drawing.Size(954, 406)
         Me.Crystal_1.TabIndex = 38
         Me.Crystal_1.Visible = false
-        '
-        'Button2
-        '
-        Me.Button2.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(619, 163)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 39
-        Me.Button2.Text = "Linq"
-        Me.Button2.UseVisualStyleBackColor = false
         '
         'Form1
         '
