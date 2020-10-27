@@ -5,9 +5,10 @@ Imports System.IO
 Imports System.Data.OleDb
 Imports System.Data.SqlClient
 Imports ApplicationBlocks.Data
-'fazer um design diferente no Crystal Reports
-'usar linha do codigo para fazer uma formula
-'ordenar as linhas po 
+'Mexer mais nas formulas
+'Throw
+'String Format
+'Globalização  
 
 
 Public Class Form1
@@ -23,8 +24,6 @@ Public Class Form1
         num_1.Text = ""
         num_2.Text = ""
         num_idade.Text = ""
-
-        Dim t As CadastroDeAlunoTeste.DataSetProjetoF
     End Sub
 
     Public Function GetDatasetProject() As DataSet
@@ -70,14 +69,40 @@ Public Class Form1
             Dim m_rptDoc = New CrystalDecisions.CrystalReports.Engine.ReportDocument
             m_rptDoc.Load("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\CrystalReportF.rpt", CrystalDecisions.[Shared].OpenReportMethod.OpenReportByDefault)
 
+
+            Dim rptObjects = m_rptDoc.ReportDefinition.ReportObjects
+
+            For Each rptObj As CrystalDecisions.CrystalReports.Engine.ReportObject In rptObjects
+
+                Debug.WriteLine(rptObj.Name)
+                If rptObj.Name = "textoGenero" Then
+
+
+
+                End If
+
+
+
+            Next
+
+            Dim Formula = m_rptDoc.DataDefinition.FormulaFields.Item("teste")
+            Formula.Text = "{Projeto.Numero1}+{Projeto.Numero2}"
+            Dim errorText As String = ""
+            Dim checked = Formula.Check(errorText)
+
+            If Not checked Then
+                Throw New InvalidOperationException($"Erro formula {Formula.Name} {errorText}" )
+            End If
+
+
             ds.Tables(0).TableName = "Projeto"
             m_rptDoc.Database.Tables(0).SetDataSource(ds)
             Crystal_1.ReportSource = m_rptDoc
-         
+
             lbl_aviso.Text = ""
-            Crystal_1.Visible = true
-        Catch
-            Console.WriteLine("Ocorreu um erro fatal... ")
+            Crystal_1.Visible = True
+        Catch ex As Exception
+            MessageBox.Show("Ocorreu um erro fatal... Erro: " & ex.ToString())
         End Try
     End Sub
 

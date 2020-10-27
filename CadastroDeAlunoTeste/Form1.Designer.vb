@@ -83,7 +83,7 @@ Partial Class Form1
         '
         Me.cmd_cadastro.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_cadastro.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_cadastro.Location = New System.Drawing.Point(211, 27)
+        Me.cmd_cadastro.Location = New System.Drawing.Point(233, 27)
         Me.cmd_cadastro.Name = "cmd_cadastro"
         Me.cmd_cadastro.Size = New System.Drawing.Size(75, 23)
         Me.cmd_cadastro.TabIndex = 0
@@ -94,7 +94,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = true
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(34, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(86, 13)
         Me.Label1.TabIndex = 1
@@ -104,7 +104,7 @@ Partial Class Form1
         '
         Me.txt_nome.BackColor = System.Drawing.Color.Lavender
         Me.txt_nome.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txt_nome.Location = New System.Drawing.Point(104, 6)
+        Me.txt_nome.Location = New System.Drawing.Point(126, 6)
         Me.txt_nome.Name = "txt_nome"
         Me.txt_nome.Size = New System.Drawing.Size(100, 20)
         Me.txt_nome.TabIndex = 2
@@ -113,7 +113,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = true
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(12, 40)
+        Me.Label2.Location = New System.Drawing.Point(34, 40)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(86, 13)
         Me.Label2.TabIndex = 3
@@ -122,7 +122,7 @@ Partial Class Form1
         'num_idade
         '
         Me.num_idade.BackColor = System.Drawing.Color.Lavender
-        Me.num_idade.Location = New System.Drawing.Point(104, 38)
+        Me.num_idade.Location = New System.Drawing.Point(126, 38)
         Me.num_idade.Name = "num_idade"
         Me.num_idade.Size = New System.Drawing.Size(45, 20)
         Me.num_idade.TabIndex = 4
@@ -130,7 +130,7 @@ Partial Class Form1
         'txt_animal
         '
         Me.txt_animal.BackColor = System.Drawing.Color.Lavender
-        Me.txt_animal.Location = New System.Drawing.Point(158, 69)
+        Me.txt_animal.Location = New System.Drawing.Point(180, 69)
         Me.txt_animal.Name = "txt_animal"
         Me.txt_animal.Size = New System.Drawing.Size(100, 20)
         Me.txt_animal.TabIndex = 5
@@ -139,7 +139,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = true
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(12, 72)
+        Me.Label3.Location = New System.Drawing.Point(34, 72)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(140, 13)
         Me.Label3.TabIndex = 6
@@ -149,7 +149,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = true
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(12, 103)
+        Me.Label4.Location = New System.Drawing.Point(34, 103)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 13)
         Me.Label4.TabIndex = 7
@@ -159,7 +159,7 @@ Partial Class Form1
         '
         Me.radio_masc.AutoSize = true
         Me.radio_masc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.radio_masc.Location = New System.Drawing.Point(83, 101)
+        Me.radio_masc.Location = New System.Drawing.Point(105, 101)
         Me.radio_masc.Name = "radio_masc"
         Me.radio_masc.Size = New System.Drawing.Size(73, 17)
         Me.radio_masc.TabIndex = 8
@@ -171,7 +171,7 @@ Partial Class Form1
         '
         Me.radio_fem.AutoSize = true
         Me.radio_fem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.radio_fem.Location = New System.Drawing.Point(162, 101)
+        Me.radio_fem.Location = New System.Drawing.Point(184, 101)
         Me.radio_fem.Name = "radio_fem"
         Me.radio_fem.Size = New System.Drawing.Size(67, 17)
         Me.radio_fem.TabIndex = 9
@@ -183,7 +183,7 @@ Partial Class Form1
         '
         Me.radio_outro.AutoSize = true
         Me.radio_outro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
-        Me.radio_outro.Location = New System.Drawing.Point(235, 101)
+        Me.radio_outro.Location = New System.Drawing.Point(257, 101)
         Me.radio_outro.Name = "radio_outro"
         Me.radio_outro.Size = New System.Drawing.Size(51, 17)
         Me.radio_outro.TabIndex = 10
@@ -195,7 +195,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = true
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(12, 134)
+        Me.Label5.Location = New System.Drawing.Point(34, 134)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(148, 13)
         Me.Label5.TabIndex = 11
@@ -207,7 +207,7 @@ Partial Class Form1
         Me.cb_estacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_estacao.FormattingEnabled = true
         Me.cb_estacao.Items.AddRange(New Object() {"Primavera", "Verão", "Outono", "Inverno"})
-        Me.cb_estacao.Location = New System.Drawing.Point(162, 131)
+        Me.cb_estacao.Location = New System.Drawing.Point(184, 131)
         Me.cb_estacao.Name = "cb_estacao"
         Me.cb_estacao.Size = New System.Drawing.Size(121, 21)
         Me.cb_estacao.TabIndex = 12
@@ -215,7 +215,7 @@ Partial Class Form1
         'lbl_teste
         '
         Me.lbl_teste.AutoSize = true
-        Me.lbl_teste.Location = New System.Drawing.Point(229, 260)
+        Me.lbl_teste.Location = New System.Drawing.Point(229, 270)
         Me.lbl_teste.Name = "lbl_teste"
         Me.lbl_teste.Size = New System.Drawing.Size(0, 13)
         Me.lbl_teste.TabIndex = 13
@@ -228,7 +228,7 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.num_2)
         Me.GroupBox1.Controls.Add(Me.num_1)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox1.Location = New System.Drawing.Point(304, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(443, 6)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(261, 120)
         Me.GroupBox1.TabIndex = 14
@@ -286,7 +286,7 @@ Partial Class Form1
         '
         Me.lbl_cadastro.AutoSize = true
         Me.lbl_cadastro.ForeColor = System.Drawing.SystemColors.Control
-        Me.lbl_cadastro.Location = New System.Drawing.Point(213, 4)
+        Me.lbl_cadastro.Location = New System.Drawing.Point(320, 9)
         Me.lbl_cadastro.Name = "lbl_cadastro"
         Me.lbl_cadastro.Size = New System.Drawing.Size(16, 13)
         Me.lbl_cadastro.TabIndex = 15
@@ -297,16 +297,16 @@ Partial Class Form1
         '
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_dados.GridColor = System.Drawing.Color.LightSalmon
-        Me.dgv_dados.Location = New System.Drawing.Point(12, 188)
+        Me.dgv_dados.Location = New System.Drawing.Point(62, 198)
         Me.dgv_dados.Name = "dgv_dados"
-        Me.dgv_dados.Size = New System.Drawing.Size(954, 150)
+        Me.dgv_dados.Size = New System.Drawing.Size(965, 150)
         Me.dgv_dados.TabIndex = 18
         '
         'cmd_novo
         '
         Me.cmd_novo.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_novo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_novo.Location = New System.Drawing.Point(661, 20)
+        Me.cmd_novo.Location = New System.Drawing.Point(865, 20)
         Me.cmd_novo.Name = "cmd_novo"
         Me.cmd_novo.Size = New System.Drawing.Size(132, 23)
         Me.cmd_novo.TabIndex = 20
@@ -317,7 +317,7 @@ Partial Class Form1
         '
         Me.cmd_deletar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_deletar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_deletar.Location = New System.Drawing.Point(661, 65)
+        Me.cmd_deletar.Location = New System.Drawing.Point(865, 65)
         Me.cmd_deletar.Name = "cmd_deletar"
         Me.cmd_deletar.Size = New System.Drawing.Size(132, 23)
         Me.cmd_deletar.TabIndex = 21
@@ -328,7 +328,7 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = true
         Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(15, 163)
+        Me.Label7.Location = New System.Drawing.Point(37, 163)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(19, 13)
         Me.Label7.TabIndex = 24
@@ -337,7 +337,7 @@ Partial Class Form1
         'num_id
         '
         Me.num_id.BackColor = System.Drawing.Color.Lavender
-        Me.num_id.Location = New System.Drawing.Point(40, 160)
+        Me.num_id.Location = New System.Drawing.Point(62, 160)
         Me.num_id.Name = "num_id"
         Me.num_id.Size = New System.Drawing.Size(120, 20)
         Me.num_id.TabIndex = 25
@@ -346,7 +346,7 @@ Partial Class Form1
         '
         Me.Label8.AutoSize = true
         Me.Label8.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label8.Location = New System.Drawing.Point(628, 49)
+        Me.Label8.Location = New System.Drawing.Point(832, 49)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(144, 13)
         Me.Label8.TabIndex = 26
@@ -356,7 +356,7 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = true
         Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(628, 6)
+        Me.Label9.Location = New System.Drawing.Point(832, 6)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(198, 13)
         Me.Label9.TabIndex = 19
@@ -388,7 +388,7 @@ Partial Class Form1
         '
         Me.cmd_conectar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_conectar.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_conectar.Location = New System.Drawing.Point(619, 140)
+        Me.cmd_conectar.Location = New System.Drawing.Point(823, 140)
         Me.cmd_conectar.Name = "cmd_conectar"
         Me.cmd_conectar.Size = New System.Drawing.Size(75, 23)
         Me.cmd_conectar.TabIndex = 29
@@ -397,7 +397,7 @@ Partial Class Form1
         '
         'txt_gambiarra
         '
-        Me.txt_gambiarra.Location = New System.Drawing.Point(-2, 318)
+        Me.txt_gambiarra.Location = New System.Drawing.Point(-2, 328)
         Me.txt_gambiarra.Name = "txt_gambiarra"
         Me.txt_gambiarra.Size = New System.Drawing.Size(100, 20)
         Me.txt_gambiarra.TabIndex = 30
@@ -410,7 +410,7 @@ Partial Class Form1
         Me.GroupBox2.Controls.Add(Me.radio_sql)
         Me.GroupBox2.Controls.Add(Me.radio_oledb)
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(304, 140)
+        Me.GroupBox2.Location = New System.Drawing.Point(421, 143)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(301, 42)
         Me.GroupBox2.TabIndex = 32
@@ -432,7 +432,7 @@ Partial Class Form1
         '
         Me.cmd_editar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_editar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_editar.Location = New System.Drawing.Point(661, 109)
+        Me.cmd_editar.Location = New System.Drawing.Point(865, 109)
         Me.cmd_editar.Name = "cmd_editar"
         Me.cmd_editar.Size = New System.Drawing.Size(132, 23)
         Me.cmd_editar.TabIndex = 33
@@ -443,7 +443,7 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = true
         Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label10.Location = New System.Drawing.Point(628, 93)
+        Me.Label10.Location = New System.Drawing.Point(832, 93)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(137, 13)
         Me.Label10.TabIndex = 34
@@ -453,7 +453,7 @@ Partial Class Form1
         '
         Me.cmd_limpar.BackColor = System.Drawing.Color.White
         Me.cmd_limpar.ForeColor = System.Drawing.Color.Black
-        Me.cmd_limpar.Location = New System.Drawing.Point(166, 158)
+        Me.cmd_limpar.Location = New System.Drawing.Point(188, 158)
         Me.cmd_limpar.Name = "cmd_limpar"
         Me.cmd_limpar.Size = New System.Drawing.Size(132, 22)
         Me.cmd_limpar.TabIndex = 35
@@ -462,7 +462,7 @@ Partial Class Form1
         '
         'lbl_aviso
         '
-        Me.lbl_aviso.Location = New System.Drawing.Point(706, 142)
+        Me.lbl_aviso.Location = New System.Drawing.Point(910, 142)
         Me.lbl_aviso.Name = "lbl_aviso"
         Me.lbl_aviso.Size = New System.Drawing.Size(154, 42)
         Me.lbl_aviso.TabIndex = 36
@@ -492,7 +492,7 @@ Partial Class Form1
         '
         Me.Button2.BackColor = System.Drawing.Color.MidnightBlue
         Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(619, 163)
+        Me.Button2.Location = New System.Drawing.Point(823, 163)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 39
@@ -505,10 +505,10 @@ Partial Class Form1
         Me.Crystal_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Crystal_1.Cursor = System.Windows.Forms.Cursors.Default
         Me.Crystal_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Crystal_1.Location = New System.Drawing.Point(12, 344)
+        Me.Crystal_1.Location = New System.Drawing.Point(12, 354)
         Me.Crystal_1.Name = "Crystal_1"
         Me.Crystal_1.ReportSource = Me.CrystalReportF1
-        Me.Crystal_1.Size = New System.Drawing.Size(954, 406)
+        Me.Crystal_1.Size = New System.Drawing.Size(1077, 590)
         Me.Crystal_1.TabIndex = 38
         Me.Crystal_1.Visible = false
         '
@@ -518,7 +518,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(982, 763)
+        Me.ClientSize = New System.Drawing.Size(1100, 956)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Crystal_1)
         Me.Controls.Add(Me.lbl_aviso)
