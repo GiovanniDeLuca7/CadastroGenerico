@@ -5,11 +5,13 @@ Imports System.IO
 Imports System.Data.OleDb
 Imports System.Data.SqlClient
 Imports ApplicationBlocks.Data
-'Mexer mais nas formulas
+Imports System.Threading.Tasks
+Imports System.Threading.Thread
+Imports System.Globalization
+Imports CadastroDeAlunoTeste.My.Resources
+
 'Throw
 'String Format
-'Globalização  
-
 
 Public Class Form1
     Private connString As String
@@ -24,6 +26,38 @@ Public Class Form1
         num_1.Text = ""
         num_2.Text = ""
         num_idade.Text = ""
+
+        'Dim s As String = String.Format("It is now {0:d} at {0:t}",
+                              '  Date.Now)
+        's.write("The current system date is: ")
+        'response.write(Date)
+    End Sub
+
+    Private Sub GetText()
+        lbl_frm_nome.Text = Res.Nome
+        lbl_animal.Text = Res.Animal
+        lbl_idade.Text = Res.Idade
+        lbl_id.Text = Res.ID
+        lbl_estacao.Text = Res.Estação
+        lbl_genero.Text = Res.Genero
+        gp_calculadora.Text = Res.Calculadora
+        lbl_textocalc.Text = Res.TextoCalculadora
+        cmd_cadastro.Text = Res.Cadastrar
+        radio_masc.Text = Res.Masculino
+        radio_fem.Text = Res.Feminino
+        radio_outro.Text = Res.Outro
+        cmd_limpar.Text = Res.LimparCampos
+        gp_access.Text = Res.Acesso
+        cmd_calcular.Text = Res.Calcular
+        cmd_conectar.Text = Res.Conectar
+        Button2.Text = Res.Linq
+        cmd_deletar.Text = Res.Deletar
+        lbl_deletar.Text = Res.DeletarTexto
+        cmd_editar.Text = Res.Editar
+        lbl_editar.Text = Res.EditarTexto
+        cmd_novo.Text = Res.Novo
+        lbl_novo.Text = Res.NovoTexto
+        Me.Text = Res.Form
     End Sub
 
     Public Function GetDatasetProject() As DataSet
@@ -69,21 +103,7 @@ Public Class Form1
             Dim m_rptDoc = New CrystalDecisions.CrystalReports.Engine.ReportDocument
             m_rptDoc.Load("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\CrystalReportF.rpt", CrystalDecisions.[Shared].OpenReportMethod.OpenReportByDefault)
 
-
             Dim rptObjects = m_rptDoc.ReportDefinition.ReportObjects
-
-            For Each rptObj As CrystalDecisions.CrystalReports.Engine.ReportObject In rptObjects
-
-                Debug.WriteLine(rptObj.Name)
-                If rptObj.Name = "textoGenero" Then
-
-
-
-                End If
-
-
-
-            Next
 
             Dim Formula = m_rptDoc.DataDefinition.FormulaFields.Item("teste")
             Formula.Text = "{Projeto.Numero1}+{Projeto.Numero2}"
@@ -91,16 +111,16 @@ Public Class Form1
             Dim checked = Formula.Check(errorText)
 
             If Not checked Then
-                Throw New InvalidOperationException($"Erro formula {Formula.Name} {errorText}" )
+                Throw New InvalidOperationException($"Erro formula {Formula.Name} {errorText}")
             End If
 
 
             ds.Tables(0).TableName = "Projeto"
             m_rptDoc.Database.Tables(0).SetDataSource(ds)
-            Crystal_1.ReportSource = m_rptDoc
+            lbl_nome.ReportSource = m_rptDoc
 
             lbl_aviso.Text = ""
-            Crystal_1.Visible = True
+            lbl_nome.Visible = True
         Catch ex As Exception
             MessageBox.Show("Ocorreu um erro fatal... Erro: " & ex.ToString())
         End Try
@@ -229,8 +249,6 @@ Public Class Form1
             Dim paramId = m_dbHelper.NewParameter("@Id", num_id.Text)
 
             dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql, paramId)
-
-            'dgv_dados.Rows(0).Selected
 
             Dim drLido = dsLido.Tables(0).Rows(0)
 
@@ -366,6 +384,16 @@ Public Class Form1
             lbl_aviso.Text = "Erro! Conecte-se ao banco de dados!"
         End Try
     End Sub
+
+    Private Sub btn_brasil_Click(sender As Object, e As EventArgs) Handles btn_brasil.Click
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("pt-BR")
+        GetText()
+    End Sub
+
+    Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        GetText()
+    End Sub
 End Class
 
 'trocar sDBstr por conexao
@@ -374,5 +402,3 @@ End Class
 'oCn por OleDbConexao
 'oDA por OleDbDataAdaptador
 'oDs por OleDbDataSetagem
-
-'...

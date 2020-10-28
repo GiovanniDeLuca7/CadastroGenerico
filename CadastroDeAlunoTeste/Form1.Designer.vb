@@ -23,42 +23,43 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.cmd_cadastro = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbl_frm_nome = New System.Windows.Forms.Label()
         Me.txt_nome = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_idade = New System.Windows.Forms.Label()
         Me.num_idade = New System.Windows.Forms.NumericUpDown()
         Me.txt_animal = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.lbl_animal = New System.Windows.Forms.Label()
+        Me.lbl_genero = New System.Windows.Forms.Label()
         Me.radio_masc = New System.Windows.Forms.RadioButton()
         Me.radio_fem = New System.Windows.Forms.RadioButton()
         Me.radio_outro = New System.Windows.Forms.RadioButton()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lbl_estacao = New System.Windows.Forms.Label()
         Me.cb_estacao = New System.Windows.Forms.ComboBox()
         Me.lbl_teste = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.gp_calculadora = New System.Windows.Forms.GroupBox()
         Me.lbl_aguardando = New System.Windows.Forms.Label()
         Me.cmd_calcular = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lbl_textocalc = New System.Windows.Forms.Label()
         Me.num_2 = New System.Windows.Forms.NumericUpDown()
         Me.num_1 = New System.Windows.Forms.NumericUpDown()
         Me.lbl_cadastro = New System.Windows.Forms.Label()
         Me.dgv_dados = New System.Windows.Forms.DataGridView()
         Me.cmd_novo = New System.Windows.Forms.Button()
         Me.cmd_deletar = New System.Windows.Forms.Button()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lbl_id = New System.Windows.Forms.Label()
         Me.num_id = New System.Windows.Forms.NumericUpDown()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
+        Me.lbl_deletar = New System.Windows.Forms.Label()
+        Me.lbl_novo = New System.Windows.Forms.Label()
         Me.radio_oledb = New System.Windows.Forms.RadioButton()
         Me.radio_sql = New System.Windows.Forms.RadioButton()
         Me.cmd_conectar = New System.Windows.Forms.Button()
         Me.txt_gambiarra = New System.Windows.Forms.TextBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.gp_access = New System.Windows.Forms.GroupBox()
         Me.radio_oracle = New System.Windows.Forms.RadioButton()
         Me.cmd_editar = New System.Windows.Forms.Button()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.lbl_editar = New System.Windows.Forms.Label()
         Me.cmd_limpar = New System.Windows.Forms.Button()
         Me.lbl_aviso = New System.Windows.Forms.RichTextBox()
         Me.SkinManager1 = New Syncfusion.Windows.Forms.SkinManager(Me.components)
@@ -66,15 +67,17 @@ Partial Class Form1
         Me.NovobancoDataSet = New CadastroDeAlunoTeste.novobancoDataSet()
         Me.ProjetoTableAdapter = New CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Crystal_1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.btn_eua = New System.Windows.Forms.Button()
+        Me.btn_brasil = New System.Windows.Forms.Button()
+        Me.lbl_nome = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.GroupBox1.SuspendLayout
+        Me.gp_calculadora.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.num_1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.dgv_dados,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.num_id,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.GroupBox2.SuspendLayout
+        Me.gp_access.SuspendLayout
         CType(Me.ProjetoBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.NovobancoDataSet,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
@@ -83,391 +86,263 @@ Partial Class Form1
         '
         Me.cmd_cadastro.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_cadastro.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_cadastro.Location = New System.Drawing.Point(233, 27)
+        resources.ApplyResources(Me.cmd_cadastro, "cmd_cadastro")
         Me.cmd_cadastro.Name = "cmd_cadastro"
-        Me.cmd_cadastro.Size = New System.Drawing.Size(75, 23)
-        Me.cmd_cadastro.TabIndex = 0
-        Me.cmd_cadastro.Text = "Cadastrar"
         Me.cmd_cadastro.UseVisualStyleBackColor = false
         '
-        'Label1
+        'lbl_frm_nome
         '
-        Me.Label1.AutoSize = true
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(34, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(86, 13)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Digite seu nome:"
+        resources.ApplyResources(Me.lbl_frm_nome, "lbl_frm_nome")
+        Me.lbl_frm_nome.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_frm_nome.Name = "lbl_frm_nome"
         '
         'txt_nome
         '
         Me.txt_nome.BackColor = System.Drawing.Color.Lavender
         Me.txt_nome.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txt_nome.Location = New System.Drawing.Point(126, 6)
+        resources.ApplyResources(Me.txt_nome, "txt_nome")
         Me.txt_nome.Name = "txt_nome"
-        Me.txt_nome.Size = New System.Drawing.Size(100, 20)
-        Me.txt_nome.TabIndex = 2
         '
-        'Label2
+        'lbl_idade
         '
-        Me.Label2.AutoSize = true
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(34, 40)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 13)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Digite sua idade:"
+        resources.ApplyResources(Me.lbl_idade, "lbl_idade")
+        Me.lbl_idade.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_idade.Name = "lbl_idade"
         '
         'num_idade
         '
         Me.num_idade.BackColor = System.Drawing.Color.Lavender
-        Me.num_idade.Location = New System.Drawing.Point(126, 38)
+        resources.ApplyResources(Me.num_idade, "num_idade")
         Me.num_idade.Name = "num_idade"
-        Me.num_idade.Size = New System.Drawing.Size(45, 20)
-        Me.num_idade.TabIndex = 4
         '
         'txt_animal
         '
         Me.txt_animal.BackColor = System.Drawing.Color.Lavender
-        Me.txt_animal.Location = New System.Drawing.Point(180, 69)
+        resources.ApplyResources(Me.txt_animal, "txt_animal")
         Me.txt_animal.Name = "txt_animal"
-        Me.txt_animal.Size = New System.Drawing.Size(100, 20)
-        Me.txt_animal.TabIndex = 5
         '
-        'Label3
+        'lbl_animal
         '
-        Me.Label3.AutoSize = true
-        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(34, 72)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(140, 13)
-        Me.Label3.TabIndex = 6
-        Me.Label3.Text = "Digite o nome de um animal:"
+        resources.ApplyResources(Me.lbl_animal, "lbl_animal")
+        Me.lbl_animal.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_animal.Name = "lbl_animal"
         '
-        'Label4
+        'lbl_genero
         '
-        Me.Label4.AutoSize = true
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label4.Location = New System.Drawing.Point(34, 103)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(65, 13)
-        Me.Label4.TabIndex = 7
-        Me.Label4.Text = "Seu gênero:"
+        resources.ApplyResources(Me.lbl_genero, "lbl_genero")
+        Me.lbl_genero.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_genero.Name = "lbl_genero"
         '
         'radio_masc
         '
-        Me.radio_masc.AutoSize = true
+        resources.ApplyResources(Me.radio_masc, "radio_masc")
         Me.radio_masc.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.radio_masc.Location = New System.Drawing.Point(105, 101)
         Me.radio_masc.Name = "radio_masc"
-        Me.radio_masc.Size = New System.Drawing.Size(73, 17)
-        Me.radio_masc.TabIndex = 8
         Me.radio_masc.TabStop = true
-        Me.radio_masc.Text = "Masculino"
         Me.radio_masc.UseVisualStyleBackColor = true
         '
         'radio_fem
         '
-        Me.radio_fem.AutoSize = true
+        resources.ApplyResources(Me.radio_fem, "radio_fem")
         Me.radio_fem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer), CType(CType(255,Byte),Integer))
-        Me.radio_fem.Location = New System.Drawing.Point(184, 101)
         Me.radio_fem.Name = "radio_fem"
-        Me.radio_fem.Size = New System.Drawing.Size(67, 17)
-        Me.radio_fem.TabIndex = 9
         Me.radio_fem.TabStop = true
-        Me.radio_fem.Text = "Feminino"
         Me.radio_fem.UseVisualStyleBackColor = true
         '
         'radio_outro
         '
-        Me.radio_outro.AutoSize = true
+        resources.ApplyResources(Me.radio_outro, "radio_outro")
         Me.radio_outro.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255,Byte),Integer), CType(CType(255,Byte),Integer), CType(CType(128,Byte),Integer))
-        Me.radio_outro.Location = New System.Drawing.Point(257, 101)
         Me.radio_outro.Name = "radio_outro"
-        Me.radio_outro.Size = New System.Drawing.Size(51, 17)
-        Me.radio_outro.TabIndex = 10
         Me.radio_outro.TabStop = true
-        Me.radio_outro.Text = "Outro"
         Me.radio_outro.UseVisualStyleBackColor = true
         '
-        'Label5
+        'lbl_estacao
         '
-        Me.Label5.AutoSize = true
-        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label5.Location = New System.Drawing.Point(34, 134)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(148, 13)
-        Me.Label5.TabIndex = 11
-        Me.Label5.Text = "Escolha uma estação do ano:"
+        resources.ApplyResources(Me.lbl_estacao, "lbl_estacao")
+        Me.lbl_estacao.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_estacao.Name = "lbl_estacao"
         '
         'cb_estacao
         '
         Me.cb_estacao.BackColor = System.Drawing.Color.Lavender
         Me.cb_estacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_estacao.FormattingEnabled = true
-        Me.cb_estacao.Items.AddRange(New Object() {"Primavera", "Verão", "Outono", "Inverno"})
-        Me.cb_estacao.Location = New System.Drawing.Point(184, 131)
+        Me.cb_estacao.Items.AddRange(New Object() {resources.GetString("cb_estacao.Items"), resources.GetString("cb_estacao.Items1"), resources.GetString("cb_estacao.Items2"), resources.GetString("cb_estacao.Items3")})
+        resources.ApplyResources(Me.cb_estacao, "cb_estacao")
         Me.cb_estacao.Name = "cb_estacao"
-        Me.cb_estacao.Size = New System.Drawing.Size(121, 21)
-        Me.cb_estacao.TabIndex = 12
         '
         'lbl_teste
         '
-        Me.lbl_teste.AutoSize = true
-        Me.lbl_teste.Location = New System.Drawing.Point(229, 270)
+        resources.ApplyResources(Me.lbl_teste, "lbl_teste")
         Me.lbl_teste.Name = "lbl_teste"
-        Me.lbl_teste.Size = New System.Drawing.Size(0, 13)
-        Me.lbl_teste.TabIndex = 13
         '
-        'GroupBox1
+        'gp_calculadora
         '
-        Me.GroupBox1.Controls.Add(Me.lbl_aguardando)
-        Me.GroupBox1.Controls.Add(Me.cmd_calcular)
-        Me.GroupBox1.Controls.Add(Me.Label6)
-        Me.GroupBox1.Controls.Add(Me.num_2)
-        Me.GroupBox1.Controls.Add(Me.num_1)
-        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox1.Location = New System.Drawing.Point(443, 6)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(261, 120)
-        Me.GroupBox1.TabIndex = 14
-        Me.GroupBox1.TabStop = false
-        Me.GroupBox1.Text = "Calculadora"
+        Me.gp_calculadora.Controls.Add(Me.lbl_aguardando)
+        Me.gp_calculadora.Controls.Add(Me.cmd_calcular)
+        Me.gp_calculadora.Controls.Add(Me.lbl_textocalc)
+        Me.gp_calculadora.Controls.Add(Me.num_2)
+        Me.gp_calculadora.Controls.Add(Me.num_1)
+        Me.gp_calculadora.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.gp_calculadora, "gp_calculadora")
+        Me.gp_calculadora.Name = "gp_calculadora"
+        Me.gp_calculadora.TabStop = false
         '
         'lbl_aguardando
         '
-        Me.lbl_aguardando.AutoSize = true
-        Me.lbl_aguardando.Location = New System.Drawing.Point(3, 101)
+        resources.ApplyResources(Me.lbl_aguardando, "lbl_aguardando")
         Me.lbl_aguardando.Name = "lbl_aguardando"
-        Me.lbl_aguardando.Size = New System.Drawing.Size(16, 13)
-        Me.lbl_aguardando.TabIndex = 18
-        Me.lbl_aguardando.Text = "..."
-        Me.lbl_aguardando.Visible = false
         '
         'cmd_calcular
         '
         Me.cmd_calcular.BackColor = System.Drawing.Color.MidnightBlue
-        Me.cmd_calcular.Location = New System.Drawing.Point(92, 73)
+        resources.ApplyResources(Me.cmd_calcular, "cmd_calcular")
         Me.cmd_calcular.Name = "cmd_calcular"
-        Me.cmd_calcular.Size = New System.Drawing.Size(75, 23)
-        Me.cmd_calcular.TabIndex = 17
-        Me.cmd_calcular.Text = "Calcular"
         Me.cmd_calcular.UseVisualStyleBackColor = false
         '
-        'Label6
+        'lbl_textocalc
         '
-        Me.Label6.AutoSize = true
-        Me.Label6.Location = New System.Drawing.Point(7, 20)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(94, 13)
-        Me.Label6.TabIndex = 16
-        Me.Label6.Text = "Insira dois valores:"
+        resources.ApplyResources(Me.lbl_textocalc, "lbl_textocalc")
+        Me.lbl_textocalc.Name = "lbl_textocalc"
         '
         'num_2
         '
         Me.num_2.BackColor = System.Drawing.Color.Lavender
-        Me.num_2.Location = New System.Drawing.Point(132, 40)
+        resources.ApplyResources(Me.num_2, "num_2")
         Me.num_2.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_2.Name = "num_2"
-        Me.num_2.Size = New System.Drawing.Size(120, 20)
-        Me.num_2.TabIndex = 15
         '
         'num_1
         '
         Me.num_1.BackColor = System.Drawing.Color.Lavender
-        Me.num_1.Location = New System.Drawing.Point(6, 40)
+        resources.ApplyResources(Me.num_1, "num_1")
         Me.num_1.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_1.Name = "num_1"
-        Me.num_1.Size = New System.Drawing.Size(120, 20)
-        Me.num_1.TabIndex = 0
         '
         'lbl_cadastro
         '
-        Me.lbl_cadastro.AutoSize = true
+        resources.ApplyResources(Me.lbl_cadastro, "lbl_cadastro")
         Me.lbl_cadastro.ForeColor = System.Drawing.SystemColors.Control
-        Me.lbl_cadastro.Location = New System.Drawing.Point(320, 9)
         Me.lbl_cadastro.Name = "lbl_cadastro"
-        Me.lbl_cadastro.Size = New System.Drawing.Size(16, 13)
-        Me.lbl_cadastro.TabIndex = 15
-        Me.lbl_cadastro.Text = "..."
-        Me.lbl_cadastro.Visible = false
         '
         'dgv_dados
         '
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_dados.GridColor = System.Drawing.Color.LightSalmon
-        Me.dgv_dados.Location = New System.Drawing.Point(62, 198)
+        resources.ApplyResources(Me.dgv_dados, "dgv_dados")
         Me.dgv_dados.Name = "dgv_dados"
-        Me.dgv_dados.Size = New System.Drawing.Size(965, 150)
-        Me.dgv_dados.TabIndex = 18
         '
         'cmd_novo
         '
         Me.cmd_novo.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_novo.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_novo.Location = New System.Drawing.Point(865, 20)
+        resources.ApplyResources(Me.cmd_novo, "cmd_novo")
         Me.cmd_novo.Name = "cmd_novo"
-        Me.cmd_novo.Size = New System.Drawing.Size(132, 23)
-        Me.cmd_novo.TabIndex = 20
-        Me.cmd_novo.Text = "Novo"
         Me.cmd_novo.UseVisualStyleBackColor = false
         '
         'cmd_deletar
         '
         Me.cmd_deletar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_deletar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_deletar.Location = New System.Drawing.Point(865, 65)
+        resources.ApplyResources(Me.cmd_deletar, "cmd_deletar")
         Me.cmd_deletar.Name = "cmd_deletar"
-        Me.cmd_deletar.Size = New System.Drawing.Size(132, 23)
-        Me.cmd_deletar.TabIndex = 21
-        Me.cmd_deletar.Text = "Deletar"
         Me.cmd_deletar.UseVisualStyleBackColor = false
         '
-        'Label7
+        'lbl_id
         '
-        Me.Label7.AutoSize = true
-        Me.Label7.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label7.Location = New System.Drawing.Point(37, 163)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(19, 13)
-        Me.Label7.TabIndex = 24
-        Me.Label7.Text = "Id:"
+        resources.ApplyResources(Me.lbl_id, "lbl_id")
+        Me.lbl_id.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_id.Name = "lbl_id"
         '
         'num_id
         '
         Me.num_id.BackColor = System.Drawing.Color.Lavender
-        Me.num_id.Location = New System.Drawing.Point(62, 160)
+        resources.ApplyResources(Me.num_id, "num_id")
         Me.num_id.Name = "num_id"
-        Me.num_id.Size = New System.Drawing.Size(120, 20)
-        Me.num_id.TabIndex = 25
         '
-        'Label8
+        'lbl_deletar
         '
-        Me.Label8.AutoSize = true
-        Me.Label8.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label8.Location = New System.Drawing.Point(832, 49)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(144, 13)
-        Me.Label8.TabIndex = 26
-        Me.Label8.Text = "Insira o Id que deseja apagar"
+        resources.ApplyResources(Me.lbl_deletar, "lbl_deletar")
+        Me.lbl_deletar.ForeColor = System.Drawing.SystemColors.Control
+        Me.lbl_deletar.Name = "lbl_deletar"
         '
-        'Label9
+        'lbl_novo
         '
-        Me.Label9.AutoSize = true
-        Me.Label9.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label9.Location = New System.Drawing.Point(832, 6)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(198, 13)
-        Me.Label9.TabIndex = 19
-        Me.Label9.Text = "Preencha os campos antes de cadastrar"
+        resources.ApplyResources(Me.lbl_novo, "lbl_novo")
+        Me.lbl_novo.ForeColor = System.Drawing.SystemColors.Control
+        Me.lbl_novo.Name = "lbl_novo"
         '
         'radio_oledb
         '
-        Me.radio_oledb.AutoSize = true
-        Me.radio_oledb.Location = New System.Drawing.Point(6, 17)
+        resources.ApplyResources(Me.radio_oledb, "radio_oledb")
         Me.radio_oledb.Name = "radio_oledb"
-        Me.radio_oledb.Size = New System.Drawing.Size(97, 17)
-        Me.radio_oledb.TabIndex = 27
         Me.radio_oledb.TabStop = true
-        Me.radio_oledb.Text = "OleDb Provider"
         Me.radio_oledb.UseVisualStyleBackColor = true
         '
         'radio_sql
         '
-        Me.radio_sql.AutoSize = true
-        Me.radio_sql.Location = New System.Drawing.Point(107, 17)
+        resources.ApplyResources(Me.radio_sql, "radio_sql")
         Me.radio_sql.Name = "radio_sql"
-        Me.radio_sql.Size = New System.Drawing.Size(94, 17)
-        Me.radio_sql.TabIndex = 28
         Me.radio_sql.TabStop = true
-        Me.radio_sql.Text = "MySQL Server"
         Me.radio_sql.UseVisualStyleBackColor = true
         '
         'cmd_conectar
         '
         Me.cmd_conectar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_conectar.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_conectar.Location = New System.Drawing.Point(823, 140)
+        resources.ApplyResources(Me.cmd_conectar, "cmd_conectar")
         Me.cmd_conectar.Name = "cmd_conectar"
-        Me.cmd_conectar.Size = New System.Drawing.Size(75, 23)
-        Me.cmd_conectar.TabIndex = 29
-        Me.cmd_conectar.Text = "Conectar"
         Me.cmd_conectar.UseVisualStyleBackColor = false
         '
         'txt_gambiarra
         '
-        Me.txt_gambiarra.Location = New System.Drawing.Point(-2, 328)
+        resources.ApplyResources(Me.txt_gambiarra, "txt_gambiarra")
         Me.txt_gambiarra.Name = "txt_gambiarra"
-        Me.txt_gambiarra.Size = New System.Drawing.Size(100, 20)
-        Me.txt_gambiarra.TabIndex = 30
-        Me.txt_gambiarra.Text = "N/A"
-        Me.txt_gambiarra.Visible = false
         '
-        'GroupBox2
+        'gp_access
         '
-        Me.GroupBox2.Controls.Add(Me.radio_oracle)
-        Me.GroupBox2.Controls.Add(Me.radio_sql)
-        Me.GroupBox2.Controls.Add(Me.radio_oledb)
-        Me.GroupBox2.ForeColor = System.Drawing.SystemColors.Control
-        Me.GroupBox2.Location = New System.Drawing.Point(421, 143)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(301, 42)
-        Me.GroupBox2.TabIndex = 32
-        Me.GroupBox2.TabStop = false
-        Me.GroupBox2.Text = "Acesso"
+        Me.gp_access.Controls.Add(Me.radio_oracle)
+        Me.gp_access.Controls.Add(Me.radio_sql)
+        Me.gp_access.Controls.Add(Me.radio_oledb)
+        Me.gp_access.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.gp_access, "gp_access")
+        Me.gp_access.Name = "gp_access"
+        Me.gp_access.TabStop = false
         '
         'radio_oracle
         '
-        Me.radio_oracle.AutoSize = true
-        Me.radio_oracle.Location = New System.Drawing.Point(207, 18)
+        resources.ApplyResources(Me.radio_oracle, "radio_oracle")
         Me.radio_oracle.Name = "radio_oracle"
-        Me.radio_oracle.Size = New System.Drawing.Size(90, 17)
-        Me.radio_oracle.TabIndex = 35
         Me.radio_oracle.TabStop = true
-        Me.radio_oracle.Text = "Oracle Server"
         Me.radio_oracle.UseVisualStyleBackColor = true
         '
         'cmd_editar
         '
         Me.cmd_editar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_editar.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.cmd_editar.Location = New System.Drawing.Point(865, 109)
+        resources.ApplyResources(Me.cmd_editar, "cmd_editar")
         Me.cmd_editar.Name = "cmd_editar"
-        Me.cmd_editar.Size = New System.Drawing.Size(132, 23)
-        Me.cmd_editar.TabIndex = 33
-        Me.cmd_editar.Text = "Editar"
         Me.cmd_editar.UseVisualStyleBackColor = false
         '
-        'Label10
+        'lbl_editar
         '
-        Me.Label10.AutoSize = true
-        Me.Label10.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label10.Location = New System.Drawing.Point(832, 93)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(137, 13)
-        Me.Label10.TabIndex = 34
-        Me.Label10.Text = "Insira o Id que deseja editar"
+        resources.ApplyResources(Me.lbl_editar, "lbl_editar")
+        Me.lbl_editar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.lbl_editar.Name = "lbl_editar"
         '
         'cmd_limpar
         '
         Me.cmd_limpar.BackColor = System.Drawing.Color.White
         Me.cmd_limpar.ForeColor = System.Drawing.Color.Black
-        Me.cmd_limpar.Location = New System.Drawing.Point(188, 158)
+        resources.ApplyResources(Me.cmd_limpar, "cmd_limpar")
         Me.cmd_limpar.Name = "cmd_limpar"
-        Me.cmd_limpar.Size = New System.Drawing.Size(132, 22)
-        Me.cmd_limpar.TabIndex = 35
-        Me.cmd_limpar.Text = "Limpar Campos"
         Me.cmd_limpar.UseVisualStyleBackColor = false
         '
         'lbl_aviso
         '
-        Me.lbl_aviso.Location = New System.Drawing.Point(910, 142)
+        resources.ApplyResources(Me.lbl_aviso, "lbl_aviso")
         Me.lbl_aviso.Name = "lbl_aviso"
-        Me.lbl_aviso.Size = New System.Drawing.Size(154, 42)
-        Me.lbl_aviso.TabIndex = 36
-        Me.lbl_aviso.Text = ""
-        Me.lbl_aviso.Visible = false
         '
         'SkinManager1
         '
@@ -492,76 +367,83 @@ Partial Class Form1
         '
         Me.Button2.BackColor = System.Drawing.Color.MidnightBlue
         Me.Button2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Button2.Location = New System.Drawing.Point(823, 163)
+        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 39
-        Me.Button2.Text = "Linq"
         Me.Button2.UseVisualStyleBackColor = false
         '
-        'Crystal_1
+        'btn_eua
         '
-        Me.Crystal_1.ActiveViewIndex = 0
-        Me.Crystal_1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Crystal_1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Crystal_1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Crystal_1.Location = New System.Drawing.Point(12, 354)
-        Me.Crystal_1.Name = "Crystal_1"
-        Me.Crystal_1.ReportSource = Me.CrystalReportF1
-        Me.Crystal_1.Size = New System.Drawing.Size(1077, 590)
-        Me.Crystal_1.TabIndex = 38
-        Me.Crystal_1.Visible = false
+        resources.ApplyResources(Me.btn_eua, "btn_eua")
+        Me.btn_eua.BackgroundImage = Global.CadastroDeAlunoTeste.My.Resources.Resources.eua
+        Me.btn_eua.Name = "btn_eua"
+        Me.btn_eua.UseVisualStyleBackColor = true
+        '
+        'btn_brasil
+        '
+        resources.ApplyResources(Me.btn_brasil, "btn_brasil")
+        Me.btn_brasil.BackgroundImage = Global.CadastroDeAlunoTeste.My.Resources.Resources.brasil
+        Me.btn_brasil.Name = "btn_brasil"
+        Me.btn_brasil.UseVisualStyleBackColor = true
+        '
+        'lbl_nome
+        '
+        Me.lbl_nome.ActiveViewIndex = 0
+        Me.lbl_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_nome.Cursor = System.Windows.Forms.Cursors.Default
+        Me.lbl_nome.ForeColor = System.Drawing.SystemColors.ControlText
+        resources.ApplyResources(Me.lbl_nome, "lbl_nome")
+        Me.lbl_nome.Name = "lbl_nome"
+        Me.lbl_nome.ReportSource = Me.CrystalReportF1
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.AutoSize = true
         Me.BackColor = System.Drawing.Color.BlueViolet
-        Me.ClientSize = New System.Drawing.Size(1100, 956)
+        Me.Controls.Add(Me.btn_eua)
+        Me.Controls.Add(Me.btn_brasil)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Crystal_1)
+        Me.Controls.Add(Me.lbl_nome)
         Me.Controls.Add(Me.lbl_aviso)
         Me.Controls.Add(Me.cmd_limpar)
-        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.lbl_editar)
         Me.Controls.Add(Me.cmd_editar)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.gp_access)
         Me.Controls.Add(Me.lbl_cadastro)
         Me.Controls.Add(Me.txt_gambiarra)
         Me.Controls.Add(Me.cmd_conectar)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.lbl_novo)
+        Me.Controls.Add(Me.lbl_deletar)
         Me.Controls.Add(Me.num_id)
-        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.lbl_id)
         Me.Controls.Add(Me.cmd_deletar)
         Me.Controls.Add(Me.cmd_novo)
         Me.Controls.Add(Me.dgv_dados)
-        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.gp_calculadora)
         Me.Controls.Add(Me.lbl_teste)
         Me.Controls.Add(Me.cb_estacao)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.lbl_estacao)
         Me.Controls.Add(Me.radio_outro)
         Me.Controls.Add(Me.radio_fem)
         Me.Controls.Add(Me.radio_masc)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.lbl_genero)
+        Me.Controls.Add(Me.lbl_animal)
         Me.Controls.Add(Me.txt_animal)
         Me.Controls.Add(Me.num_idade)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl_idade)
         Me.Controls.Add(Me.txt_nome)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lbl_frm_nome)
         Me.Controls.Add(Me.cmd_cadastro)
         Me.Name = "Form1"
-        Me.Text = "Preferências"
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).EndInit
-        Me.GroupBox1.ResumeLayout(false)
-        Me.GroupBox1.PerformLayout
+        Me.gp_calculadora.ResumeLayout(false)
+        Me.gp_calculadora.PerformLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.num_1,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.dgv_dados,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.num_id,System.ComponentModel.ISupportInitialize).EndInit
-        Me.GroupBox2.ResumeLayout(false)
-        Me.GroupBox2.PerformLayout
+        Me.gp_access.ResumeLayout(false)
+        Me.gp_access.PerformLayout
         CType(Me.ProjetoBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.NovobancoDataSet,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
@@ -570,23 +452,23 @@ Partial Class Form1
 End Sub
 
     Private WithEvents cmd_cadastro As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_frm_nome As Label
     Friend WithEvents txt_nome As TextBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_idade As Label
     Friend WithEvents num_idade As NumericUpDown
     Friend WithEvents txt_animal As TextBox
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
+    Friend WithEvents lbl_animal As Label
+    Friend WithEvents lbl_genero As Label
     Friend WithEvents radio_masc As RadioButton
     Friend WithEvents radio_fem As RadioButton
     Friend WithEvents radio_outro As RadioButton
-    Friend WithEvents Label5 As Label
+    Friend WithEvents lbl_estacao As Label
     Friend WithEvents cb_estacao As ComboBox
     Friend WithEvents lbl_teste As Label
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents gp_calculadora As GroupBox
     Friend WithEvents lbl_aguardando As Label
     Friend WithEvents cmd_calcular As Button
-    Friend WithEvents Label6 As Label
+    Friend WithEvents lbl_textocalc As Label
     Friend WithEvents num_2 As NumericUpDown
     Friend WithEvents num_1 As NumericUpDown
     Friend WithEvents lbl_cadastro As Label
@@ -596,23 +478,25 @@ End Sub
     Friend WithEvents ProjetoTableAdapter As novobancoDataSetTableAdapters.ProjetoTableAdapter
     Friend WithEvents cmd_novo As Button
     Friend WithEvents cmd_deletar As Button
-    Friend WithEvents Label7 As Label
+    Friend WithEvents lbl_id As Label
     Friend WithEvents num_id As NumericUpDown
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
+    Friend WithEvents lbl_deletar As Label
+    Friend WithEvents lbl_novo As Label
     Friend WithEvents radio_oledb As RadioButton
     Friend WithEvents radio_sql As RadioButton
     Friend WithEvents cmd_conectar As Button
     Friend WithEvents txt_gambiarra As TextBox
-    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents gp_access As GroupBox
     Friend WithEvents cmd_editar As Button
-    Friend WithEvents Label10 As Label
+    Friend WithEvents lbl_editar As Label
     Friend WithEvents radio_oracle As RadioButton
     Friend WithEvents cmd_limpar As Button
     Friend WithEvents lbl_aviso As RichTextBox
     Friend WithEvents SkinManager1 As Syncfusion.Windows.Forms.SkinManager
     Friend WithEvents Button1 As Button
-    Friend WithEvents Crystal_1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents lbl_nome As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReportF1 As CrystalReportF
     Friend WithEvents Button2 As Button
+    Friend WithEvents btn_brasil As Button
+    Friend WithEvents btn_eua As Button
 End Class
