@@ -12,7 +12,6 @@ Imports CadastroDeAlunoTeste.My.Resources
 Imports System.Threading
 
 'Throw
-'String Format
 
 Public Class Form1
     Private connString As String
@@ -22,21 +21,17 @@ Public Class Form1
     Private m_dbConn As IDbConnection
 
     Public Sub New()
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
         InitializeComponent()
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'NovobancoDataSet.Projeto' table. You can move, or remove it, as needed.
         Me.ProjetoTableAdapter.Fill(Me.NovobancoDataSet.Projeto)
         num_1.Text = ""
         num_2.Text = ""
         num_idade.Text = ""
-
-        'Dim s As String = String.Format("It is now {0:d} at {0:t}",
-        '  Date.Now)
-        's.write("The current system date is: ")
-        'response.write(Date)
     End Sub
 
     Public Function GetDatasetProject() As DataSet
@@ -121,7 +116,6 @@ Public Class Form1
     End Sub
 
     Private Sub cmd_novo_Click(sender As Object, e As EventArgs) Handles cmd_novo.Click
-
         Try
             If num_1.Text = "" Then
                 num_1.Text = "0"
@@ -192,7 +186,6 @@ Public Class Form1
             Dim sql = "SELECT * FROM Projeto"
             dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
 
-
             If radio_oledb.Checked Then
                 Dim oleDbHelper As New OleDBDbHelper
                 m_dbHelper = oleDbHelper
@@ -220,12 +213,9 @@ Public Class Form1
     Private Sub cmd_editar_Click(sender As Object, e As EventArgs) Handles cmd_editar.Click
         Try
             Dim dsLido As DataSet
-
             Dim sql = "SELECT * FROM Projeto WHERE Id = @Id"
             Dim paramId = m_dbHelper.NewParameter("@Id", num_id.Text)
-
             dsLido = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql, paramId)
-
             Dim drLido = dsLido.Tables(0).Rows(0)
 
             If txt_nome.Text <> "" Then
@@ -256,7 +246,6 @@ Public Class Form1
                 drLido("Genero") = txt_gambiarra.Text
             End If
 
-
             If radio_oledb.Checked Then
                 Dim oleDbHelper As New OleDBDbHelper
                 m_dbHelper = oleDbHelper
@@ -268,7 +257,6 @@ Public Class Form1
             ElseIf radio_oracle.Checked Then
                 Dim OracleDbHelper As New MSOracleDbHelper
                 m_dbHelper = OracleDbHelper
-
             End If
 
             Dim param1 = m_dbHelper.NewParameter("@Nome", drLido("Nome"))
@@ -323,6 +311,15 @@ Public Class Form1
             lbl_aguardando.Visible = True
             lbl_aguardando.Text = "Insira os numeros antes!"
         End Try
+
+        Dim ratio As Double = num_1.Text
+        Dim result As String =
+            String.Format("String = {0:0%}", ratio)
+            String.Format("Data = {0:D}", DateTime.Now)
+        lbl_aviso.Visible = True
+        lbl_aviso.Text = result
+
+
     End Sub
 
     Private Sub cmd_limpar_Click(sender As Object, e As EventArgs) Handles cmd_limpar.Click
@@ -371,6 +368,11 @@ Public Class Form1
         Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
         Me.Controls.Clear()
         InitializeComponent()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim DataHoraAtual As DateTime = Now
+        lbl_data.Text = "Data: " & DataHoraAtual.ToShortDateString & ", Hora: " & DataHoraAtual.ToShortTimeString
     End Sub
 End Class
 
