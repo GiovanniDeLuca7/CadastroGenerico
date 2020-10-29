@@ -117,113 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cmd_cadastro.Text" xml:space="preserve">
-    <value>Register</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_frm_nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
-  </data>
-  <data name="lbl_frm_nome.Text" xml:space="preserve">
-    <value>Insert your name:</value>
-  </data>
-  <data name="lbl_idade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 13</value>
-  </data>
-  <data name="lbl_idade.Text" xml:space="preserve">
-    <value>Insert your age:</value>
-  </data>
-  <data name="lbl_animal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 13</value>
-  </data>
-  <data name="lbl_animal.Text" xml:space="preserve">
-    <value>Insert a name of an animal:</value>
-  </data>
-  <data name="lbl_genero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
-  </data>
-  <data name="lbl_genero.Text" xml:space="preserve">
-    <value>Your gender:</value>
-  </data>
-  <data name="radio_masc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
-  </data>
-  <data name="radio_masc.Text" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <data name="radio_fem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
-  </data>
-  <data name="radio_fem.Text" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="radio_outro.Text" xml:space="preserve">
-    <value>Other</value>
-  </data>
-  <data name="lbl_estacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 13</value>
-  </data>
-  <data name="lbl_estacao.Text" xml:space="preserve">
-    <value>Insert a season of the year:</value>
-  </data>
-  <data name="cb_estacao.Items" xml:space="preserve">
-    <value>Spring</value>
-  </data>
-  <data name="cb_estacao.Items1" xml:space="preserve">
-    <value>Summer</value>
-  </data>
-  <data name="cb_estacao.Items2" xml:space="preserve">
-    <value>Autumn</value>
-  </data>
-  <data name="cb_estacao.Items3" xml:space="preserve">
-    <value>Winter</value>
-  </data>
-  <data name="gp_calculadora.Text" xml:space="preserve">
-    <value>Calculator</value>
-  </data>
-  <data name="cmd_calcular.Text" xml:space="preserve">
-    <value>Calculate</value>
-  </data>
-  <data name="lbl_textocalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
-  </data>
-  <data name="lbl_textocalc.Text" xml:space="preserve">
-    <value>Insert two values:</value>
-  </data>
-  <data name="cmd_novo.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="cmd_deletar.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="lbl_deletar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 13</value>
-  </data>
-  <data name="lbl_deletar.Text" xml:space="preserve">
-    <value>Insert the Id you want to delete</value>
-  </data>
-  <data name="lbl_novo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 13</value>
-  </data>
-  <data name="lbl_novo.Text" xml:space="preserve">
-    <value>Fill the fields before the register</value>
-  </data>
-  <data name="cmd_conectar.Text" xml:space="preserve">
-    <value>Conect</value>
-  </data>
-  <data name="gp_access.Text" xml:space="preserve">
-    <value>Access</value>
-  </data>
-  <data name="cmd_editar.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="lbl_editar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 13</value>
-  </data>
-  <data name="lbl_editar.Text" xml:space="preserve">
-    <value>Insert the Id you want to edit</value>
-  </data>
-  <data name="cmd_limpar.Text" xml:space="preserve">
-    <value>Clean fields</value>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAAAAEACACoCAAAJgAAABAQAAABAAgAaAUAAM4IAAAoAAAAIAAAAEAAAAABAAgAAAAAAAAE
+        AAAAAAAAAAAAAAABAAAAAAAA////AMv+/wCZ/v8AZf7/ADP+/wAA/f0A/sv/AMvL/wCZy/8AZcv/ADPM
+        /wAAy/0A/pn/AMuZ/wCZmf8AZZj/ADOY/wAAmP0A/mX/AMtl/wCYZf8AZWX/ADNl/wAAZf0A/jP/AMsz
+        /wCYM/8AZTP/ADMz/wAAMv0A/QD9AMsA/QCYAP0AZQD9ADIA/QAAAP0A///LAMv/ywCZ/8wAZf/LADP/
+        zAAA/csA/8vLAMzMzACYy8sAZsvMADLLywAAy8wA/5nLAMuYywCYmMsAZpjMADKYywAAmcwA/2XLAMtm
+        zACYZswAZmbMADJlywAAZcwA/zPLAMsyywCYMssAZTLLADIyywAAMswA/QDLAMsAzACYAMwAZQDMADIA
+        zAAAAMwA//+ZAMv/mQCZ/5kAZf+YADP/mQAA/ZgA/8yZAMvLmACYy5gAZsyZADLLmAAAzJkA/5mZAMuY
+        mACZmZkAZZiYADOYmQAAl5gA/2WYAMxmmACYZZgAZWWYADNlmQAAZZgA/zOYAMsymACYM5kAZTOZADMz
+        mQAAMpgA/QCYAMwAmACXAJgAZQCYADIAmAAAAJgA//9lAMv/ZQCY/2UAZf9lADP/ZgAA/WUA/8tlAMzM
+        ZgCYzGYAZsxmADLLZQAAzGYA/5hlAMyZZgCYmGUAZZhlADOZZgAAmGUA/2VlAMxmZgCYZWUAZmZmADJl
+        ZQAAZWYA/zNlAMsyZQCZM2UAZTJlADIyZQAAMmYA/QBlAMwAZQCYAGUAZQBmADIAZgAAAGYA//8zAMz/
+        MwCY/zMAZv8zADP/MwAA/TIA/8wzAMvLMgCYyzIAZcsyADLLMgAAzDMA/5kzAMuYMgCZmTMAZZkzADOZ
+        MwAAmDIA/2YzAMtlMgCZZjMAZWUyADJlMgAAZjMA/zMzAMsyMgCZMzMAZTIyADMzMwAAMTIA/QAyAMwA
+        MgCYADIAZgAyADEAMgAAADIA/f0AAMv9AACY/QAAZf0AADL9AAAA/QAA/csAAMzMAACZzAAAZcwAADPM
+        AAAAzAAA/ZgAAMyZAACYmAAAZZgAADKYAAAAmAAA/WUAAMxmAACYZQAAZmYAADJmAAAAZgAA/TIAAMwz
+        AACYMgAAZjMAADIyAAAAMgAA/QAAAMwAAACYAAAAZgAAADIAAAAAAO4AAADcAAAAugAAAKoAAACIAAAA
+        dgAAAFQAAABEAAAAIgAAABAAAO4AAADcAAAAugAAAKoAAACIAAAAdgAAAFQAAABEAAAAIgAAABAAAO4A
+        AADcAAAAugAAAKoAAACIAAAAdgAAAFQAAABEAAAAIgAAABAAAADu7u4A3d3dALu7uwCqqqoAiIiIAHd3
+        dwBVVVUAREREACIiIgAREREAAAAAAP//////////////////////////////////////////////////
+        //////////////////////////////////////////////////////8REf//////////////////////
+        ////////////////EREREf///////////////////////////////////wL/ERH/Av//////////////
+        //////////////////8CAgL//wICAv//////////////////////////////AgIC/////wICAv//////
+        /////////////////////wICAv+W//+W/wICAv////////////////////////8CAgL/lpb//5aW/wIC
+        Av//////////////////////AgIC/5b/////lpaW/wICAv///////////////////wICAv+Wlpb/Bf//
+        lpaW/wICAv////////////////8CAgL/lpaWlpb/BQX/lpaW/wICAv//////////////AgIC/5aWlpaW
+        lpb/BQX/lpaW/wICAv///////////wICAv+WlpaWlpaWlv8FBf+WlpaW/wICAv////////8R/wL/lpaW
+        /5aWlv+Wlv8FBf+WlpaW/wL/Ef//////ERER/////5aW////lpb//wUF/////////xEREf////8RERH/
+        ////lpb/Bf+Wlv//BQX/////////ERER//////8R/wL/lpaW//////+Wlv8FBf+WlpaW/wL/Ef//////
+        //8CAgL/lpaWlv+Wlpb/BQX/lpaWlv8CAgL///////////8CAgL/lpaW/5aWlv8FBf+Wlpb/AgIC////
+        //////////8CAgL/lpaWlpb/BQX/lpaW/wICAv////////////////8CAgL/lpaW/wX//5aWlv8CAgL/
+        //////////////////8CAgL/lv////+Wlpb/AgIC//////////////////////8CAgL/lpb//5aW/wIC
+        Av////////////////////////8CAgL/lv//lv8CAgL///////////////////////////8CAgL/////
+        AgIC//////////////////////////////8CAgL//wICAv////////////////////////////////8C
+        /xER/wL///////////////////////////////////8RERER////////////////////////////////
+        //////8REf//////////////////////////////////////////////////////////////////////
+        /////////////////////////////////////n////w////4H///8A///+AH///AA///gAH//wAA//4A
+        AH/8AAA/+AAAH/AAAA/gAAAHwAAAA4AAAAEAAAAAAAAAAIAAAAHAAAAD4AAAB/AAAA/4AAAf/AAAP/4A
+        AH//AAD//4AB///AA///4Af///AP///4H////D////5//ygAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAA
+        AAAAAAAAAAEAAAAAAAD///8Ay/7/AJn+/wBl/v8AM/7/AAD9/QD+y/8Ay8v/AJnL/wBly/8AM8z/AADL
+        /QD+mf8Ay5n/AJmZ/wBlmP8AM5j/AACY/QD+Zf8Ay2X/AJhl/wBlZf8AM2X/AABl/QD+M/8AyzP/AJgz
+        /wBlM/8AMzP/AAAy/QD9AP0AywD9AJgA/QBlAP0AMgD9AAAA/QD//8sAy//LAJn/zABl/8sAM//MAAD9
+        ywD/y8sAzMzMAJjLywBmy8wAMsvLAADLzAD/mcsAy5jLAJiYywBmmMwAMpjLAACZzAD/ZcsAy2bMAJhm
+        zABmZswAMmXLAABlzAD/M8sAyzLLAJgyywBlMssAMjLLAAAyzAD9AMsAywDMAJgAzABlAMwAMgDMAAAA
+        zAD//5kAy/+ZAJn/mQBl/5gAM/+ZAAD9mAD/zJkAy8uYAJjLmABmzJkAMsuYAADMmQD/mZkAy5iYAJmZ
+        mQBlmJgAM5iZAACXmAD/ZZgAzGaYAJhlmABlZZgAM2WZAABlmAD/M5gAyzKYAJgzmQBlM5kAMzOZAAAy
+        mAD9AJgAzACYAJcAmABlAJgAMgCYAAAAmAD//2UAy/9lAJj/ZQBl/2UAM/9mAAD9ZQD/y2UAzMxmAJjM
+        ZgBmzGYAMstlAADMZgD/mGUAzJlmAJiYZQBlmGUAM5lmAACYZQD/ZWUAzGZmAJhlZQBmZmYAMmVlAABl
+        ZgD/M2UAyzJlAJkzZQBlMmUAMjJlAAAyZgD9AGUAzABlAJgAZQBlAGYAMgBmAAAAZgD//zMAzP8zAJj/
+        MwBm/zMAM/8zAAD9MgD/zDMAy8syAJjLMgBlyzIAMssyAADMMwD/mTMAy5gyAJmZMwBlmTMAM5kzAACY
+        MgD/ZjMAy2UyAJlmMwBlZTIAMmUyAABmMwD/MzMAyzIyAJkzMwBlMjIAMzMzAAAxMgD9ADIAzAAyAJgA
+        MgBmADIAMQAyAAAAMgD9/QAAy/0AAJj9AABl/QAAMv0AAAD9AAD9ywAAzMwAAJnMAABlzAAAM8wAAADM
+        AAD9mAAAzJkAAJiYAABlmAAAMpgAAACYAAD9ZQAAzGYAAJhlAABmZgAAMmYAAABmAAD9MgAAzDMAAJgy
+        AABmMwAAMjIAAAAyAAD9AAAAzAAAAJgAAABmAAAAMgAAAAAA7gAAANwAAAC6AAAAqgAAAIgAAAB2AAAA
+        VAAAAEQAAAAiAAAAEAAA7gAAANwAAAC6AAAAqgAAAIgAAAB2AAAAVAAAAEQAAAAiAAAAEAAA7gAAANwA
+        AAC6AAAAqgAAAIgAAAB2AAAAVAAAAEQAAAAiAAAAEAAAAO7u7gDd3d0Au7u7AKqqqgCIiIgAd3d3AFVV
+        VQBEREQAIiIiABEREQAAAAAA////////////////////////////////////////////////////////
+        //////////////////////////////////////////////////////////+W//////////////////+W
+        lpb//5b//////////////////wX///////////////////8F//////////////+W/5b//5b/////////
+        /////5b/////////////////////////////////////////////////////////////////////////
+        //////////////////////////////////////////////5/AAD8PwAA+B8AAPAPAADgBwAAwAMAAIAB
+        AAAAAAAAAAAAAIABAADAAwAA4AcAAPAPAAD4HwAA/D8AAP5/AAA=
+</value>
   </data>
 </root>

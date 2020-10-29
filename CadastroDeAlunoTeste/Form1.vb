@@ -20,6 +20,11 @@ Public Class Form1
     Private m_dbHelper As IDBHelper
     Private m_dbConn As IDbConnection
 
+    Public Sub New()
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
+        InitializeComponent()
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'NovobancoDataSet.Projeto' table. You can move, or remove it, as needed.
         Me.ProjetoTableAdapter.Fill(Me.NovobancoDataSet.Projeto)
@@ -31,33 +36,6 @@ Public Class Form1
                               '  Date.Now)
         's.write("The current system date is: ")
         'response.write(Date)
-    End Sub
-
-    Private Sub GetText()
-        lbl_frm_nome.Text = Res.Nome
-        lbl_animal.Text = Res.Animal
-        lbl_idade.Text = Res.Idade
-        lbl_id.Text = Res.ID
-        lbl_estacao.Text = Res.Estação
-        lbl_genero.Text = Res.Genero
-        gp_calculadora.Text = Res.Calculadora
-        lbl_textocalc.Text = Res.TextoCalculadora
-        cmd_cadastro.Text = Res.Cadastrar
-        radio_masc.Text = Res.Masculino
-        radio_fem.Text = Res.Feminino
-        radio_outro.Text = Res.Outro
-        cmd_limpar.Text = Res.LimparCampos
-        gp_access.Text = Res.Acesso
-        cmd_calcular.Text = Res.Calcular
-        cmd_conectar.Text = Res.Conectar
-        Button2.Text = Res.Linq
-        cmd_deletar.Text = Res.Deletar
-        lbl_deletar.Text = Res.DeletarTexto
-        cmd_editar.Text = Res.Editar
-        lbl_editar.Text = Res.EditarTexto
-        cmd_novo.Text = Res.Novo
-        lbl_novo.Text = Res.NovoTexto
-        Me.Text = Res.Form
     End Sub
 
     Public Function GetDatasetProject() As DataSet
@@ -386,13 +364,13 @@ Public Class Form1
     End Sub
 
     Private Sub btn_brasil_Click(sender As Object, e As EventArgs) Handles btn_brasil.Click
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("pt-BR")
-        GetText()
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
+        Me.Refresh()
     End Sub
 
     Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
+        Me.Refresh()
         System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
-        GetText()
     End Sub
 End Class
 
