@@ -21,7 +21,7 @@ Public Class Form1
     Private m_dbConn As IDbConnection
 
     Public Sub New()
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
         InitializeComponent()
     End Sub
 
@@ -91,12 +91,9 @@ Public Class Form1
             If Not checked Then
                 Throw New InvalidOperationException($"Erro formula {Formula.Name} {errorText}")
             End If
-
-
             ds.Tables(0).TableName = "Projeto"
             m_rptDoc.Database.Tables(0).SetDataSource(ds)
             lbl_nome.ReportSource = m_rptDoc
-
             lbl_aviso.Text = ""
             lbl_nome.Visible = True
         Catch ex As Exception
