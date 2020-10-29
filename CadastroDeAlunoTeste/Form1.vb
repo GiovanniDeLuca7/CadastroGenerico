@@ -362,19 +362,15 @@ Public Class Form1
     End Sub
 
     Private Sub btn_brasil_Click(sender As Object, e As EventArgs) Handles btn_brasil.Click
-        Select Case Threading.Thread.CurrentThread.CurrentUICulture.IetfLanguageTag
-            Case "en-US"
-                Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
-            Case ""
-                Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
-        End Select
+      Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
         Me.Controls.Clear()
         InitializeComponent()
     End Sub
 
     Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
-        Me.Refresh()
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        Me.Controls.Clear()
+        InitializeComponent()
     End Sub
 End Class
 
