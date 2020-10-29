@@ -9,6 +9,7 @@ Imports System.Threading.Tasks
 Imports System.Threading.Thread
 Imports System.Globalization
 Imports CadastroDeAlunoTeste.My.Resources
+Imports System.Threading
 
 'Throw
 'String Format
@@ -33,7 +34,7 @@ Public Class Form1
         num_idade.Text = ""
 
         'Dim s As String = String.Format("It is now {0:d} at {0:t}",
-                              '  Date.Now)
+        '  Date.Now)
         's.write("The current system date is: ")
         'response.write(Date)
     End Sub
@@ -361,8 +362,14 @@ Public Class Form1
     End Sub
 
     Private Sub btn_brasil_Click(sender As Object, e As EventArgs) Handles btn_brasil.Click
-        System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
-        Me.Refresh()
+        Select Case Threading.Thread.CurrentThread.CurrentUICulture.IetfLanguageTag
+            Case "en-US"
+                Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
+            Case ""
+                Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        End Select
+        Me.Controls.Clear()
+        InitializeComponent()
     End Sub
 
     Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
