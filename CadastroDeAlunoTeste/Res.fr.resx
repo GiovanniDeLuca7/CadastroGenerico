@@ -117,143 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cmd_cadastro.Text" xml:space="preserve">
-    <value>Register</value>
+  <data name="Data" xml:space="preserve">
+    <value>Date: </value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_frm_nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 13</value>
+  <data name="Hora" xml:space="preserve">
+    <value>, Heure: </value>
   </data>
-  <data name="lbl_frm_nome.Text" xml:space="preserve">
-    <value>Insert your name:</value>
+  <data name="Sucesso" xml:space="preserve">
+    <value>Sauvegarde réussie</value>
   </data>
-  <data name="lbl_idade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 13</value>
+  <data name="Pronto" xml:space="preserve">
+    <value>Prêt!</value>
   </data>
-  <data name="lbl_idade.Text" xml:space="preserve">
-    <value>Insert your age:</value>
+  <data name="NovoTexto" xml:space="preserve">
+    <value>Remplissez les champs avant de vous inscrire</value>
   </data>
-  <data name="lbl_animal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 13</value>
+  <data name="LinqErro" xml:space="preserve">
+    <value>Erreur! Connectez-vous à la base de données!</value>
   </data>
-  <data name="lbl_animal.Text" xml:space="preserve">
-    <value>Insert a name of an animal:</value>
+  <data name="InsiraOsNumeros" xml:space="preserve">
+    <value>Insérez d'abord les chiffres!</value>
   </data>
-  <data name="lbl_genero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 13</value>
+  <data name="Aviso" xml:space="preserve">
+    <value>Aucune connexion établie</value>
   </data>
-  <data name="lbl_genero.Text" xml:space="preserve">
-    <value>Your gender:</value>
-  </data>
-  <data name="radio_masc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 17</value>
-  </data>
-  <data name="radio_masc.Text" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <data name="radio_fem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
-  </data>
-  <data name="radio_fem.Text" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="radio_outro.Text" xml:space="preserve">
-    <value>Other</value>
-  </data>
-  <data name="lbl_estacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>135, 13</value>
-  </data>
-  <data name="lbl_estacao.Text" xml:space="preserve">
-    <value>Insert a season of the year:</value>
-  </data>
-  <data name="cb_estacao.Items" xml:space="preserve">
-    <value>Spring</value>
-  </data>
-  <data name="cb_estacao.Items1" xml:space="preserve">
-    <value>Summer</value>
-  </data>
-  <data name="cb_estacao.Items2" xml:space="preserve">
-    <value>Autumn</value>
-  </data>
-  <data name="cb_estacao.Items3" xml:space="preserve">
-    <value>Winter</value>
-  </data>
-  <data name="gp_calculadora.Text" xml:space="preserve">
-    <value>Calculator</value>
-  </data>
-  <data name="cmd_calcular.Text" xml:space="preserve">
-    <value>Calculate</value>
-  </data>
-  <data name="lbl_textocalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 13</value>
-  </data>
-  <data name="lbl_textocalc.Text" xml:space="preserve">
-    <value>Insert two values:</value>
-  </data>
-  <data name="cmd_novo.Text" xml:space="preserve">
-    <value>New</value>
-  </data>
-  <data name="cmd_deletar.Text" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="lbl_deletar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 13</value>
-  </data>
-  <data name="lbl_deletar.Text" xml:space="preserve">
-    <value>Insert the Id you want to delete</value>
-  </data>
-  <data name="lbl_novo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 13</value>
-  </data>
-  <data name="lbl_novo.Text" xml:space="preserve">
-    <value>Fill the fields before the register</value>
-  </data>
-  <data name="cmd_conectar.Text" xml:space="preserve">
-    <value>Conect</value>
-  </data>
-  <data name="gp_access.Text" xml:space="preserve">
-    <value>Access</value>
-  </data>
-  <data name="cmd_editar.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="lbl_editar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 13</value>
-  </data>
-  <data name="lbl_editar.Text" xml:space="preserve">
-    <value>Insert the Id you want to edit</value>
-  </data>
-  <data name="cmd_limpar.Text" xml:space="preserve">
-    <value>Clean fields</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Preferences Register</value>
-  </data>
-  <data name="lbl_id.Text" xml:space="preserve">
-    <value>Id:</value>
-  </data>
-  <data name="radio_oledb.Text" xml:space="preserve">
-    <value>OleDb Provider</value>
-  </data>
-  <data name="radio_oracle.Text" xml:space="preserve">
-    <value>Oracle Server</value>
-  </data>
-  <data name="radio_sql.Text" xml:space="preserve">
-    <value>MySQL Server</value>
-  </data>
-  <data name="txt_gambiarra.Text" xml:space="preserve">
-    <value>N/A</value>
-  </data>
-  <data name="lbl_data.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="lbl_cadastro.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="lbl_aguardando.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="Button2.Text" xml:space="preserve">
-    <value>Linq</value>
+  <data name="IdInserido" xml:space="preserve">
+    <value>Erreur! L'ID inséré est déjà utilisé ou non valide</value>
   </data>
 </root>

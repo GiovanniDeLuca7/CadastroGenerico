@@ -62,7 +62,7 @@ Public Class Form1
             m_dbConn.Open()
         Else
             lbl_aviso.Visible = True
-            lbl_aviso.Text = "Nenhuma conexão realizada :("
+            lbl_aviso.Text = Res.Aviso
         End If
 
         Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
@@ -288,7 +288,7 @@ Public Class Form1
 
     Private Sub cmd_cadastro_Click(sender As Object, e As EventArgs) Handles cmd_cadastro.Click
         lbl_cadastro.Visible = True
-        lbl_cadastro.Text = "Salvo com Sucesso"
+        lbl_cadastro.Text = Res.Sucesso
         Dim texto As String = txt_nome.Text
         Dim idade As String = num_idade.Text
         Dim animal As String = txt_animal.Text
@@ -302,24 +302,20 @@ Public Class Form1
     Private Sub cmd_calcular_Click(sender As Object, e As EventArgs) Handles cmd_calcular.Click
         Try
             lbl_aguardando.Visible = True
-            lbl_aguardando.Text = "Pronto!"
+            lbl_aguardando.Text = Res.Pronto
             Dim numero1 As Integer = num_1.Text
             Dim numero2 As Integer = num_2.Text
             ClassSalvar.Calculadora(numero1, numero2)
             Shell("NotePad.Exe ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Debugcalc.txt""", 1)
+            Dim ratio As Double = num_1.Text
+            Dim result As String =
+            String.Format("String = {0:0%}", ratio)
+            lbl_aviso.Visible = True
+            lbl_aviso.Text = result
         Catch
             lbl_aguardando.Visible = True
-            lbl_aguardando.Text = "Insira os numeros antes!"
+            lbl_aguardando.Text = Res.InsiraOsNumeros
         End Try
-
-        Dim ratio As Double = num_1.Text
-        Dim result As String =
-            String.Format("String = {0:0%}", ratio)
-            String.Format("Data = {0:D}", DateTime.Now)
-        lbl_aviso.Visible = True
-        lbl_aviso.Text = result
-
-
     End Sub
 
     Private Sub cmd_limpar_Click(sender As Object, e As EventArgs) Handles cmd_limpar.Click
@@ -354,25 +350,35 @@ Public Class Form1
             dgv_dados.DataSource = query.AsDataView()
         Catch
             lbl_aviso.Visible = True
-            lbl_aviso.Text = "Erro! Conecte-se ao banco de dados!"
+
+            lbl_aviso.Text = Res.LinqErro
         End Try
     End Sub
 
     Private Sub btn_brasil_Click(sender As Object, e As EventArgs) Handles btn_brasil.Click
       Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
+        Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("pt-BR")
         Me.Controls.Clear()
         InitializeComponent()
     End Sub
 
     Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
         Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("en-US")
+        Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
+        Me.Controls.Clear()
+        InitializeComponent()
+    End Sub
+
+    Private Sub btn_frc_Click(sender As Object, e As EventArgs) Handles btn_frc.Click
+        Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("fr")
+        Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("fr")
         Me.Controls.Clear()
         InitializeComponent()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim DataHoraAtual As DateTime = Now
-        lbl_data.Text = "Data: " & DataHoraAtual.ToShortDateString & ", Hora: " & DataHoraAtual.ToShortTimeString
+        lbl_data.Text = Res.Data & DataHoraAtual.ToShortDateString & Res.Hora & DataHoraAtual.ToShortTimeString
     End Sub
 End Class
 

@@ -117,79 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Acesso" xml:space="preserve">
-    <value>Acesso</value>
+  <data name="Data" xml:space="preserve">
+    <value>Data: </value>
   </data>
-  <data name="Animal" xml:space="preserve">
-    <value>Digite o nome de um animal:</value>
+  <data name="Hora" xml:space="preserve">
+    <value>, Hora: </value>
   </data>
-  <data name="Cadastrar" xml:space="preserve">
-    <value>Cadastrar</value>
+  <data name="InsiraOsNumeros" xml:space="preserve">
+    <value>Insira os números antes!</value>
   </data>
-  <data name="Calculadora" xml:space="preserve">
-    <value>Calculadora</value>
-  </data>
-  <data name="Calcular" xml:space="preserve">
-    <value>Calcular</value>
-  </data>
-  <data name="Conectar" xml:space="preserve">
-    <value>Conectar</value>
-  </data>
-  <data name="Deletar" xml:space="preserve">
-    <value>Deletar</value>
-  </data>
-  <data name="DeletarTexto" xml:space="preserve">
-    <value>Insira o Id que deseja apagar</value>
-  </data>
-  <data name="Editar" xml:space="preserve">
-    <value>Editar</value>
-  </data>
-  <data name="EditarTexto" xml:space="preserve">
-    <value>Insira o Id que deseja editar</value>
-  </data>
-  <data name="Estação" xml:space="preserve">
-    <value>Escolha uma estação do ano:</value>
-  </data>
-  <data name="Feminino" xml:space="preserve">
-    <value>Feminino</value>
-  </data>
-  <data name="Form" xml:space="preserve">
-    <value>Cadastro de Preferências</value>
-  </data>
-  <data name="Genero" xml:space="preserve">
-    <value>Seu gênero:</value>
-  </data>
-  <data name="ID" xml:space="preserve">
-    <value>Id:</value>
-  </data>
-  <data name="Idade" xml:space="preserve">
-    <value>Digite sua idade:</value>
-  </data>
-  <data name="LimparCampos" xml:space="preserve">
-    <value>Limpar Campos</value>
-  </data>
-  <data name="Linq" xml:space="preserve">
-    <value>Linq</value>
-  </data>
-  <data name="Masculino" xml:space="preserve">
-    <value>Masculino</value>
-  </data>
-  <data name="Nome" xml:space="preserve">
-    <value>Digite seu nome:</value>
-  </data>
-  <data name="Novo" xml:space="preserve">
-    <value>Novo</value>
+  <data name="LinqErro" xml:space="preserve">
+    <value>Erro! Conecte-se ao banco de dados!</value>
   </data>
   <data name="NovoTexto" xml:space="preserve">
     <value>Preencha os campos antes de cadastrar</value>
   </data>
-  <data name="Outro" xml:space="preserve">
-    <value>Outro</value>
+  <data name="Pronto" xml:space="preserve">
+    <value>Pronto!</value>
   </data>
-  <data name="Primavera" xml:space="preserve">
-    <value>Primavera</value>
+  <data name="Sucesso" xml:space="preserve">
+    <value>Salvo com sucesso</value>
   </data>
-  <data name="TextoCalculadora" xml:space="preserve">
-    <value>Insira dois valores:</value>
+  <data name="Aviso" xml:space="preserve">
+    <value>Nenhuma conexão realizada</value>
+  </data>
+  <data name="IdInserido" xml:space="preserve">
+    <value>Erro! O Id inserido já está sendo usado ou é inválido</value>
   </data>
 </root>

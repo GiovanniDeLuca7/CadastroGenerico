@@ -117,79 +117,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Acesso" xml:space="preserve">
-    <value>Access</value>
+  <data name="Data" xml:space="preserve">
+    <value>Date: </value>
   </data>
-  <data name="Animal" xml:space="preserve">
-    <value>Insert a name of an animal:</value>
+  <data name="Hora" xml:space="preserve">
+    <value>, Hour: </value>
   </data>
-  <data name="Cadastrar" xml:space="preserve">
-    <value>Register</value>
+  <data name="InsiraOsNumeros" xml:space="preserve">
+    <value>Insert the numbers before!</value>
   </data>
-  <data name="Calculadora" xml:space="preserve">
-    <value>Calculator</value>
-  </data>
-  <data name="Calcular" xml:space="preserve">
-    <value>Calculate</value>
-  </data>
-  <data name="Conectar" xml:space="preserve">
-    <value>Conect</value>
-  </data>
-  <data name="Deletar" xml:space="preserve">
-    <value>Delete</value>
-  </data>
-  <data name="DeletarTexto" xml:space="preserve">
-    <value>Insert the Id you want to delete</value>
-  </data>
-  <data name="Editar" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="EditarTexto" xml:space="preserve">
-    <value>Insert the Id you want to edit</value>
-  </data>
-  <data name="Estação" xml:space="preserve">
-    <value>Insert a season of the year:</value>
-  </data>
-  <data name="Feminino" xml:space="preserve">
-    <value>Female</value>
-  </data>
-  <data name="Form" xml:space="preserve">
-    <value>Preferences Register</value>
-  </data>
-  <data name="Genero" xml:space="preserve">
-    <value>Your gender:</value>
-  </data>
-  <data name="ID" xml:space="preserve">
-    <value>Id:</value>
-  </data>
-  <data name="Idade" xml:space="preserve">
-    <value>Insert your age:</value>
-  </data>
-  <data name="LimparCampos" xml:space="preserve">
-    <value>Clean fields</value>
-  </data>
-  <data name="Linq" xml:space="preserve">
-    <value>Linq</value>
-  </data>
-  <data name="Masculino" xml:space="preserve">
-    <value>Male</value>
-  </data>
-  <data name="Nome" xml:space="preserve">
-    <value>Insert your name:</value>
-  </data>
-  <data name="Novo" xml:space="preserve">
-    <value>New</value>
+  <data name="LinqErro" xml:space="preserve">
+    <value>Error! Conect to the database!</value>
   </data>
   <data name="NovoTexto" xml:space="preserve">
     <value>Fill the fields before the register</value>
   </data>
-  <data name="Outro" xml:space="preserve">
-    <value>Other</value>
+  <data name="Pronto" xml:space="preserve">
+    <value>Ready!</value>
   </data>
-  <data name="Primavera" xml:space="preserve">
-    <value>Spring</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Res" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>res.resx;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
   </data>
-  <data name="TextoCalculadora" xml:space="preserve">
-    <value>Insert two values:</value>
+  <data name="Res_Designer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>res.designer.vb;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Sucesso" xml:space="preserve">
+    <value>Save success</value>
+  </data>
+  <data name="Aviso" xml:space="preserve">
+    <value>No connection made</value>
+  </data>
+  <data name="IdInserido" xml:space="preserve">
+    <value>Error! The inserted ID is already in use or not valid</value>
   </data>
 </root>

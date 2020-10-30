@@ -65,191 +65,38 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Acesso.
+        '''  Looks up a localized string similar to Data: .
         '''</summary>
-        Public Shared ReadOnly Property Acesso() As String
+        Public Shared ReadOnly Property Data() As String
             Get
-                Return ResourceManager.GetString("Acesso", resourceCulture)
+                Return ResourceManager.GetString("Data", resourceCulture)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Digite o nome de um animal:.
+        '''  Looks up a localized string similar to , Hora: .
         '''</summary>
-        Public Shared ReadOnly Property Animal() As String
+        Public Shared ReadOnly Property Hora() As String
             Get
-                Return ResourceManager.GetString("Animal", resourceCulture)
+                Return ResourceManager.GetString("Hora", resourceCulture)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Cadastrar.
+        '''  Looks up a localized string similar to Insira os numeros antes!.
         '''</summary>
-        Public Shared ReadOnly Property Cadastrar() As String
+        Public Shared ReadOnly Property InsiraOsNumeros() As String
             Get
-                Return ResourceManager.GetString("Cadastrar", resourceCulture)
+                Return ResourceManager.GetString("InsiraOsNumeros", resourceCulture)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Calculadora.
+        '''  Looks up a localized string similar to Erro! Conecte-se ao banco de dados!.
         '''</summary>
-        Public Shared ReadOnly Property Calculadora() As String
+        Public Shared ReadOnly Property LinqErro() As String
             Get
-                Return ResourceManager.GetString("Calculadora", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Calcular.
-        '''</summary>
-        Public Shared ReadOnly Property Calcular() As String
-            Get
-                Return ResourceManager.GetString("Calcular", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Conectar.
-        '''</summary>
-        Public Shared ReadOnly Property Conectar() As String
-            Get
-                Return ResourceManager.GetString("Conectar", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Deletar.
-        '''</summary>
-        Public Shared ReadOnly Property Deletar() As String
-            Get
-                Return ResourceManager.GetString("Deletar", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Insira o Id que deseja apagar.
-        '''</summary>
-        Public Shared ReadOnly Property DeletarTexto() As String
-            Get
-                Return ResourceManager.GetString("DeletarTexto", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Editar.
-        '''</summary>
-        Public Shared ReadOnly Property Editar() As String
-            Get
-                Return ResourceManager.GetString("Editar", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Insira o Id que deseja editar.
-        '''</summary>
-        Public Shared ReadOnly Property EditarTexto() As String
-            Get
-                Return ResourceManager.GetString("EditarTexto", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Escolha uma estação do ano:.
-        '''</summary>
-        Public Shared ReadOnly Property Estação() As String
-            Get
-                Return ResourceManager.GetString("Estação", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Feminino.
-        '''</summary>
-        Public Shared ReadOnly Property Feminino() As String
-            Get
-                Return ResourceManager.GetString("Feminino", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Cadastro de Preferências.
-        '''</summary>
-        Public Shared ReadOnly Property Form() As String
-            Get
-                Return ResourceManager.GetString("Form", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Seu gênero:.
-        '''</summary>
-        Public Shared ReadOnly Property Genero() As String
-            Get
-                Return ResourceManager.GetString("Genero", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Id:.
-        '''</summary>
-        Public Shared ReadOnly Property ID() As String
-            Get
-                Return ResourceManager.GetString("ID", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Digite sua idade:.
-        '''</summary>
-        Public Shared ReadOnly Property Idade() As String
-            Get
-                Return ResourceManager.GetString("Idade", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Limpar Campos.
-        '''</summary>
-        Public Shared ReadOnly Property LimparCampos() As String
-            Get
-                Return ResourceManager.GetString("LimparCampos", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Linq.
-        '''</summary>
-        Public Shared ReadOnly Property Linq() As String
-            Get
-                Return ResourceManager.GetString("Linq", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Masculino.
-        '''</summary>
-        Public Shared ReadOnly Property Masculino() As String
-            Get
-                Return ResourceManager.GetString("Masculino", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Digite seu nome:.
-        '''</summary>
-        Public Shared ReadOnly Property Nome() As String
-            Get
-                Return ResourceManager.GetString("Nome", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Novo.
-        '''</summary>
-        Public Shared ReadOnly Property Novo() As String
-            Get
-                Return ResourceManager.GetString("Novo", resourceCulture)
+                Return ResourceManager.GetString("LinqErro", resourceCulture)
             End Get
         End Property
         
@@ -263,29 +110,20 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Outro.
+        '''  Looks up a localized string similar to Pronto!.
         '''</summary>
-        Public Shared ReadOnly Property Outro() As String
+        Public Shared ReadOnly Property Pronto() As String
             Get
-                Return ResourceManager.GetString("Outro", resourceCulture)
+                Return ResourceManager.GetString("Pronto", resourceCulture)
             End Get
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Primavera.
+        '''  Looks up a localized string similar to Salvo com sucesso.
         '''</summary>
-        Public Shared ReadOnly Property Primavera() As String
+        Public Shared ReadOnly Property Sucesso() As String
             Get
-                Return ResourceManager.GetString("Primavera", resourceCulture)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized string similar to Insira dois valores:.
-        '''</summary>
-        Public Shared ReadOnly Property TextoCalculadora() As String
-            Get
-                Return ResourceManager.GetString("TextoCalculadora", resourceCulture)
+                Return ResourceManager.GetString("Sucesso", resourceCulture)
             End Get
         End Property
     End Class
