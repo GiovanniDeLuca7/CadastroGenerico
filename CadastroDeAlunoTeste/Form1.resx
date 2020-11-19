@@ -117,596 +117,590 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="lbl_textocalc.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmd_cadastro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="lbl_cadastro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 13</value>
+  <data name="cmd_cadastro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 50</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="btn_brasil.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="cmd_cadastro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 25</value>
   </data>
-  <data name="&gt;&gt;SkinManager1.Name" xml:space="preserve">
-    <value>SkinManager1</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cmd_cadastro.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;radio_oledb.Parent" xml:space="preserve">
-    <value>gp_access</value>
+  <data name="cmd_cadastro.Text" xml:space="preserve">
+    <value>Cadastrar</value>
   </data>
-  <data name="&gt;&gt;radio_outro.Name" xml:space="preserve">
-    <value>radio_outro</value>
+  <data name="&gt;&gt;cmd_cadastro.Name" xml:space="preserve">
+    <value>cmd_cadastro</value>
   </data>
-  <data name="&gt;&gt;gp_access.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btn_frc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;radio_masc.Name" xml:space="preserve">
-    <value>radio_masc</value>
-  </data>
-  <data name="lbl_editar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>795, 103</value>
-  </data>
-  <data name="&gt;&gt;radio_fem.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_id.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;cmd_calcular.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmd_deletar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_aguardando.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 101</value>
-  </data>
-  <data name="&gt;&gt;cmd_editar.Type" xml:space="preserve">
+  <data name="&gt;&gt;cmd_cadastro.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btn_frc.Parent" xml:space="preserve">
+  <data name="&gt;&gt;cmd_cadastro.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_gambiarra.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radio_sql.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 17</value>
-  </data>
-  <data name="&gt;&gt;txt_nome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="num_idade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
-  </data>
-  <data name="cmd_conectar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btn_brasil.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="num_idade.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="radio_sql.Text" xml:space="preserve">
-    <value>MySQL Server</value>
-  </data>
-  <data name="cmd_limpar.Text" xml:space="preserve">
-    <value>Limpar Campos</value>
-  </data>
-  <data name="cmd_novo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 23</value>
-  </data>
-  <data name="&gt;&gt;lbl_id.Name" xml:space="preserve">
-    <value>lbl_id</value>
-  </data>
-  <data name="&gt;&gt;num_id.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_animal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;txt_nome.Name" xml:space="preserve">
-    <value>txt_nome</value>
-  </data>
-  <data name="lbl_novo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmd_deletar.Text" xml:space="preserve">
-    <value>Deletar</value>
   </data>
   <data name="&gt;&gt;cmd_cadastro.ZOrder" xml:space="preserve">
-    <value>35</value>
-  </data>
-  <data name="lbl_novo.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
-    <value>Timer1</value>
+    <value>34</value>
   </data>
   <data name="lbl_frm_nome.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="cmd_calcular.Text" xml:space="preserve">
-    <value>Calcular</value>
-  </data>
-  <data name="txt_animal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 75</value>
-  </data>
-  <data name="&gt;&gt;dgv_dados.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="num_id.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 167</value>
-  </data>
-  <data name="&gt;&gt;radio_oledb.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;lbl_novo.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="lbl_aguardando.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="lbl_frm_nome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;lbl_genero.Name" xml:space="preserve">
-    <value>lbl_genero</value>
+  <data name="lbl_frm_nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 37</value>
   </data>
-  <data name="&gt;&gt;cmd_conectar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lbl_frm_nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
   </data>
-  <data name="radio_masc.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="lbl_frm_nome.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="lbl_animal.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="lbl_frm_nome.Text" xml:space="preserve">
+    <value>Digite seu nome:</value>
   </data>
-  <data name="&gt;&gt;btn_brasil.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_frm_nome.Name" xml:space="preserve">
+    <value>lbl_frm_nome</value>
+  </data>
+  <data name="&gt;&gt;lbl_frm_nome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_frm_nome.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lbl_animal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 78</value>
+  <data name="&gt;&gt;lbl_frm_nome.ZOrder" xml:space="preserve">
+    <value>33</value>
   </data>
-  <data name="lbl_cadastro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 194</value>
+  <data name="txt_nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 34</value>
   </data>
-  <data name="lbl_id.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+  <data name="txt_nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
   </data>
-  <data name="cmd_cadastro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="txt_nome.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txt_nome.Name" xml:space="preserve">
+    <value>txt_nome</value>
+  </data>
+  <data name="&gt;&gt;txt_nome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_nome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_nome.ZOrder" xml:space="preserve">
+    <value>32</value>
+  </data>
+  <data name="lbl_idade.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_idade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="lbl_idade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 68</value>
+  </data>
+  <data name="lbl_idade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <data name="lbl_idade.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="lbl_idade.Text" xml:space="preserve">
+    <value>Digite sua idade:</value>
+  </data>
+  <data name="&gt;&gt;lbl_idade.Name" xml:space="preserve">
+    <value>lbl_idade</value>
+  </data>
+  <data name="&gt;&gt;lbl_idade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lbl_idade.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lbl_id.Text" xml:space="preserve">
-    <value>Id:</value>
+  <data name="&gt;&gt;lbl_idade.ZOrder" xml:space="preserve">
+    <value>31</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Cadastro de Preferências</value>
+  <data name="num_idade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 66</value>
   </data>
-  <data name="&gt;&gt;lbl_textocalc.Parent" xml:space="preserve">
-    <value>gp_calculadora</value>
+  <data name="num_idade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
   </data>
-  <data name="btn_eua.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 46</value>
+  <data name="num_idade.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;lbl_estacao.Name" xml:space="preserve">
-    <value>lbl_estacao</value>
+  <data name="&gt;&gt;num_idade.Name" xml:space="preserve">
+    <value>num_idade</value>
   </data>
-  <data name="&gt;&gt;ProjetoBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;num_idade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;radio_masc.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;radio_masc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbl_id.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_editar.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="&gt;&gt;lbl_aviso.Name" xml:space="preserve">
-    <value>lbl_aviso</value>
-  </data>
-  <data name="cmd_novo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmd_novo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 30</value>
-  </data>
-  <data name="btn_brasil.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="btn_frc.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="lbl_teste.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 300</value>
-  </data>
-  <data name="&gt;&gt;lbl_novo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbl_deletar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 13</value>
-  </data>
-  <data name="radio_sql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_idade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 46</value>
-  </data>
-  <data name="&gt;&gt;txt_gambiarra.Parent" xml:space="preserve">
+  <data name="&gt;&gt;num_idade.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="cmd_conectar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 150</value>
+  <data name="&gt;&gt;num_idade.ZOrder" xml:space="preserve">
+    <value>30</value>
   </data>
-  <data name="btn_brasil.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="txt_animal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 97</value>
   </data>
-  <data name="&gt;&gt;lbl_deletar.Type" xml:space="preserve">
+  <data name="txt_animal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txt_animal.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txt_animal.Name" xml:space="preserve">
+    <value>txt_animal</value>
+  </data>
+  <data name="&gt;&gt;txt_animal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_animal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_animal.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="lbl_animal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_animal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_animal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 100</value>
+  </data>
+  <data name="lbl_animal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 13</value>
+  </data>
+  <data name="lbl_animal.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lbl_animal.Text" xml:space="preserve">
+    <value>Digite o nome de um animal:</value>
+  </data>
+  <data name="&gt;&gt;lbl_animal.Name" xml:space="preserve">
+    <value>lbl_animal</value>
+  </data>
+  <data name="&gt;&gt;lbl_animal.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lbl_genero.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lbl_animal.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_animal.ZOrder" xml:space="preserve">
     <value>28</value>
   </data>
   <data name="lbl_genero.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="num_2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
+  <data name="lbl_genero.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="btn_frc.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
+  <data name="lbl_genero.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 131</value>
   </data>
-  <data name="lbl_aviso.Location" type="System.Drawing.Point, System.Drawing">
-    <value>873, 152</value>
+  <data name="lbl_genero.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
   </data>
-  <data name="cmd_limpar.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
+  <data name="lbl_genero.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="lbl_cadastro.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="lbl_genero.Text" xml:space="preserve">
+    <value>Seu gênero:</value>
   </data>
-  <data name="radio_masc.Text" xml:space="preserve">
-    <value>Masculino</value>
-  </data>
-  <data name="lbl_teste.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 13</value>
-  </data>
-  <data name="&gt;&gt;lbl_id.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;cmd_cadastro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_animal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbl_data.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 194</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="num_1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="lbl_frm_nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
+  <data name="&gt;&gt;lbl_genero.Name" xml:space="preserve">
+    <value>lbl_genero</value>
   </data>
   <data name="&gt;&gt;lbl_genero.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;cmd_deletar.Name" xml:space="preserve">
-    <value>cmd_deletar</value>
-  </data>
-  <data name="&gt;&gt;cmd_conectar.Name" xml:space="preserve">
-    <value>cmd_conectar</value>
-  </data>
-  <data name="&gt;&gt;cmd_novo.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lbl_genero.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;lbl_animal.ZOrder" xml:space="preserve">
-    <value>29</value>
-  </data>
-  <data name="radio_oracle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 18</value>
-  </data>
-  <data name="lbl_novo.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radio_oledb.Text" xml:space="preserve">
-    <value>OleDb Provider</value>
-  </data>
-  <data name="&gt;&gt;num_id.Name" xml:space="preserve">
-    <value>num_id</value>
-  </data>
-  <data name="&gt;&gt;lbl_frm_nome.ZOrder" xml:space="preserve">
-    <value>34</value>
-  </data>
-  <data name="radio_outro.Text" xml:space="preserve">
-    <value>Outro</value>
-  </data>
-  <data name="lbl_idade.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_textocalc.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;btn_frc.Name" xml:space="preserve">
-    <value>btn_frc</value>
-  </data>
-  <data name="txt_animal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="&gt;&gt;lbl_editar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_deletar.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="radio_masc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 107</value>
-  </data>
-  <data name="txt_gambiarra.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
-  </data>
-  <data name="&gt;&gt;num_1.Name" xml:space="preserve">
-    <value>num_1</value>
-  </data>
-  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProjetoBindingSource.Name" xml:space="preserve">
-    <value>ProjetoBindingSource</value>
-  </data>
-  <data name="btn_frc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 46</value>
-  </data>
-  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
-    <value>Button2</value>
-  </data>
-  <data name="lbl_editar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>137, 13</value>
-  </data>
-  <data name="cmd_calcular.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="gp_access.Location" type="System.Drawing.Point, System.Drawing">
-    <value>419, 152</value>
-  </data>
-  <data name="&gt;&gt;num_2.Name" xml:space="preserve">
-    <value>num_2</value>
-  </data>
-  <data name="lbl_idade.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 16</value>
-  </data>
-  <data name="&gt;&gt;lbl_editar.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="lbl_novo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>198, 13</value>
-  </data>
-  <data name="&gt;&gt;btn_frc.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;radio_oracle.Name" xml:space="preserve">
-    <value>radio_oracle</value>
-  </data>
-  <data name="lbl_teste.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="btn_frc.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="&gt;&gt;txt_gambiarra.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="cmd_editar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 23</value>
-  </data>
-  <data name="&gt;&gt;NovobancoDataSet.Name" xml:space="preserve">
-    <value>NovobancoDataSet</value>
-  </data>
-  <data name="lbl_animal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radio_oledb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="txt_gambiarra.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbl_teste.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cb_estacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
+  <data name="&gt;&gt;lbl_genero.ZOrder" xml:space="preserve">
+    <value>27</value>
   </data>
   <data name="radio_masc.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;btn_brasil.Name" xml:space="preserve">
-    <value>btn_brasil</value>
-  </data>
-  <data name="cmd_deletar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 23</value>
-  </data>
-  <data name="&gt;&gt;cmd_limpar.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;radio_sql.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="lbl_nome.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="&gt;&gt;cb_estacao.Name" xml:space="preserve">
-    <value>cb_estacao</value>
-  </data>
-  <data name="radio_oracle.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="dgv_dados.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radio_fem.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="cmd_conectar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="radio_masc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;gp_access.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radio_masc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 129</value>
   </data>
-  <data name="txt_gambiarra.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1003, 338</value>
+  <data name="radio_masc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
   </data>
-  <data name="radio_outro.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="radio_masc.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="cmd_calcular.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="radio_masc.Text" xml:space="preserve">
+    <value>Masculino</value>
   </data>
-  <data name="cmd_cadastro.Text" xml:space="preserve">
-    <value>Cadastrar</value>
+  <data name="&gt;&gt;radio_masc.Name" xml:space="preserve">
+    <value>radio_masc</value>
   </data>
-  <data name="&gt;&gt;lbl_deletar.Name" xml:space="preserve">
-    <value>lbl_deletar</value>
+  <data name="&gt;&gt;radio_masc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbl_id.Size" type="System.Drawing.Size, System.Drawing">
-    <value>19, 13</value>
-  </data>
-  <data name="radio_fem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>67, 17</value>
-  </data>
-  <data name="btn_frc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1030, 99</value>
-  </data>
-  <data name="&gt;&gt;cmd_novo.Name" xml:space="preserve">
-    <value>cmd_novo</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.Parent" xml:space="preserve">
+  <data name="&gt;&gt;radio_masc.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="cmd_novo.Text" xml:space="preserve">
-    <value>Novo</value>
+  <data name="&gt;&gt;radio_masc.ZOrder" xml:space="preserve">
+    <value>26</value>
   </data>
-  <data name="&gt;&gt;cmd_limpar.Name" xml:space="preserve">
-    <value>cmd_limpar</value>
-  </data>
-  <data name="&gt;&gt;cmd_conectar.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;radio_oracle.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lbl_data.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="&gt;&gt;cmd_deletar.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="lbl_novo.Text" xml:space="preserve">
-    <value>Preencha os campos antes de cadastrar</value>
-  </data>
-  <data name="&gt;&gt;lbl_aguardando.Parent" xml:space="preserve">
-    <value>gp_calculadora</value>
+  <data name="radio_fem.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="radio_fem.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;lbl_textocalc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radio_fem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 129</value>
   </data>
-  <data name="&gt;&gt;lbl_teste.Name" xml:space="preserve">
-    <value>lbl_teste</value>
+  <data name="radio_fem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
   </data>
-  <data name="cmd_deletar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="radio_fem.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;btn_eua.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radio_fem.Text" xml:space="preserve">
+    <value>Feminino</value>
   </data>
-  <data name="&gt;&gt;radio_outro.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;radio_fem.Name" xml:space="preserve">
+    <value>radio_fem</value>
+  </data>
+  <data name="&gt;&gt;radio_fem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radio_fem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;radio_fem.ZOrder" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="num_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 40</value>
+  <data name="radio_outro.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="lbl_textocalc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 20</value>
+  <data name="radio_outro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="radio_outro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 129</value>
   </data>
-  <data name="&gt;&gt;lbl_aguardando.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="radio_outro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 17</value>
   </data>
-  <data name="&gt;&gt;lbl_frm_nome.Name" xml:space="preserve">
-    <value>lbl_frm_nome</value>
+  <data name="radio_outro.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
-  <data name="&gt;&gt;lbl_estacao.ZOrder" xml:space="preserve">
-    <value>24</value>
+  <data name="radio_outro.Text" xml:space="preserve">
+    <value>Outro</value>
   </data>
-  <data name="&gt;&gt;lbl_nome.Type" xml:space="preserve">
-    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
-  </data>
-  <data name="&gt;&gt;cmd_conectar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;lbl_frm_nome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_frm_nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 15</value>
+  <data name="&gt;&gt;radio_outro.Name" xml:space="preserve">
+    <value>radio_outro</value>
   </data>
   <data name="&gt;&gt;radio_outro.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lbl_animal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 13</value>
+  <data name="&gt;&gt;radio_outro.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="lbl_nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 369</value>
+  <data name="&gt;&gt;radio_outro.ZOrder" xml:space="preserve">
+    <value>24</value>
   </data>
-  <data name="&gt;&gt;lbl_data.ZOrder" xml:space="preserve">
+  <data name="lbl_estacao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_estacao.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_estacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 159</value>
+  </data>
+  <data name="lbl_estacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 13</value>
+  </data>
+  <data name="lbl_estacao.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="lbl_estacao.Text" xml:space="preserve">
+    <value>Escolha uma estação do ano:</value>
+  </data>
+  <data name="&gt;&gt;lbl_estacao.Name" xml:space="preserve">
+    <value>lbl_estacao</value>
+  </data>
+  <data name="&gt;&gt;lbl_estacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_estacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_estacao.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="cb_estacao.Items" xml:space="preserve">
+    <value>Primavera</value>
+  </data>
+  <data name="cb_estacao.Items1" xml:space="preserve">
+    <value>Verão</value>
+  </data>
+  <data name="cb_estacao.Items2" xml:space="preserve">
+    <value>Outono</value>
+  </data>
+  <data name="cb_estacao.Items3" xml:space="preserve">
+    <value>Inverno</value>
+  </data>
+  <data name="cb_estacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 156</value>
+  </data>
+  <data name="cb_estacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="cb_estacao.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;cb_estacao.Name" xml:space="preserve">
+    <value>cb_estacao</value>
+  </data>
+  <data name="&gt;&gt;cb_estacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cb_estacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cb_estacao.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lbl_teste.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_teste.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_teste.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 312</value>
+  </data>
+  <data name="lbl_teste.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="lbl_teste.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lbl_teste.Name" xml:space="preserve">
+    <value>lbl_teste</value>
+  </data>
+  <data name="&gt;&gt;lbl_teste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_teste.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_teste.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Name" xml:space="preserve">
+    <value>lbl_aguardando</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Name" xml:space="preserve">
+    <value>cmd_calcular</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Name" xml:space="preserve">
+    <value>lbl_textocalc</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;num_2.Name" xml:space="preserve">
+    <value>num_2</value>
+  </data>
+  <data name="&gt;&gt;num_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_2.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;num_2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;num_1.Name" xml:space="preserve">
+    <value>num_1</value>
+  </data>
+  <data name="&gt;&gt;num_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_1.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
   </data>
   <data name="&gt;&gt;num_1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="lbl_animal.Text" xml:space="preserve">
-    <value>Digite o nome de um animal:</value>
+  <data name="gp_calculadora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 37</value>
   </data>
-  <data name="lbl_cadastro.Text" xml:space="preserve">
+  <data name="gp_calculadora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 120</value>
+  </data>
+  <data name="gp_calculadora.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="gp_calculadora.Text" xml:space="preserve">
+    <value>Calculadora</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.Name" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lbl_aguardando.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_aguardando.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_aguardando.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 101</value>
+  </data>
+  <data name="lbl_aguardando.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 13</value>
+  </data>
+  <data name="lbl_aguardando.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lbl_aguardando.Text" xml:space="preserve">
     <value>...</value>
   </data>
-  <data name="txt_nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 20</value>
+  <data name="lbl_aguardando.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Name" xml:space="preserve">
+    <value>lbl_aguardando</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmd_calcular.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmd_calcular.Location" type="System.Drawing.Point, System.Drawing">
+    <value>92, 73</value>
+  </data>
+  <data name="cmd_calcular.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cmd_calcular.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="cmd_calcular.Text" xml:space="preserve">
+    <value>Calcular</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Name" xml:space="preserve">
+    <value>cmd_calcular</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lbl_textocalc.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_textocalc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_textocalc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="lbl_textocalc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="lbl_textocalc.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lbl_textocalc.Text" xml:space="preserve">
+    <value>Insira dois valores:</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Name" xml:space="preserve">
+    <value>lbl_textocalc</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="num_2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 40</value>
+  </data>
+  <data name="num_2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="num_2.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;num_2.Name" xml:space="preserve">
+    <value>num_2</value>
+  </data>
+  <data name="&gt;&gt;num_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_2.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
   </data>
   <data name="&gt;&gt;num_2.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -714,38 +708,758 @@
   <data name="num_1.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 40</value>
   </data>
-  <data name="lbl_aguardando.Text" xml:space="preserve">
+  <data name="num_1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="num_1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;num_1.Name" xml:space="preserve">
+    <value>num_1</value>
+  </data>
+  <data name="&gt;&gt;num_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_1.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;num_1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lbl_cadastro.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_cadastro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_cadastro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>64, 212</value>
+  </data>
+  <data name="lbl_cadastro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>16, 13</value>
+  </data>
+  <data name="lbl_cadastro.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="lbl_cadastro.Text" xml:space="preserve">
     <value>...</value>
+  </data>
+  <data name="lbl_cadastro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_cadastro.Name" xml:space="preserve">
+    <value>lbl_cadastro</value>
+  </data>
+  <data name="&gt;&gt;lbl_cadastro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_cadastro.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_cadastro.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="dgv_dados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 225</value>
+  </data>
+  <data name="dgv_dados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>965, 150</value>
+  </data>
+  <data name="dgv_dados.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;dgv_dados.Name" xml:space="preserve">
+    <value>dgv_dados</value>
+  </data>
+  <data name="&gt;&gt;dgv_dados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dgv_dados.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="lbl_genero.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 109</value>
+  <data name="&gt;&gt;dgv_dados.ZOrder" xml:space="preserve">
+    <value>19</value>
   </data>
-  <data name="&gt;&gt;radio_sql.Name" xml:space="preserve">
-    <value>radio_sql</value>
+  <data name="cmd_novo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="radio_oracle.AutoSize" type="System.Boolean, mscorlib">
+  <data name="cmd_novo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 52</value>
+  </data>
+  <data name="cmd_novo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 23</value>
+  </data>
+  <data name="cmd_novo.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="cmd_novo.Text" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="&gt;&gt;cmd_novo.Name" xml:space="preserve">
+    <value>cmd_novo</value>
+  </data>
+  <data name="&gt;&gt;cmd_novo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_novo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmd_novo.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="cmd_deletar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmd_deletar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 97</value>
+  </data>
+  <data name="cmd_deletar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 23</value>
+  </data>
+  <data name="cmd_deletar.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="cmd_deletar.Text" xml:space="preserve">
+    <value>Deletar</value>
+  </data>
+  <data name="&gt;&gt;cmd_deletar.Name" xml:space="preserve">
+    <value>cmd_deletar</value>
+  </data>
+  <data name="&gt;&gt;cmd_deletar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_deletar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmd_deletar.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lbl_id.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lbl_idade.Text" xml:space="preserve">
-    <value>Digite sua idade:</value>
+  <data name="lbl_id.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="lbl_aguardando.Size" type="System.Drawing.Size, System.Drawing">
-    <value>16, 13</value>
+  <data name="lbl_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 194</value>
   </data>
-  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 173</value>
+  <data name="lbl_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 13</value>
   </data>
-  <data name="cmd_editar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 119</value>
+  <data name="lbl_id.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lbl_id.Text" xml:space="preserve">
+    <value>Id:</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.Name" xml:space="preserve">
+    <value>lbl_id</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_id.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="num_id.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 189</value>
+  </data>
+  <data name="num_id.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="num_id.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;num_id.Name" xml:space="preserve">
+    <value>num_id</value>
+  </data>
+  <data name="&gt;&gt;num_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_id.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;num_id.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lbl_deletar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_deletar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_deletar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>795, 81</value>
+  </data>
+  <data name="lbl_deletar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 13</value>
+  </data>
+  <data name="lbl_deletar.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="lbl_deletar.Text" xml:space="preserve">
+    <value>Insira o Id que deseja apagar</value>
+  </data>
+  <data name="&gt;&gt;lbl_deletar.Name" xml:space="preserve">
+    <value>lbl_deletar</value>
+  </data>
+  <data name="&gt;&gt;lbl_deletar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_deletar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_deletar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lbl_novo.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_novo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_novo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>795, 38</value>
+  </data>
+  <data name="lbl_novo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 13</value>
+  </data>
+  <data name="lbl_novo.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="lbl_novo.Text" xml:space="preserve">
+    <value>Preencha os campos antes de cadastrar</value>
+  </data>
+  <data name="&gt;&gt;lbl_novo.Name" xml:space="preserve">
+    <value>lbl_novo</value>
+  </data>
+  <data name="&gt;&gt;lbl_novo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_novo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_novo.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="radio_oledb.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="gp_calculadora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 120</value>
+  <data name="radio_oledb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radio_oledb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="radio_oledb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 17</value>
+  </data>
+  <data name="radio_oledb.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="radio_oledb.Text" xml:space="preserve">
+    <value>OleDb Provider</value>
+  </data>
+  <data name="&gt;&gt;radio_oledb.Name" xml:space="preserve">
+    <value>radio_oledb</value>
+  </data>
+  <data name="&gt;&gt;radio_oledb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radio_oledb.Parent" xml:space="preserve">
+    <value>gp_access</value>
+  </data>
+  <data name="&gt;&gt;radio_oledb.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="radio_sql.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radio_sql.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radio_sql.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 17</value>
+  </data>
+  <data name="radio_sql.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="radio_sql.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="radio_sql.Text" xml:space="preserve">
+    <value>MySQL Server</value>
+  </data>
+  <data name="&gt;&gt;radio_sql.Name" xml:space="preserve">
+    <value>radio_sql</value>
+  </data>
+  <data name="&gt;&gt;radio_sql.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radio_sql.Parent" xml:space="preserve">
+    <value>gp_access</value>
+  </data>
+  <data name="&gt;&gt;radio_sql.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cmd_conectar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmd_conectar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>786, 172</value>
+  </data>
+  <data name="cmd_conectar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cmd_conectar.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="cmd_conectar.Text" xml:space="preserve">
+    <value>Conectar</value>
+  </data>
+  <data name="&gt;&gt;cmd_conectar.Name" xml:space="preserve">
+    <value>cmd_conectar</value>
+  </data>
+  <data name="&gt;&gt;cmd_conectar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_conectar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmd_conectar.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txt_gambiarra.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1003, 350</value>
+  </data>
+  <data name="txt_gambiarra.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="txt_gambiarra.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="txt_gambiarra.Text" xml:space="preserve">
+    <value>N/A</value>
+  </data>
+  <data name="txt_gambiarra.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;txt_gambiarra.Name" xml:space="preserve">
+    <value>txt_gambiarra</value>
+  </data>
+  <data name="&gt;&gt;txt_gambiarra.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_gambiarra.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_gambiarra.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Name" xml:space="preserve">
+    <value>radio_oracle</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Parent" xml:space="preserve">
+    <value>gp_access</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gp_access.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 174</value>
+  </data>
+  <data name="gp_access.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 42</value>
+  </data>
+  <data name="gp_access.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="gp_access.Text" xml:space="preserve">
+    <value>Acesso</value>
+  </data>
+  <data name="&gt;&gt;gp_access.Name" xml:space="preserve">
+    <value>gp_access</value>
+  </data>
+  <data name="&gt;&gt;gp_access.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gp_access.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gp_access.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="radio_oracle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radio_oracle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radio_oracle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 18</value>
+  </data>
+  <data name="radio_oracle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="radio_oracle.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="radio_oracle.Text" xml:space="preserve">
+    <value>Oracle Server</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Name" xml:space="preserve">
+    <value>radio_oracle</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Parent" xml:space="preserve">
+    <value>gp_access</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmd_editar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmd_editar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>828, 141</value>
+  </data>
+  <data name="cmd_editar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 23</value>
+  </data>
+  <data name="cmd_editar.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="cmd_editar.Text" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="&gt;&gt;cmd_editar.Name" xml:space="preserve">
+    <value>cmd_editar</value>
+  </data>
+  <data name="&gt;&gt;cmd_editar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_editar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmd_editar.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="lbl_editar.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lbl_editar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lbl_editar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>795, 125</value>
+  </data>
+  <data name="lbl_editar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 13</value>
+  </data>
+  <data name="lbl_editar.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lbl_editar.Text" xml:space="preserve">
+    <value>Insira o Id que deseja editar</value>
+  </data>
+  <data name="&gt;&gt;lbl_editar.Name" xml:space="preserve">
+    <value>lbl_editar</value>
+  </data>
+  <data name="&gt;&gt;lbl_editar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_editar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_editar.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cmd_limpar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cmd_limpar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 187</value>
+  </data>
+  <data name="cmd_limpar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 22</value>
+  </data>
+  <data name="cmd_limpar.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="cmd_limpar.Text" xml:space="preserve">
+    <value>Limpar Campos</value>
+  </data>
+  <data name="&gt;&gt;cmd_limpar.Name" xml:space="preserve">
+    <value>cmd_limpar</value>
+  </data>
+  <data name="&gt;&gt;cmd_limpar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_limpar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cmd_limpar.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lbl_aviso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>873, 174</value>
+  </data>
+  <data name="lbl_aviso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 42</value>
+  </data>
+  <data name="lbl_aviso.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="lbl_aviso.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbl_aviso.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_aviso.Name" xml:space="preserve">
+    <value>lbl_aviso</value>
+  </data>
+  <data name="&gt;&gt;lbl_aviso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_aviso.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_aviso.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="SkinManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>508, 17</value>
+  </metadata>
+  <metadata name="ProjetoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>174, 17</value>
+  </metadata>
+  <metadata name="NovobancoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="NovobancoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="ProjetoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>344, 17</value>
+  </metadata>
+  <data name="Button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>786, 195</value>
+  </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="Button2.Text" xml:space="preserve">
+    <value>Linq</value>
+  </data>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
+  </data>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_eua.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btn_eua.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_eua.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_eua.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1030, 73</value>
+  </data>
+  <data name="btn_eua.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 46</value>
+  </data>
+  <data name="btn_eua.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;btn_eua.Name" xml:space="preserve">
+    <value>btn_eua</value>
+  </data>
+  <data name="&gt;&gt;btn_eua.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_eua.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_eua.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btn_brasil.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btn_brasil.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_brasil.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_brasil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1030, 26</value>
+  </data>
+  <data name="btn_brasil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 46</value>
+  </data>
+  <data name="btn_brasil.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;btn_brasil.Name" xml:space="preserve">
+    <value>btn_brasil</value>
+  </data>
+  <data name="&gt;&gt;btn_brasil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_brasil.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_brasil.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>638, 17</value>
+  </metadata>
+  <data name="lbl_nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 381</value>
+  </data>
+  <data name="lbl_nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1077, 545</value>
+  </data>
+  <data name="lbl_nome.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="lbl_nome.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.Name" xml:space="preserve">
+    <value>lbl_nome</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>638, 17</value>
+  </metadata>
+  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>776, 17</value>
+  </metadata>
+  <data name="btn_frc.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="btn_frc.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="btn_frc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_frc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1030, 120</value>
+  </data>
+  <data name="btn_frc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 46</value>
+  </data>
+  <data name="btn_frc.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;btn_frc.Name" xml:space="preserve">
+    <value>btn_frc</value>
+  </data>
+  <data name="&gt;&gt;btn_frc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_frc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btn_frc.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>865, 17</value>
+  </metadata>
+  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mandar e-mail</value>
+  </data>
+  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="lbl_data.Text" xml:space="preserve">
+    <value>horas</value>
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 24</value>
+  </data>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>35</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1100, 933</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4281,670 +4995,67 @@
         APw/AAD8PwAA+B8AAPgfAAA=
 </value>
   </data>
-  <data name="&gt;&gt;lbl_idade.ZOrder" xml:space="preserve">
-    <value>32</value>
-  </data>
-  <data name="gp_access.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 42</value>
-  </data>
-  <data name="&gt;&gt;lbl_aguardando.Name" xml:space="preserve">
-    <value>lbl_aguardando</value>
-  </data>
-  <data name="&gt;&gt;lbl_editar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radio_outro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>51, 17</value>
-  </data>
-  <data name="&gt;&gt;btn_eua.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cmd_cadastro.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbl_teste.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_aguardando.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lbl_aviso.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;lbl_aviso.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="gp_calculadora.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="txt_nome.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="lbl_estacao.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;cmd_deletar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txt_animal.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;txt_gambiarra.Name" xml:space="preserve">
-    <value>txt_gambiarra</value>
-  </data>
-  <data name="&gt;&gt;num_idade.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radio_outro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 107</value>
-  </data>
-  <data name="&gt;&gt;lbl_aviso.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cmd_editar.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;lbl_idade.Name" xml:space="preserve">
-    <value>lbl_idade</value>
-  </data>
-  <data name="&gt;&gt;num_id.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="num_1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="lbl_aviso.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gp_access.Text" xml:space="preserve">
-    <value>Acesso</value>
-  </data>
-  <data name="cmd_cadastro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 25</value>
-  </data>
-  <data name="&gt;&gt;lbl_idade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmd_cadastro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>296, 28</value>
-  </data>
-  <data name="&gt;&gt;num_1.Parent" xml:space="preserve">
-    <value>gp_calculadora</value>
-  </data>
-  <data name="&gt;&gt;lbl_id.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="radio_oracle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 17</value>
-  </data>
-  <data name="&gt;&gt;dgv_dados.Name" xml:space="preserve">
-    <value>dgv_dados</value>
-  </data>
-  <data name="&gt;&gt;num_2.Parent" xml:space="preserve">
-    <value>gp_calculadora</value>
-  </data>
-  <data name="&gt;&gt;lbl_novo.Name" xml:space="preserve">
-    <value>lbl_novo</value>
-  </data>
-  <data name="dgv_dados.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 213</value>
-  </data>
-  <data name="&gt;&gt;lbl_genero.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_frm_nome.Text" xml:space="preserve">
-    <value>Digite seu nome:</value>
-  </data>
-  <data name="num_2.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lbl_editar.Name" xml:space="preserve">
-    <value>lbl_editar</value>
-  </data>
-  <data name="lbl_idade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 13</value>
-  </data>
-  <data name="lbl_nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1077, 545</value>
-  </data>
-  <data name="lbl_id.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 172</value>
-  </data>
-  <data name="cmd_novo.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;CrystalReportF1.Type" xml:space="preserve">
-    <value>CadastroDeAlunoTeste.CrystalReportF, CrystalReportF.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="cb_estacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 134</value>
-  </data>
-  <data name="radio_fem.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;gp_access.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="gp_calculadora.Text" xml:space="preserve">
-    <value>Calculadora</value>
-  </data>
-  <data name="&gt;&gt;num_id.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;cmd_calcular.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_eua.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1030, 52</value>
-  </data>
-  <data name="lbl_genero.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="cmd_conectar.Text" xml:space="preserve">
-    <value>Conectar</value>
-  </data>
-  <data name="lbl_frm_nome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;lbl_novo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbl_deletar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="cb_estacao.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="cb_estacao.Items" xml:space="preserve">
-    <value>Primavera</value>
-  </data>
-  <data name="&gt;&gt;lbl_cadastro.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="btn_eua.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_eua.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbl_teste.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="lbl_aviso.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 42</value>
-  </data>
-  <data name="&gt;&gt;cmd_novo.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="lbl_deletar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cmd_limpar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;radio_masc.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;radio_sql.Parent" xml:space="preserve">
-    <value>gp_access</value>
-  </data>
-  <data name="&gt;&gt;lbl_teste.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmd_deletar.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;cb_estacao.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radio_fem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 107</value>
-  </data>
-  <data name="&gt;&gt;lbl_cadastro.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="num_id.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="lbl_estacao.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cmd_cadastro.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="btn_brasil.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1030, 5</value>
-  </data>
-  <data name="lbl_aguardando.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="lbl_editar.Text" xml:space="preserve">
-    <value>Insira o Id que deseja editar</value>
-  </data>
-  <data name="&gt;&gt;txt_animal.Name" xml:space="preserve">
-    <value>txt_animal</value>
-  </data>
-  <data name="lbl_deletar.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="gp_calculadora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 15</value>
-  </data>
-  <data name="btn_brasil.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 46</value>
-  </data>
-  <data name="lbl_estacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 137</value>
-  </data>
-  <data name="num_id.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="&gt;&gt;num_idade.Name" xml:space="preserve">
-    <value>num_idade</value>
-  </data>
-  <data name="lbl_genero.Text" xml:space="preserve">
-    <value>Seu gênero:</value>
-  </data>
-  <data name="&gt;&gt;cb_estacao.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="lbl_textocalc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 13</value>
-  </data>
-  <data name="lbl_cadastro.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;radio_oracle.Parent" xml:space="preserve">
-    <value>gp_access</value>
-  </data>
-  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="cmd_conectar.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
-  </data>
-  <data name="&gt;&gt;cmd_limpar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_cadastro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_cadastro.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbl_frm_nome.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;cmd_cadastro.Name" xml:space="preserve">
-    <value>cmd_cadastro</value>
-  </data>
-  <data name="lbl_estacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 13</value>
-  </data>
-  <data name="&gt;&gt;lbl_data.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radio_masc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;gp_access.Name" xml:space="preserve">
-    <value>gp_access</value>
-  </data>
-  <data name="lbl_data.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;lbl_textocalc.Name" xml:space="preserve">
-    <value>lbl_textocalc</value>
-  </data>
-  <data name="&gt;&gt;cb_estacao.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txt_nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 12</value>
-  </data>
-  <data name="radio_sql.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="lbl_data.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
-  </data>
-  <data name="&gt;&gt;num_1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radio_oledb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbl_editar.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txt_nome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbl_data.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;num_idade.ZOrder" xml:space="preserve">
-    <value>31</value>
-  </data>
-  <data name="radio_oledb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 17</value>
-  </data>
-  <data name="cmd_editar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="radio_oledb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 17</value>
-  </data>
-  <data name="&gt;&gt;radio_sql.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="cmd_deletar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>828, 75</value>
-  </data>
-  <data name="lbl_aviso.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;lbl_estacao.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lbl_animal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="radio_fem.Text" xml:space="preserve">
-    <value>Feminino</value>
-  </data>
-  <data name="lbl_editar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_novo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>795, 16</value>
-  </data>
-  <data name="radio_sql.Location" type="System.Drawing.Point, System.Drawing">
-    <value>107, 17</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;lbl_animal.Name" xml:space="preserve">
-    <value>lbl_animal</value>
-  </data>
-  <data name="&gt;&gt;num_idade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radio_oracle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_eua.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;btn_eua.Name" xml:space="preserve">
-    <value>btn_eua</value>
-  </data>
-  <data name="&gt;&gt;btn_frc.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.Name" xml:space="preserve">
-    <value>gp_calculadora</value>
-  </data>
-  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="btn_eua.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="cmd_limpar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 22</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
-  </data>
-  <data name="btn_eua.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="radio_masc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 17</value>
-  </data>
-  <data name="&gt;&gt;lbl_aguardando.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cmd_calcular.Name" xml:space="preserve">
-    <value>cmd_calcular</value>
-  </data>
-  <data name="&gt;&gt;cmd_editar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dgv_dados.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_animal.ZOrder" xml:space="preserve">
-    <value>30</value>
-  </data>
-  <data name="lbl_nome.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;btn_brasil.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmd_editar.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="radio_sql.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1100, 925</value>
-  </data>
-  <data name="&gt;&gt;txt_nome.ZOrder" xml:space="preserve">
-    <value>33</value>
-  </data>
-  <data name="&gt;&gt;ProjetoTableAdapter.Type" xml:space="preserve">
-    <value>CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter, novobancoDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;lbl_textocalc.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="lbl_deletar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="radio_oracle.Text" xml:space="preserve">
-    <value>Oracle Server</value>
-  </data>
-  <data name="radio_outro.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;radio_fem.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="lbl_textocalc.Text" xml:space="preserve">
-    <value>Insira dois valores:</value>
-  </data>
-  <data name="&gt;&gt;lbl_estacao.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_deletar.Text" xml:space="preserve">
-    <value>Insira o Id que deseja apagar</value>
-  </data>
-  <data name="lbl_genero.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="num_idade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 44</value>
-  </data>
-  <data name="radio_outro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;CrystalReportF1.Name" xml:space="preserve">
-    <value>CrystalReportF1</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.Name" xml:space="preserve">
-    <value>lbl_nome</value>
-  </data>
-  <data name="&gt;&gt;num_2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_brasil.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="lbl_estacao.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;cmd_limpar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="txt_gambiarra.Text" xml:space="preserve">
-    <value>N/A</value>
-  </data>
-  <data name="&gt;&gt;lbl_cadastro.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="Button2.Text" xml:space="preserve">
-    <value>Linq</value>
-  </data>
-  <data name="&gt;&gt;lbl_animal.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="radio_oledb.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="&gt;&gt;lbl_data.Name" xml:space="preserve">
-    <value>lbl_data</value>
-  </data>
-  <data name="&gt;&gt;lbl_frm_nome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dgv_dados.Size" type="System.Drawing.Size, System.Drawing">
-    <value>965, 150</value>
-  </data>
-  <data name="lbl_textocalc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="gp_access.TabIndex" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="cmd_calcular.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="radio_oracle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;ProjetoTableAdapter.Name" xml:space="preserve">
-    <value>ProjetoTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;radio_outro.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbl_teste.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;NovobancoDataSet.Type" xml:space="preserve">
-    <value>CadastroDeAlunoTeste.novobancoDataSet, novobancoDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lbl_genero.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 13</value>
-  </data>
-  <data name="lbl_aviso.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="lbl_deletar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>795, 59</value>
-  </data>
-  <data name="&gt;&gt;lbl_cadastro.Name" xml:space="preserve">
-    <value>lbl_cadastro</value>
-  </data>
-  <data name="cb_estacao.Items1" xml:space="preserve">
-    <value>Verão</value>
-  </data>
-  <data name="cb_estacao.Items2" xml:space="preserve">
-    <value>Outono</value>
-  </data>
-  <data name="cb_estacao.Items3" xml:space="preserve">
-    <value>Inverno</value>
-  </data>
-  <data name="&gt;&gt;lbl_id.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="lbl_data.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="&gt;&gt;cmd_calcular.Parent" xml:space="preserve">
-    <value>gp_calculadora</value>
-  </data>
-  <data name="lbl_idade.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cmd_editar.Name" xml:space="preserve">
-    <value>cmd_editar</value>
-  </data>
-  <data name="&gt;&gt;radio_fem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lbl_estacao.Text" xml:space="preserve">
-    <value>Escolha uma estação do ano:</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Cadastro de Preferências</value>
+  </data>
+  <data name="&gt;&gt;SkinManager1.Name" xml:space="preserve">
+    <value>SkinManager1</value>
   </data>
   <data name="&gt;&gt;SkinManager1.Type" xml:space="preserve">
     <value>Syncfusion.Windows.Forms.SkinManager, Syncfusion.Shared.Base, Version=14.4460.0.15, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
-  <data name="cmd_editar.Text" xml:space="preserve">
-    <value>Editar</value>
+  <data name="&gt;&gt;ProjetoBindingSource.Name" xml:space="preserve">
+    <value>ProjetoBindingSource</value>
   </data>
-  <data name="&gt;&gt;radio_oledb.Name" xml:space="preserve">
-    <value>radio_oledb</value>
+  <data name="&gt;&gt;ProjetoBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="cmd_calcular.Location" type="System.Drawing.Point, System.Drawing">
-    <value>92, 73</value>
+  <data name="&gt;&gt;NovobancoDataSet.Name" xml:space="preserve">
+    <value>NovobancoDataSet</value>
   </data>
-  <data name="&gt;&gt;cmd_novo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;NovobancoDataSet.Type" xml:space="preserve">
+    <value>CadastroDeAlunoTeste.novobancoDataSet, novobancoDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;radio_fem.Name" xml:space="preserve">
-    <value>radio_fem</value>
+  <data name="&gt;&gt;ProjetoTableAdapter.Name" xml:space="preserve">
+    <value>ProjetoTableAdapter</value>
   </data>
-  <data name="lbl_aguardando.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;ProjetoTableAdapter.Type" xml:space="preserve">
+    <value>CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter, novobancoDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="cmd_limpar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 165</value>
+  <data name="&gt;&gt;CrystalReportF1.Name" xml:space="preserve">
+    <value>CrystalReportF1</value>
   </data>
-  <data name="&gt;&gt;txt_animal.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;CrystalReportF1.Type" xml:space="preserve">
+    <value>CadastroDeAlunoTeste.CrystalReportF, CrystalReportF.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="txt_gambiarra.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
+  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
+    <value>Timer1</value>
   </data>
-  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>638, 17</value>
-  </metadata>
-  <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>776, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="ProjetoTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>344, 17</value>
-  </metadata>
-  <metadata name="ProjetoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>174, 17</value>
-  </metadata>
-  <metadata name="NovobancoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="SkinManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>508, 17</value>
-  </metadata>
+  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrincipalToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrincipalToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;PrincipalToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MandarEmailToolStripMenuItem.Name" xml:space="preserve">
+    <value>MandarEmailToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;MandarEmailToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_data.Name" xml:space="preserve">
+    <value>lbl_data</value>
+  </data>
+  <data name="&gt;&gt;lbl_data.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

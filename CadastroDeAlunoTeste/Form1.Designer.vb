@@ -71,9 +71,12 @@ Partial Class Form1
         Me.btn_brasil = New System.Windows.Forms.Button()
         Me.lbl_nome = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
-        Me.lbl_data = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btn_frc = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MandarEmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_data = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.gp_calculadora.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -83,13 +86,14 @@ Partial Class Form1
         Me.gp_access.SuspendLayout
         CType(Me.ProjetoBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.NovobancoDataSet,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.MenuStrip1.SuspendLayout
         Me.SuspendLayout
         '
         'cmd_cadastro
         '
-        resources.ApplyResources(Me.cmd_cadastro, "cmd_cadastro")
         Me.cmd_cadastro.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_cadastro.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.cmd_cadastro, "cmd_cadastro")
         Me.cmd_cadastro.Name = "cmd_cadastro"
         Me.cmd_cadastro.UseVisualStyleBackColor = false
         '
@@ -101,9 +105,9 @@ Partial Class Form1
         '
         'txt_nome
         '
-        resources.ApplyResources(Me.txt_nome, "txt_nome")
         Me.txt_nome.BackColor = System.Drawing.Color.Lavender
         Me.txt_nome.ForeColor = System.Drawing.SystemColors.WindowText
+        resources.ApplyResources(Me.txt_nome, "txt_nome")
         Me.txt_nome.Name = "txt_nome"
         '
         'lbl_idade
@@ -114,14 +118,14 @@ Partial Class Form1
         '
         'num_idade
         '
-        resources.ApplyResources(Me.num_idade, "num_idade")
         Me.num_idade.BackColor = System.Drawing.Color.Lavender
+        resources.ApplyResources(Me.num_idade, "num_idade")
         Me.num_idade.Name = "num_idade"
         '
         'txt_animal
         '
-        resources.ApplyResources(Me.txt_animal, "txt_animal")
         Me.txt_animal.BackColor = System.Drawing.Color.Lavender
+        resources.ApplyResources(Me.txt_animal, "txt_animal")
         Me.txt_animal.Name = "txt_animal"
         '
         'lbl_animal
@@ -168,11 +172,11 @@ Partial Class Form1
         '
         'cb_estacao
         '
-        resources.ApplyResources(Me.cb_estacao, "cb_estacao")
         Me.cb_estacao.BackColor = System.Drawing.Color.Lavender
         Me.cb_estacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_estacao.FormattingEnabled = true
         Me.cb_estacao.Items.AddRange(New Object() {resources.GetString("cb_estacao.Items"), resources.GetString("cb_estacao.Items1"), resources.GetString("cb_estacao.Items2"), resources.GetString("cb_estacao.Items3")})
+        resources.ApplyResources(Me.cb_estacao, "cb_estacao")
         Me.cb_estacao.Name = "cb_estacao"
         '
         'lbl_teste
@@ -182,13 +186,13 @@ Partial Class Form1
         '
         'gp_calculadora
         '
-        resources.ApplyResources(Me.gp_calculadora, "gp_calculadora")
         Me.gp_calculadora.Controls.Add(Me.lbl_aguardando)
         Me.gp_calculadora.Controls.Add(Me.cmd_calcular)
         Me.gp_calculadora.Controls.Add(Me.lbl_textocalc)
         Me.gp_calculadora.Controls.Add(Me.num_2)
         Me.gp_calculadora.Controls.Add(Me.num_1)
         Me.gp_calculadora.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.gp_calculadora, "gp_calculadora")
         Me.gp_calculadora.Name = "gp_calculadora"
         Me.gp_calculadora.TabStop = false
         '
@@ -199,8 +203,8 @@ Partial Class Form1
         '
         'cmd_calcular
         '
-        resources.ApplyResources(Me.cmd_calcular, "cmd_calcular")
         Me.cmd_calcular.BackColor = System.Drawing.Color.MidnightBlue
+        resources.ApplyResources(Me.cmd_calcular, "cmd_calcular")
         Me.cmd_calcular.Name = "cmd_calcular"
         Me.cmd_calcular.UseVisualStyleBackColor = false
         '
@@ -211,15 +215,15 @@ Partial Class Form1
         '
         'num_2
         '
-        resources.ApplyResources(Me.num_2, "num_2")
         Me.num_2.BackColor = System.Drawing.Color.Lavender
+        resources.ApplyResources(Me.num_2, "num_2")
         Me.num_2.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_2.Name = "num_2"
         '
         'num_1
         '
-        resources.ApplyResources(Me.num_1, "num_1")
         Me.num_1.BackColor = System.Drawing.Color.Lavender
+        resources.ApplyResources(Me.num_1, "num_1")
         Me.num_1.Minimum = New Decimal(New Integer() {100, 0, 0, -2147483648})
         Me.num_1.Name = "num_1"
         '
@@ -231,24 +235,24 @@ Partial Class Form1
         '
         'dgv_dados
         '
-        resources.ApplyResources(Me.dgv_dados, "dgv_dados")
         Me.dgv_dados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_dados.GridColor = System.Drawing.Color.LightSalmon
+        resources.ApplyResources(Me.dgv_dados, "dgv_dados")
         Me.dgv_dados.Name = "dgv_dados"
         '
         'cmd_novo
         '
-        resources.ApplyResources(Me.cmd_novo, "cmd_novo")
         Me.cmd_novo.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_novo.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        resources.ApplyResources(Me.cmd_novo, "cmd_novo")
         Me.cmd_novo.Name = "cmd_novo"
         Me.cmd_novo.UseVisualStyleBackColor = false
         '
         'cmd_deletar
         '
-        resources.ApplyResources(Me.cmd_deletar, "cmd_deletar")
         Me.cmd_deletar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_deletar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        resources.ApplyResources(Me.cmd_deletar, "cmd_deletar")
         Me.cmd_deletar.Name = "cmd_deletar"
         Me.cmd_deletar.UseVisualStyleBackColor = false
         '
@@ -260,8 +264,8 @@ Partial Class Form1
         '
         'num_id
         '
-        resources.ApplyResources(Me.num_id, "num_id")
         Me.num_id.BackColor = System.Drawing.Color.Lavender
+        resources.ApplyResources(Me.num_id, "num_id")
         Me.num_id.Name = "num_id"
         '
         'lbl_deletar
@@ -292,9 +296,9 @@ Partial Class Form1
         '
         'cmd_conectar
         '
-        resources.ApplyResources(Me.cmd_conectar, "cmd_conectar")
         Me.cmd_conectar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_conectar.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.cmd_conectar, "cmd_conectar")
         Me.cmd_conectar.Name = "cmd_conectar"
         Me.cmd_conectar.UseVisualStyleBackColor = false
         '
@@ -305,11 +309,11 @@ Partial Class Form1
         '
         'gp_access
         '
-        resources.ApplyResources(Me.gp_access, "gp_access")
         Me.gp_access.Controls.Add(Me.radio_oracle)
         Me.gp_access.Controls.Add(Me.radio_sql)
         Me.gp_access.Controls.Add(Me.radio_oledb)
         Me.gp_access.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.gp_access, "gp_access")
         Me.gp_access.Name = "gp_access"
         Me.gp_access.TabStop = false
         '
@@ -322,9 +326,9 @@ Partial Class Form1
         '
         'cmd_editar
         '
-        resources.ApplyResources(Me.cmd_editar, "cmd_editar")
         Me.cmd_editar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_editar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        resources.ApplyResources(Me.cmd_editar, "cmd_editar")
         Me.cmd_editar.Name = "cmd_editar"
         Me.cmd_editar.UseVisualStyleBackColor = false
         '
@@ -336,9 +340,9 @@ Partial Class Form1
         '
         'cmd_limpar
         '
-        resources.ApplyResources(Me.cmd_limpar, "cmd_limpar")
         Me.cmd_limpar.BackColor = System.Drawing.Color.White
         Me.cmd_limpar.ForeColor = System.Drawing.Color.Black
+        resources.ApplyResources(Me.cmd_limpar, "cmd_limpar")
         Me.cmd_limpar.Name = "cmd_limpar"
         Me.cmd_limpar.UseVisualStyleBackColor = false
         '
@@ -368,9 +372,9 @@ Partial Class Form1
         '
         'Button2
         '
-        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.BackColor = System.Drawing.Color.MidnightBlue
         Me.Button2.ForeColor = System.Drawing.SystemColors.Control
+        resources.ApplyResources(Me.Button2, "Button2")
         Me.Button2.Name = "Button2"
         Me.Button2.UseVisualStyleBackColor = false
         '
@@ -390,19 +394,13 @@ Partial Class Form1
         '
         'lbl_nome
         '
-        resources.ApplyResources(Me.lbl_nome, "lbl_nome")
         Me.lbl_nome.ActiveViewIndex = 0
         Me.lbl_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lbl_nome.Cursor = System.Windows.Forms.Cursors.Default
         Me.lbl_nome.ForeColor = System.Drawing.SystemColors.ControlText
+        resources.ApplyResources(Me.lbl_nome, "lbl_nome")
         Me.lbl_nome.Name = "lbl_nome"
         Me.lbl_nome.ReportSource = Me.CrystalReportF1
-        '
-        'lbl_data
-        '
-        resources.ApplyResources(Me.lbl_data, "lbl_data")
-        Me.lbl_data.ForeColor = System.Drawing.Color.White
-        Me.lbl_data.Name = "lbl_data"
         '
         'Timer1
         '
@@ -416,13 +414,33 @@ Partial Class Form1
         Me.btn_frc.Name = "btn_frc"
         Me.btn_frc.UseVisualStyleBackColor = true
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.lbl_data})
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.Name = "MenuStrip1"
+        '
+        'PrincipalToolStripMenuItem
+        '
+        Me.PrincipalToolStripMenuItem.Name = "PrincipalToolStripMenuItem"
+        resources.ApplyResources(Me.PrincipalToolStripMenuItem, "PrincipalToolStripMenuItem")
+        '
+        'MandarEmailToolStripMenuItem
+        '
+        Me.MandarEmailToolStripMenuItem.Name = "MandarEmailToolStripMenuItem"
+        resources.ApplyResources(Me.MandarEmailToolStripMenuItem, "MandarEmailToolStripMenuItem")
+        '
+        'lbl_data
+        '
+        resources.ApplyResources(Me.lbl_data, "lbl_data")
+        Me.lbl_data.Name = "lbl_data"
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.BlueViolet
         Me.Controls.Add(Me.btn_frc)
-        Me.Controls.Add(Me.lbl_data)
         Me.Controls.Add(Me.btn_eua)
         Me.Controls.Add(Me.btn_brasil)
         Me.Controls.Add(Me.Button2)
@@ -457,6 +475,8 @@ Partial Class Form1
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.lbl_frm_nome)
         Me.Controls.Add(Me.cmd_cadastro)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).EndInit
         Me.gp_calculadora.ResumeLayout(false)
@@ -469,6 +489,8 @@ Partial Class Form1
         Me.gp_access.PerformLayout
         CType(Me.ProjetoBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.NovobancoDataSet,System.ComponentModel.ISupportInitialize).EndInit
+        Me.MenuStrip1.ResumeLayout(false)
+        Me.MenuStrip1.PerformLayout
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -522,7 +544,10 @@ End Sub
     Friend WithEvents Button2 As Button
     Friend WithEvents btn_brasil As Button
     Friend WithEvents btn_eua As Button
-    Friend WithEvents lbl_data As Label
     Friend WithEvents Timer1 As Timer
     Friend WithEvents btn_frc As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents PrincipalToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MandarEmailToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lbl_data As ToolStripMenuItem
 End Class

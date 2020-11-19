@@ -65,6 +65,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Looks up a localized string similar to Nenhuma conexão realizada.
+        '''</summary>
+        Public Shared ReadOnly Property Aviso() As String
+            Get
+                Return ResourceManager.GetString("Aviso", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Looks up a localized string similar to Data: .
         '''</summary>
         Public Shared ReadOnly Property Data() As String
@@ -83,7 +92,16 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Looks up a localized string similar to Insira os numeros antes!.
+        '''  Looks up a localized string similar to Erro! O Id inserido já está sendo usado ou é inválido.
+        '''</summary>
+        Public Shared ReadOnly Property IdInserido() As String
+            Get
+                Return ResourceManager.GetString("IdInserido", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized string similar to Insira os números antes!.
         '''</summary>
         Public Shared ReadOnly Property InsiraOsNumeros() As String
             Get

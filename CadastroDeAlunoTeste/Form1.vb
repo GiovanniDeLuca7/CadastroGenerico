@@ -10,10 +10,10 @@ Imports System.Threading.Thread
 Imports System.Globalization
 Imports CadastroDeAlunoTeste.My.Resources
 Imports System.Threading
-
 'Throw
 
 Public Class Form1
+    Public Property StringPass As String
     Private connString As String
     Private conn As IDbConnection = Nothing
     Private adapter As IDbDataAdapter = Nothing
@@ -73,12 +73,9 @@ Public Class Form1
         Try
             Dim ds As DataSet = GetDatasetProject()
             dgv_dados.DataSource = ds.Tables(0).DefaultView
-
             Dim m_rptDoc = New CrystalDecisions.CrystalReports.Engine.ReportDocument
             m_rptDoc.Load("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\CrystalReportF.rpt", CrystalDecisions.[Shared].OpenReportMethod.OpenReportByDefault)
-
             Dim rptObjects = m_rptDoc.ReportDefinition.ReportObjects
-
             Dim Formula = m_rptDoc.DataDefinition.FormulaFields.Item("teste")
             Formula.Text = "{Projeto.Numero1}+{Projeto.Numero2}"
             Dim errorText As String = ""
@@ -221,44 +218,34 @@ Public Class Form1
             If txt_nome.Text <> "" Then
                 drLido("Nome") = txt_nome.Text
             End If
-
             If num_idade.Text <> "" Or "0" Then
                 drLido("Idade") = num_idade.Text
             End If
-
             If txt_animal.Text <> "" Then
                 drLido("Animal") = txt_animal.Text
             End If
-
             If cb_estacao.Text <> "" Then
                 drLido("Estacao") = cb_estacao.Text
             End If
-
             If num_1.Text <> "" Or "0" Then
                 drLido("Numero1") = num_1.Text
             End If
-
             If num_2.Text <> "" Or "0" Then
                 drLido("Numero2") = num_2.Text
             End If
-
             If txt_gambiarra.Text <> "" Then
                 drLido("Genero") = txt_gambiarra.Text
             End If
-
             If radio_oledb.Checked Then
                 Dim oleDbHelper As New OleDBDbHelper
                 m_dbHelper = oleDbHelper
-
             ElseIf radio_sql.Checked Then
                 Dim sqlDbHelper As New SqlDbHelper
                 m_dbHelper = sqlDbHelper
-
             ElseIf radio_oracle.Checked Then
                 Dim OracleDbHelper As New MSOracleDbHelper
                 m_dbHelper = OracleDbHelper
             End If
-
             Dim param1 = m_dbHelper.NewParameter("@Nome", drLido("Nome"))
             Dim param2 = m_dbHelper.NewParameter("@Idade", drLido("Idade"))
             Dim param3 = m_dbHelper.NewParameter("@Animal", drLido("Animal"))
@@ -281,6 +268,7 @@ Public Class Form1
             lbl_aviso.Visible = False
             lbl_aviso.Text = ""
         Catch
+            Throw New System.Exception("An exception has occurred.")
             lbl_aviso.Visible = True
             lbl_aviso.Text = "Erro! ID não existente, selecione uma linha já criada!"
         End Try
@@ -350,7 +338,6 @@ Public Class Form1
             dgv_dados.DataSource = query.AsDataView()
         Catch
             lbl_aviso.Visible = True
-
             lbl_aviso.Text = Res.LinqErro
         End Try
     End Sub
@@ -379,6 +366,11 @@ Public Class Form1
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim DataHoraAtual As DateTime = Now
         lbl_data.Text = Res.Data & DataHoraAtual.ToShortDateString & Res.Hora & DataHoraAtual.ToShortTimeString
+    End Sub
+
+    Private Sub MandarEmailToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MandarEmailToolStripMenuItem.Click
+        Me.Hide()
+        Form2.Show()
     End Sub
 End Class
 

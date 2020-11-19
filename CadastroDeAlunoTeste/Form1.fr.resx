@@ -128,7 +128,7 @@
     <value>Tapez votre nom:</value>
   </data>
   <data name="lbl_idade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 13</value>
+    <value>91, 13</value>
   </data>
   <data name="lbl_idade.Text" xml:space="preserve">
     <value>Entrez votre âge: </value>
@@ -196,6 +196,24 @@
   <data name="gp_calculadora.Text" xml:space="preserve">
     <value>Calculatrice</value>
   </data>
+  <data name="cmd_novo.Text" xml:space="preserve">
+    <value>Nouveau</value>
+  </data>
+  <data name="cmd_deletar.Text" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="lbl_deletar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 13</value>
+  </data>
+  <data name="lbl_deletar.Text" xml:space="preserve">
+    <value>Saisissez l'id que vous souhaitez supprimer</value>
+  </data>
+  <data name="lbl_novo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 13</value>
+  </data>
+  <data name="lbl_novo.Text" xml:space="preserve">
+    <value>Remplissez les champs avant de vous inscrire</value>
+  </data>
   <data name="cmd_conectar.Location" type="System.Drawing.Point, System.Drawing">
     <value>772, 150</value>
   </data>
@@ -207,6 +225,15 @@
   </data>
   <data name="gp_access.Text" xml:space="preserve">
     <value>Accès</value>
+  </data>
+  <data name="cmd_editar.Text" xml:space="preserve">
+    <value>Éditer</value>
+  </data>
+  <data name="lbl_editar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 13</value>
+  </data>
+  <data name="lbl_editar.Text" xml:space="preserve">
+    <value>Saisissez l'id que vous souhaitez modifier</value>
   </data>
   <data name="cmd_limpar.Text" xml:space="preserve">
     <value>Effacer les champs</value>
@@ -3750,50 +3777,5 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Registre des préférences</value>
-  </data>
-  <data name="Button2.Text" xml:space="preserve">
-    <value>Linq</value>
-  </data>
-  <data name="cmd_deletar.Text" xml:space="preserve">
-    <value>Effacer</value>
-  </data>
-  <data name="cmd_editar.Text" xml:space="preserve">
-    <value>Éditer</value>
-  </data>
-  <data name="cmd_novo.Text" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="lbl_aguardando.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="lbl_cadastro.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="lbl_data.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="lbl_deletar.Text" xml:space="preserve">
-    <value>Saisissez l'id que vous souhaitez supprimer</value>
-  </data>
-  <data name="lbl_editar.Text" xml:space="preserve">
-    <value>Saisissez l'id que vous souhaitez modifier</value>
-  </data>
-  <data name="lbl_id.Text" xml:space="preserve">
-    <value>Id:</value>
-  </data>
-  <data name="lbl_novo.Text" xml:space="preserve">
-    <value>Remplissez les champs avant de vous inscrire</value>
-  </data>
-  <data name="radio_oledb.Text" xml:space="preserve">
-    <value>OleDb Provider</value>
-  </data>
-  <data name="radio_oracle.Text" xml:space="preserve">
-    <value>Oracle Server</value>
-  </data>
-  <data name="radio_sql.Text" xml:space="preserve">
-    <value>MySQL Server</value>
-  </data>
-  <data name="txt_gambiarra.Text" xml:space="preserve">
-    <value>N/A</value>
   </data>
 </root>
