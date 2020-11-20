@@ -34,6 +34,7 @@ Partial Class Form2
         Me.txt_assunto = New System.Windows.Forms.TextBox()
         Me.txt_mensagem = New System.Windows.Forms.RichTextBox()
         Me.cmd_enviar = New System.Windows.Forms.Button()
+        Me.txt_info = New System.Windows.Forms.RichTextBox()
         Me.MenuStrip1.SuspendLayout
         Me.SuspendLayout
         '
@@ -42,7 +43,7 @@ Partial Class Form2
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(542, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(528, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -132,12 +133,22 @@ Partial Class Form2
         Me.cmd_enviar.Text = "Enviar e-mail"
         Me.cmd_enviar.UseVisualStyleBackColor = true
         '
+        'txt_info
+        '
+        Me.txt_info.Enabled = false
+        Me.txt_info.Location = New System.Drawing.Point(354, 46)
+        Me.txt_info.Name = "txt_info"
+        Me.txt_info.Size = New System.Drawing.Size(156, 115)
+        Me.txt_info.TabIndex = 14
+        Me.txt_info.Text = ""
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.ClientSize = New System.Drawing.Size(542, 351)
+        Me.ClientSize = New System.Drawing.Size(528, 317)
+        Me.Controls.Add(Me.txt_info)
         Me.Controls.Add(Me.cmd_enviar)
         Me.Controls.Add(Me.txt_mensagem)
         Me.Controls.Add(Me.txt_assunto)
@@ -170,4 +181,5 @@ End Sub
     Friend WithEvents txt_assunto As TextBox
     Friend WithEvents txt_mensagem As RichTextBox
     Friend WithEvents cmd_enviar As Button
+    Friend WithEvents txt_info As RichTextBox
 End Class

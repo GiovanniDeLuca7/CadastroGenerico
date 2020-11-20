@@ -69,14 +69,14 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btn_eua = New System.Windows.Forms.Button()
         Me.btn_brasil = New System.Windows.Forms.Button()
-        Me.lbl_nome = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
-        Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.btn_frc = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MandarEmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_data = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_nome = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.gp_calculadora.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -392,16 +392,6 @@ Partial Class Form1
         Me.btn_brasil.Name = "btn_brasil"
         Me.btn_brasil.UseVisualStyleBackColor = true
         '
-        'lbl_nome
-        '
-        Me.lbl_nome.ActiveViewIndex = 0
-        Me.lbl_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.lbl_nome.Cursor = System.Windows.Forms.Cursors.Default
-        Me.lbl_nome.ForeColor = System.Drawing.SystemColors.ControlText
-        resources.ApplyResources(Me.lbl_nome, "lbl_nome")
-        Me.lbl_nome.Name = "lbl_nome"
-        Me.lbl_nome.ReportSource = Me.CrystalReportF1
-        '
         'Timer1
         '
         Me.Timer1.Enabled = true
@@ -434,6 +424,16 @@ Partial Class Form1
         '
         resources.ApplyResources(Me.lbl_data, "lbl_data")
         Me.lbl_data.Name = "lbl_data"
+        '
+        'lbl_nome
+        '
+        Me.lbl_nome.ActiveViewIndex = 0
+        Me.lbl_nome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.lbl_nome.Cursor = System.Windows.Forms.Cursors.Default
+        Me.lbl_nome.ForeColor = System.Drawing.SystemColors.ControlText
+        resources.ApplyResources(Me.lbl_nome, "lbl_nome")
+        Me.lbl_nome.Name = "lbl_nome"
+        Me.lbl_nome.ReportSource = Me.CrystalReportF1
         '
         'Form1
         '

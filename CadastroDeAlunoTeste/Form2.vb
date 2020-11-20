@@ -1,6 +1,11 @@
 ﻿Imports System.Net.Mail
 
 Public Class Form2
+    Public Sub New(ByVal valorForm1 As String)
+        InitializeComponent()
+        txt_info.Text = valorForm1
+    End Sub
+
     Private Sub PrincipalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrincipalToolStripMenuItem.Click
         Me.Hide()
         Form1.Show()
@@ -20,7 +25,7 @@ Public Class Form2
             Mailmsg.To.Add(txt_para.Text)
             Mailmsg.Subject = txt_assunto.Text
             Mailmsg.IsBodyHtml = False
-            Mailmsg.Body = txt_mensagem.Text & " uau"
+            Mailmsg.Body = txt_mensagem.Text & vbCrLf & txt_info.Text
             Smtp_Server.Send(Mailmsg)
             MsgBox("E-mail enviado, obrigado :)")
         Catch ex As Exception

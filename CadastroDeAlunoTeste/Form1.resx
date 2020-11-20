@@ -1338,36 +1338,6 @@
   <data name="&gt;&gt;btn_brasil.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>638, 17</value>
-  </metadata>
-  <data name="lbl_nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 381</value>
-  </data>
-  <data name="lbl_nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1077, 545</value>
-  </data>
-  <data name="lbl_nome.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="lbl_nome.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.Name" xml:space="preserve">
-    <value>lbl_nome</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.Type" xml:space="preserve">
-    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lbl_nome.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>638, 17</value>
-  </metadata>
   <metadata name="Timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>776, 17</value>
   </metadata>
@@ -1404,27 +1374,6 @@
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>865, 17</value>
   </metadata>
-  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Principal</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 20</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mandar e-mail</value>
-  </data>
-  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="lbl_data.Text" xml:space="preserve">
-    <value>horas</value>
-  </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -1449,6 +1398,57 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
+  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mandar e-mail</value>
+  </data>
+  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="lbl_data.Text" xml:space="preserve">
+    <value>horas</value>
+  </data>
+  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>638, 17</value>
+  </metadata>
+  <data name="lbl_nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 381</value>
+  </data>
+  <data name="lbl_nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1077, 545</value>
+  </data>
+  <data name="lbl_nome.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="lbl_nome.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.Name" xml:space="preserve">
+    <value>lbl_nome</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.Type" xml:space="preserve">
+    <value>CrystalDecisions.Windows.Forms.CrystalReportViewer, CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lbl_nome.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>638, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -5022,12 +5022,6 @@
   <data name="&gt;&gt;ProjetoTableAdapter.Type" xml:space="preserve">
     <value>CadastroDeAlunoTeste.novobancoDataSetTableAdapters.ProjetoTableAdapter, novobancoDataSet.Designer.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;CrystalReportF1.Name" xml:space="preserve">
-    <value>CrystalReportF1</value>
-  </data>
-  <data name="&gt;&gt;CrystalReportF1.Type" xml:space="preserve">
-    <value>CadastroDeAlunoTeste.CrystalReportF, CrystalReportF.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
   <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
     <value>Timer1</value>
   </data>
@@ -5051,6 +5045,12 @@
   </data>
   <data name="&gt;&gt;lbl_data.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CrystalReportF1.Name" xml:space="preserve">
+    <value>CrystalReportF1</value>
+  </data>
+  <data name="&gt;&gt;CrystalReportF1.Type" xml:space="preserve">
+    <value>CadastroDeAlunoTeste.CrystalReportF, CrystalReportF.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

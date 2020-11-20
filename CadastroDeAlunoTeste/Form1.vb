@@ -10,7 +10,6 @@ Imports System.Threading.Thread
 Imports System.Globalization
 Imports CadastroDeAlunoTeste.My.Resources
 Imports System.Threading
-'Throw
 
 Public Class Form1
     Public Property StringPass As String
@@ -368,9 +367,22 @@ Public Class Form1
         lbl_data.Text = Res.Data & DataHoraAtual.ToShortDateString & Res.Hora & DataHoraAtual.ToShortTimeString
     End Sub
 
-    Private Sub MandarEmailToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MandarEmailToolStripMenuItem.Click
+    Private Sub MandarEmailToolStripMenuItem_Click(sender As System.Object, ByVal e As System.EventArgs) Handles MandarEmailToolStripMenuItem.Click
         Me.Hide()
-        Form2.Show()
+        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text)
+        frmtemp.Show()
+    End Sub
+
+    Private Sub radio_masc_CheckedChanged(sender As Object, e As EventArgs) Handles radio_masc.CheckedChanged
+        txt_gambiarra.Text = "Masculino"
+    End Sub
+
+    Private Sub radio_fem_CheckedChanged(sender As Object, e As EventArgs) Handles radio_fem.CheckedChanged
+        txt_gambiarra.Text = "Feminino"
+    End Sub
+
+    Private Sub radio_outro_CheckedChanged(sender As Object, e As EventArgs) Handles radio_outro.CheckedChanged
+        txt_gambiarra.Text = "Outro"
     End Sub
 End Class
 
