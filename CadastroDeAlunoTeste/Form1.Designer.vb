@@ -340,8 +340,8 @@ Partial Class Form1
         '
         'cmd_limpar
         '
-        Me.cmd_limpar.BackColor = System.Drawing.Color.White
-        Me.cmd_limpar.ForeColor = System.Drawing.Color.Black
+        Me.cmd_limpar.BackColor = System.Drawing.Color.MidnightBlue
+        Me.cmd_limpar.ForeColor = System.Drawing.Color.White
         resources.ApplyResources(Me.cmd_limpar, "cmd_limpar")
         Me.cmd_limpar.Name = "cmd_limpar"
         Me.cmd_limpar.UseVisualStyleBackColor = false
@@ -406,17 +406,20 @@ Partial Class Form1
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.MidnightBlue
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.lbl_data})
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
         '
         'PrincipalToolStripMenuItem
         '
+        Me.PrincipalToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PrincipalToolStripMenuItem.Name = "PrincipalToolStripMenuItem"
         resources.ApplyResources(Me.PrincipalToolStripMenuItem, "PrincipalToolStripMenuItem")
         '
         'MandarEmailToolStripMenuItem
         '
+        Me.MandarEmailToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MandarEmailToolStripMenuItem.Name = "MandarEmailToolStripMenuItem"
         resources.ApplyResources(Me.MandarEmailToolStripMenuItem, "MandarEmailToolStripMenuItem")
         '

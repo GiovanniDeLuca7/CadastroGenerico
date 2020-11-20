@@ -1374,6 +1374,27 @@
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>865, 17</value>
   </metadata>
+  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 20</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mandar e-mail</value>
+  </data>
+  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="lbl_data.Text" xml:space="preserve">
+    <value>horas</value>
+  </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -1397,27 +1418,6 @@
   </data>
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>35</value>
-  </data>
-  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Principal</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 20</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
-    <value>Mandar e-mail</value>
-  </data>
-  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="lbl_data.Text" xml:space="preserve">
-    <value>horas</value>
   </data>
   <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>638, 17</value>

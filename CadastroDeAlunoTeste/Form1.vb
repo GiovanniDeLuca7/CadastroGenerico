@@ -369,7 +369,7 @@ Public Class Form1
 
     Private Sub MandarEmailToolStripMenuItem_Click(sender As System.Object, ByVal e As System.EventArgs) Handles MandarEmailToolStripMenuItem.Click
         Me.Hide()
-        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text)
+        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text & vbCrLf & lbl_data.Text)
         frmtemp.Show()
     End Sub
 
@@ -384,6 +384,7 @@ Public Class Form1
     Private Sub radio_outro_CheckedChanged(sender As Object, e As EventArgs) Handles radio_outro.CheckedChanged
         txt_gambiarra.Text = "Outro"
     End Sub
+
 End Class
 
 'trocar sDBstr por conexao
