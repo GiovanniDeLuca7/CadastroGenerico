@@ -4,6 +4,8 @@ Public Class Form2
     Public Sub New(ByVal valorForm1 As String)
         InitializeComponent()
         txt_info.Text = valorForm1
+        Timer1.Enabled = True
+        Timer1.Interval = 1000
     End Sub
 
     Private Sub PrincipalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrincipalToolStripMenuItem.Click

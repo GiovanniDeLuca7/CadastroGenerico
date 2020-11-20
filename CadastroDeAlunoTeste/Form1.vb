@@ -21,6 +21,7 @@ Public Class Form1
 
     Public Sub New()
         System.Threading.Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
+        Me.Controls.Clear()
         InitializeComponent()
         Timer1.Enabled = True
         Timer1.Interval = 1000
@@ -343,9 +344,9 @@ Public Class Form1
 
     Private Sub btn_brasil_Click(sender As Object, e As EventArgs) Handles btn_brasil.Click
       Thread.CurrentThread.CurrentUICulture = New System.Globalization.CultureInfo("")
-        Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("pt-BR")
-        Me.Controls.Clear()
-        InitializeComponent()
+       Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("pt-BR")
+       Me.Controls.Clear()
+       InitializeComponent()
     End Sub
 
     Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
@@ -367,12 +368,6 @@ Public Class Form1
         lbl_data.Text = Res.Data & DataHoraAtual.ToShortDateString & Res.Hora & DataHoraAtual.ToShortTimeString
     End Sub
 
-    Private Sub MandarEmailToolStripMenuItem_Click(sender As System.Object, ByVal e As System.EventArgs) Handles MandarEmailToolStripMenuItem.Click
-        Me.Hide()
-        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text & vbCrLf & lbl_data.Text)
-        frmtemp.Show()
-    End Sub
-
     Private Sub radio_masc_CheckedChanged(sender As Object, e As EventArgs) Handles radio_masc.CheckedChanged
         txt_gambiarra.Text = "Masculino"
     End Sub
@@ -385,8 +380,17 @@ Public Class Form1
         txt_gambiarra.Text = "Outro"
     End Sub
 
-End Class
+    Private Sub MandarEmailToolStripMenuItem_Click(sender As System.Object, ByVal e As System.EventArgs) Handles MandarEmailToolStripMenuItem.Click
+        Me.Hide()
+        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text & vbCrLf & lbl_data.Text)
+        frmtemp.Show()
+    End Sub
 
+    Private Sub IdiomaToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+        Me.Hide()
+        Idioma.Show()
+    End Sub
+End Class
 'trocar sDBstr por conexao
 'cn por conexao
 'sSQL por selectSQL

@@ -28,94 +28,95 @@ Partial Class Idioma
         Me.btn_eua = New System.Windows.Forms.Button()
         Me.radio_br = New System.Windows.Forms.RadioButton()
         Me.radio_eua = New System.Windows.Forms.RadioButton()
-        Me.cmd_continuar = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MandarEmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_data = New System.Windows.Forms.ToolStripMenuItem()
+        Me.IdiomaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MenuStrip1.SuspendLayout
         Me.SuspendLayout
         '
         'Label1
         '
-        Me.Label1.AutoSize = true
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.Label1.Location = New System.Drawing.Point(21, 9)
+        resources.ApplyResources(Me.Label1, "Label1")
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(354, 24)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Selecione o idioma / Select the language"
         '
         'btn_brasil
         '
-        Me.btn_brasil.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        resources.ApplyResources(Me.btn_brasil, "btn_brasil")
         Me.btn_brasil.BackgroundImage = Global.CadastroDeAlunoTeste.My.Resources.Resources.brasil
-        Me.btn_brasil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_brasil.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btn_brasil.Location = New System.Drawing.Point(39, 48)
         Me.btn_brasil.Name = "btn_brasil"
-        Me.btn_brasil.Size = New System.Drawing.Size(133, 96)
-        Me.btn_brasil.TabIndex = 41
         Me.btn_brasil.UseVisualStyleBackColor = true
         '
         'btn_eua
         '
-        Me.btn_eua.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        resources.ApplyResources(Me.btn_eua, "btn_eua")
         Me.btn_eua.BackgroundImage = Global.CadastroDeAlunoTeste.My.Resources.Resources.eua
-        Me.btn_eua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.btn_eua.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.btn_eua.Location = New System.Drawing.Point(214, 48)
         Me.btn_eua.Name = "btn_eua"
-        Me.btn_eua.Size = New System.Drawing.Size(133, 96)
-        Me.btn_eua.TabIndex = 42
         Me.btn_eua.UseVisualStyleBackColor = true
         '
         'radio_br
         '
-        Me.radio_br.AutoSize = true
-        Me.radio_br.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.radio_br.Location = New System.Drawing.Point(23, 152)
+        resources.ApplyResources(Me.radio_br, "radio_br")
+        Me.radio_br.ForeColor = System.Drawing.Color.White
         Me.radio_br.Name = "radio_br"
-        Me.radio_br.Size = New System.Drawing.Size(169, 24)
-        Me.radio_br.TabIndex = 46
         Me.radio_br.TabStop = true
-        Me.radio_br.Text = "Português Brasileiro"
         Me.radio_br.UseVisualStyleBackColor = true
         '
         'radio_eua
         '
-        Me.radio_eua.AutoSize = true
-        Me.radio_eua.Font = New System.Drawing.Font("Microsoft Sans Serif", 12!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.radio_eua.Location = New System.Drawing.Point(237, 152)
+        resources.ApplyResources(Me.radio_eua, "radio_eua")
+        Me.radio_eua.ForeColor = System.Drawing.Color.White
         Me.radio_eua.Name = "radio_eua"
-        Me.radio_eua.Size = New System.Drawing.Size(79, 24)
-        Me.radio_eua.TabIndex = 47
         Me.radio_eua.TabStop = true
-        Me.radio_eua.Text = "English"
         Me.radio_eua.UseVisualStyleBackColor = true
         '
-        'cmd_continuar
+        'MenuStrip1
         '
-        Me.cmd_continuar.BackColor = System.Drawing.Color.MidnightBlue
-        Me.cmd_continuar.ForeColor = System.Drawing.SystemColors.Control
-        Me.cmd_continuar.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.cmd_continuar.Location = New System.Drawing.Point(143, 182)
-        Me.cmd_continuar.Name = "cmd_continuar"
-        Me.cmd_continuar.Size = New System.Drawing.Size(104, 29)
-        Me.cmd_continuar.TabIndex = 48
-        Me.cmd_continuar.Text = "Proximo / Next"
-        Me.cmd_continuar.UseVisualStyleBackColor = false
+        Me.MenuStrip1.BackColor = System.Drawing.Color.MidnightBlue
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.IdiomaToolStripMenuItem, Me.lbl_data})
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
+        Me.MenuStrip1.Name = "MenuStrip1"
+        '
+        'PrincipalToolStripMenuItem
+        '
+        Me.PrincipalToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.PrincipalToolStripMenuItem.Name = "PrincipalToolStripMenuItem"
+        resources.ApplyResources(Me.PrincipalToolStripMenuItem, "PrincipalToolStripMenuItem")
+        '
+        'MandarEmailToolStripMenuItem
+        '
+        Me.MandarEmailToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.MandarEmailToolStripMenuItem.Name = "MandarEmailToolStripMenuItem"
+        resources.ApplyResources(Me.MandarEmailToolStripMenuItem, "MandarEmailToolStripMenuItem")
+        '
+        'lbl_data
+        '
+        resources.ApplyResources(Me.lbl_data, "lbl_data")
+        Me.lbl_data.Name = "lbl_data"
+        '
+        'IdiomaToolStripMenuItem
+        '
+        Me.IdiomaToolStripMenuItem.BackColor = System.Drawing.Color.MidnightBlue
+        Me.IdiomaToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.IdiomaToolStripMenuItem.Name = "IdiomaToolStripMenuItem"
+        resources.ApplyResources(Me.IdiomaToolStripMenuItem, "IdiomaToolStripMenuItem")
         '
         'Idioma
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.MediumSlateBlue
-        Me.ClientSize = New System.Drawing.Size(401, 223)
-        Me.Controls.Add(Me.cmd_continuar)
+        Me.BackColor = System.Drawing.Color.DarkOrchid
+        Me.Controls.Add(Me.MenuStrip1)
         Me.Controls.Add(Me.radio_eua)
         Me.Controls.Add(Me.radio_br)
         Me.Controls.Add(Me.btn_eua)
         Me.Controls.Add(Me.btn_brasil)
         Me.Controls.Add(Me.Label1)
-        Me.Icon = CType(resources.GetObject("$this.Icon"),System.Drawing.Icon)
         Me.Name = "Idioma"
-        Me.Text = "Idioma"
+        Me.MenuStrip1.ResumeLayout(false)
+        Me.MenuStrip1.PerformLayout
         Me.ResumeLayout(false)
         Me.PerformLayout
 
@@ -126,5 +127,9 @@ End Sub
     Friend WithEvents btn_eua As Button
     Friend WithEvents radio_br As RadioButton
     Friend WithEvents radio_eua As RadioButton
-    Friend WithEvents cmd_continuar As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents PrincipalToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MandarEmailToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lbl_data As ToolStripMenuItem
+    Friend WithEvents IdiomaToolStripMenuItem As ToolStripMenuItem
 End Class

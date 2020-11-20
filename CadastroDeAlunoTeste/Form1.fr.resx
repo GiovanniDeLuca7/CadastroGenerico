@@ -182,7 +182,10 @@
     <value>Hiver</value>
   </data>
   <data name="cb_estacao.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 134</value>
+    <value>183, 156</value>
+  </data>
+  <data name="gp_calculadora.Text" xml:space="preserve">
+    <value>Calculatrice</value>
   </data>
   <data name="cmd_calcular.Text" xml:space="preserve">
     <value>Calculer</value>
@@ -192,9 +195,6 @@
   </data>
   <data name="lbl_textocalc.Text" xml:space="preserve">
     <value>Entrez deux valeurs:</value>
-  </data>
-  <data name="gp_calculadora.Text" xml:space="preserve">
-    <value>Calculatrice</value>
   </data>
   <data name="cmd_novo.Text" xml:space="preserve">
     <value>Nouveau</value>
@@ -215,7 +215,7 @@
     <value>Remplissez les champs avant de vous inscrire</value>
   </data>
   <data name="cmd_conectar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>772, 150</value>
+    <value>762, 170</value>
   </data>
   <data name="cmd_conectar.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 23</value>
@@ -239,7 +239,19 @@
     <value>Effacer les champs</value>
   </data>
   <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 173</value>
+    <value>768, 193</value>
+  </data>
+  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Principale</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 20</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
+    <value>Envoyer un e-mail</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
