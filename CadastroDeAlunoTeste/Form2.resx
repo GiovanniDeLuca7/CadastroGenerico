@@ -121,6 +121,24 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
+    <value>Enviar e-mail</value>
+  </data>
+  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="lbl_data.Text" xml:space="preserve">
+    <value>horas</value>
+  </data>
   <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -145,27 +163,6 @@
   </data>
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>13</value>
-  </data>
-  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 20</value>
-  </data>
-  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Principal</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 20</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
-    <value>Enviar e-mail</value>
-  </data>
-  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 20</value>
-  </data>
-  <data name="lbl_data.Text" xml:space="preserve">
-    <value>horas</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

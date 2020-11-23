@@ -610,6 +610,8 @@ Public Class Form1
         MandarEmailToolStripMenuItem.ForeColor = Color.Black
         TroqueACorToolStripMenuItem.ForeColor = Color.Black
         PrincipalToolStripMenuItem.ForeColor = Color.Black
+        ExcelToolStripMenuItem.ForeColor = Color.Black
+        lbl_data.ForeColor = Color.Black
 
         cmd_cadastro.BackColor = Color.PaleGreen
         cmd_limpar.BackColor = Color.PaleGreen
@@ -640,6 +642,8 @@ Public Class Form1
         MandarEmailToolStripMenuItem.ForeColor = Color.White
         TroqueACorToolStripMenuItem.ForeColor = Color.White
         PrincipalToolStripMenuItem.ForeColor = Color.White
+        ExcelToolStripMenuItem.ForeColor = Color.White
+         lbl_data.ForeColor = Color.White
 
         Me.BackColor = Color.BlueViolet
         cmd_cadastro.BackColor = Color.MidnightBlue
@@ -671,6 +675,8 @@ Public Class Form1
         MandarEmailToolStripMenuItem.ForeColor = Color.White
         TroqueACorToolStripMenuItem.ForeColor = Color.White
         PrincipalToolStripMenuItem.ForeColor = Color.White
+        ExcelToolStripMenuItem.ForeColor = Color.White
+        lbl_data.ForeColor = Color.White
 
         Me.BackColor = Color.Black
         cmd_cadastro.BackColor = Color.DimGray
@@ -704,6 +710,8 @@ Public Class Form1
         MandarEmailToolStripMenuItem.ForeColor = Color.Black
         TroqueACorToolStripMenuItem.ForeColor = Color.Black
         PrincipalToolStripMenuItem.ForeColor = Color.Black
+        ExcelToolStripMenuItem.ForeColor = Color.Black
+         lbl_data.ForeColor = Color.Black
 
         cmd_cadastro.BackColor = Color.Silver
         cmd_limpar.BackColor = Color.Silver

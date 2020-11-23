@@ -1386,24 +1386,6 @@
   <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
     <value>Enviar e-mail</value>
   </data>
-  <data name="ExportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="ExportarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Exportar</value>
-  </data>
-  <data name="ObterModeloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="ObterModeloToolStripMenuItem.Text" xml:space="preserve">
-    <value>Obter Modelo</value>
-  </data>
-  <data name="ImportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="ImportarToolStripMenuItem.Text" xml:space="preserve">
-    <value>Importar</value>
-  </data>
   <data name="ExcelToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 20</value>
   </data>
@@ -1415,9 +1397,6 @@
   </data>
   <data name="TroqueACorToolStripMenuItem.Text" xml:space="preserve">
     <value>Troque a cor!</value>
-  </data>
-  <data name="lbl_data.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="lbl_data.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 20</value>
@@ -1448,6 +1427,18 @@
   </data>
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>37</value>
+  </data>
+  <data name="ExportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="ExportarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="ImportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="ImportarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Importar</value>
   </data>
   <data name="RoxoPadrãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 22</value>
@@ -1557,6 +1548,12 @@
   <metadata name="OFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>980, 17</value>
   </metadata>
+  <data name="ObterModeloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="ObterModeloToolStripMenuItem.Text" xml:space="preserve">
+    <value>Obter Modelo</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

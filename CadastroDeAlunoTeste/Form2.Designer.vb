@@ -67,9 +67,9 @@ Partial Class Form2
         '
         'lbl_data
         '
-        resources.ApplyResources(Me.lbl_data, "lbl_data")
         Me.lbl_data.ForeColor = System.Drawing.Color.White
         Me.lbl_data.Name = "lbl_data"
+        resources.ApplyResources(Me.lbl_data, "lbl_data")
         '
         'Label2
         '

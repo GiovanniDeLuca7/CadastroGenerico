@@ -62,9 +62,51 @@ Public Class Form2
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim myArgbColor As New Color()
+        myArgbColor = Color.FromArgb(255, 0, 97, 86)
+
         If Form1.BackColor = Color.Black
-            Me.BackColor = Color.DarkGray
+            Dim dark As New Color()
+            dark = Color.FromArgb(255, 48, 47, 48)
+            Me.BackColor = dark
+            cmd_enviar.BackColor = Color.DimGray
+            cmd_incluir.BackColor = Color.DimGray
+            cmd_excluir.BackColor = Color.DimGray
+            MenuStrip1.BackColor = Color.DimGray
+            MandarEmailToolStripMenuItem.ForeColor = Color.White
+            PrincipalToolStripMenuItem.ForeColor = Color.White
+             lbl_data.ForeColor = Color.White
+            cmd_enviar.ForeColor = Color.White
+            cmd_incluir.ForeColor = Color.White
+            cmd_excluir.ForeColor = Color.White
+
+        Else If Form1.BackColor = myArgbColor
+            Me.BackColor = Color.Teal
+            cmd_enviar.BackColor = Color.PaleGreen
+            cmd_incluir.BackColor = Color.PaleGreen
+            cmd_excluir.BackColor = Color.PaleGreen
+            MenuStrip1.BackColor = Color.PaleGreen
+            MandarEmailToolStripMenuItem.ForeColor = Color.Black
+            PrincipalToolStripMenuItem.ForeColor = Color.Black
+             lbl_data.ForeColor = Color.Black
+            cmd_enviar.ForeColor = Color.Black
+            cmd_incluir.ForeColor = Color.Black
+            cmd_excluir.ForeColor = Color.Black
+        
+        Else If Form1.BackColor = Color.DodgerBlue
+            Me.BackColor = Color.MediumBlue
+            cmd_enviar.BackColor = Color.Silver
+            cmd_incluir.BackColor = Color.Silver
+            cmd_excluir.BackColor = Color.Silver
+            MenuStrip1.BackColor = Color.Silver
+            MandarEmailToolStripMenuItem.ForeColor = Color.Black
+            PrincipalToolStripMenuItem.ForeColor = Color.Black
+             lbl_data.ForeColor = Color.Black
+            cmd_enviar.ForeColor = Color.Black
+            cmd_incluir.ForeColor = Color.Black
+            cmd_excluir.ForeColor = Color.Black
         End If
     End Sub
+
 End Class
 
