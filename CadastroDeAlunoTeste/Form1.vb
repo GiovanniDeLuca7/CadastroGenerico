@@ -324,14 +324,32 @@ Public Class Form1
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Try
+            Dim EscolherCampo As String
+            EscolherCampo = InputBox("Coloque o número relativo ao campo que deseja pesquisar: 1 - Nome / 2 - Idade / 3 - Id / 4 - Animal")
+            Dim InputUser As String
+            If EscolherCampo = "1"
+                EscolherCampo = "Nome"
+                InputUser = InputBox("Escreva uma nome ou letra que deseja pesquisar: ")
+            Else If EscolherCampo = "2"
+                EscolherCampo = "Idade"
+                InputUser = InputBox("Escreva uma idade que deseja pesquisar: ")
+            Else If EscolherCampo = "3"
+                EscolherCampo = "Id"
+                InputUser = InputBox("Escreva um Id que deseja pesquisar: ")
+            Else If EscolherCampo = "4"
+                EscolherCampo = "Animal"
+                InputUser = InputBox("Escreva um animal ou letra que deseja pesquisar: ")
+            Else
+                MsgBox("O número digitado não condiz com nenhum campo, tente novamente")
+            End If
             Dim sql = "SELECT * FROM Projeto"
             Dim ds = m_dbHelper.ExecuteDataset(m_dbConn, CommandType.Text, sql)
             Dim result = From Projeto In ds.Tables(0).AsEnumerable() Where (Projeto.Field(Of String)("Genero") = "Feminino") Select New With {.Nome = Projeto.Field(Of String)("Nome"), .Animal = Projeto.Field(Of String)("Animal"), .Genero = Projeto.Field(Of String)("Genero"), .Idade = Projeto.Field(Of Integer)("Idade"), .Numero1 = Projeto.Field(Of Integer)("Numero1"), .Numero2 = Projeto.Field(Of Integer)("Numero2")}
             Dim orders As DataTable = ds.Tables(0)
             Dim query =
             From dr In orders.AsEnumerable()
-            Where dr.Field(Of String)("Nome").Contains("l")
-            Order By dr("Genero").ToString()
+            Where dr.Field(Of String)(EscolherCampo).Contains(InputUser)
+            Order By dr("Nome").ToString()
             Select dr
             dgv_dados.DataSource = ds.Tables(0).DefaultView
             lbl_aviso.Visible = False
@@ -382,7 +400,7 @@ Public Class Form1
 
     Private Sub MandarEmailToolStripMenuItem_Click(sender As System.Object, ByVal e As System.EventArgs) Handles MandarEmailToolStripMenuItem.Click
         Me.Hide()
-        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text & vbCrLf & lbl_data.Text)
+        Dim frmtemp As Form2 = New Form2("Nome: " & txt_nome.Text & vbCrLf & "Idade: " & num_idade.Text & vbCrLf & "Animal: " & txt_animal.Text & vbCrLf & "Genero: " & txt_gambiarra.Text  & vbCrLf & "Estação: " & cb_estacao.Text & vbCrLf & "Id: " & num_id.Text & vbCrLf & "Numero1: " & num_1.Text & vbCrLf & "Numero2: " & num_2.Text & vbCrLf & lbl_data.Text)
         frmtemp.Show()
     End Sub
 
@@ -450,9 +468,3 @@ Public Class Form1
         End Try
     End Sub
 End Class
-'trocar sDBstr por conexao
-'cn por conexao
-'sSQL por selectSQL
-'oCn por OleDbConexao
-'oDA por OleDbDataAdaptador
-'oDs por OleDbDataSetagem
