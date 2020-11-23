@@ -500,10 +500,10 @@ Public Class Form1
             worksheet.Range("A10").Text = "Subtração:"
             worksheet.Range("B10").Formula = "B7-B8"
             worksheet.Pictures.AddPicture(12, 2, "T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\obj\Presysp.png")
-            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Sample.xlsx")
+            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\ExcelExportado.xlsx")
         End Using
             MsgBox("O arquivo foi salvo")
-            Shell("C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Sample.xlsx""", 1)
+            Shell("C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\ExcelExportado.xlsx""", 1)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -513,8 +513,10 @@ Public Class Form1
           Try
             Using excelEngine As ExcelEngine = New ExcelEngine()
             Dim app As IApplication = excelEngine.Excel
-            app.DefaultVersion = ExcelVersion.Excel2010
-            Dim inputFileName As String = "T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Sample.xlsx"
+            app.DefaultVersion = ExcelVersion.Excel2010 
+            OFD.Title = "Selecione um arquivo para importar"
+            OFD.ShowDialog
+            Dim inputFileName As String = OFD.FileName
             Dim workbook As IWorkbook = app.Workbooks.Open(inputFileName, ExcelOpenType.Automatic)
             Dim worksheet As IWorksheet = workbook.Worksheets(0)
             Dim nome As String = worksheet("B1").Text
@@ -528,7 +530,7 @@ Public Class Form1
             worksheet.EnableSheetCalculations()
             Dim SomaForm As String = worksheet("B9").CalculatedValue
             Dim SubForm As String = worksheet("B10").CalculatedValue
-            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Output.xlsx")
+            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\ExcelCopiaImportado.xlsx")
             txt_nome.Text = nome
             num_idade.Text = idade
             txt_animal.Text = animal
@@ -554,7 +556,45 @@ Public Class Form1
             lbl_aguardando.Visible = True
             lbl_aguardando.Text = "Soma: " & SomaForm & ", Subtração: " & SubForm
             MsgBox("Os dados foram copiados para os campos com sucesso!")
+
         End Using
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub ObterModeloToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ObterModeloToolStripMenuItem.Click
+        Try
+            Using excelEngine As ExcelEngine = New ExcelEngine()
+            Dim application As IApplication = excelEngine.Excel
+            application.DefaultVersion = ExcelVersion.Excel2010
+            Dim workbook As IWorkbook = application.Workbooks.Create(1)
+            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+            worksheet.Range("A1").Text = "Nome:"
+            worksheet.Range("C1").Text = "← Insira o nome aqui!"
+            worksheet.Range("A2").Text = "Idade:"
+            worksheet.Range("C2").Text = "← Insira a idade aqui!"
+            worksheet.Range("A3").Text = "Animal:"
+            worksheet.Range("C3").Text = "← Insira o animal aqui!"
+            worksheet.Range("A4").Text = "Genero:"
+            worksheet.Range("C4").Text = "← Insira o genero aqui! (Masculino, Feminino, Outro)"
+            worksheet.Range("A5").Text = "Estação:"
+            worksheet.Range("C5").Text = "← Insira a estação aqui! (Verão, Primavera, Outono, Inverno)"
+            worksheet.Range("A6").Text = "Id:"
+            worksheet.Range("C6").Text = "← Insira o Id aqui!"
+            worksheet.Range("A7").Text = "Numero 1:"
+            worksheet.Range("C7").Text = "← Insira o primeiro número aqui!"
+            worksheet.Range("A8").Text = "Numero 2:"
+            worksheet.Range("C8").Text = "← Insira o segundo número aqui!"
+            worksheet.Range("A9").Text = "Soma:"
+            worksheet.Range("B9").Formula = "SUM(B7:B8)"
+            worksheet.Range("A10").Text = "Subtração:"
+            worksheet.Range("B10").Formula = "B7-B8"
+            worksheet.Pictures.AddPicture(12, 2, "T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\obj\Presysp.png")
+            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Modelo.xlsx")
+        End Using
+            MsgBox("O arquivo modelo foi salvo com sucesso!")
+            Shell("C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Modelo.xlsx""", 1)
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -687,5 +727,6 @@ Public Class Form1
         cmd_conectar.ForeColor = Color.Black
         Button2.ForeColor = Color.Black
     End Sub
-        
+
+    
 End Class

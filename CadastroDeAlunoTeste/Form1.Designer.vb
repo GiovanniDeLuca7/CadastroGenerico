@@ -87,6 +87,8 @@ Partial Class Form1
         Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         Me.cmd_anterior = New System.Windows.Forms.Button()
         Me.cmd_proximo = New System.Windows.Forms.Button()
+        Me.OFD = New System.Windows.Forms.OpenFileDialog()
+        Me.ObterModeloToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.gp_calculadora.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -447,6 +449,7 @@ Partial Class Form1
         '
         'ImportarToolStripMenuItem
         '
+        Me.ImportarToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ObterModeloToolStripMenuItem})
         Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
         resources.ApplyResources(Me.ImportarToolStripMenuItem, "ImportarToolStripMenuItem")
         '
@@ -508,6 +511,15 @@ Partial Class Form1
         resources.ApplyResources(Me.cmd_proximo, "cmd_proximo")
         Me.cmd_proximo.Name = "cmd_proximo"
         Me.cmd_proximo.UseVisualStyleBackColor = false
+        '
+        'OFD
+        '
+        Me.OFD.FileName = "OpenFileDialog1"
+        '
+        'ObterModeloToolStripMenuItem
+        '
+        Me.ObterModeloToolStripMenuItem.Name = "ObterModeloToolStripMenuItem"
+        resources.ApplyResources(Me.ObterModeloToolStripMenuItem, "ObterModeloToolStripMenuItem")
         '
         'Form1
         '
@@ -636,4 +648,6 @@ End Sub
     Friend WithEvents ExcelToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExportarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ImportarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OFD As OpenFileDialog
+    Friend WithEvents ObterModeloToolStripMenuItem As ToolStripMenuItem
 End Class

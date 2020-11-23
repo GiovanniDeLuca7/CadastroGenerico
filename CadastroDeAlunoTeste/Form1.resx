@@ -510,6 +510,90 @@
   <data name="&gt;&gt;lbl_teste.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
+  <data name="&gt;&gt;lbl_aguardando.Name" xml:space="preserve">
+    <value>lbl_aguardando</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;lbl_aguardando.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Name" xml:space="preserve">
+    <value>cmd_calcular</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;cmd_calcular.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Name" xml:space="preserve">
+    <value>lbl_textocalc</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;lbl_textocalc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;num_2.Name" xml:space="preserve">
+    <value>num_2</value>
+  </data>
+  <data name="&gt;&gt;num_2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_2.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;num_2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;num_1.Name" xml:space="preserve">
+    <value>num_1</value>
+  </data>
+  <data name="&gt;&gt;num_1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;num_1.Parent" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;num_1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gp_calculadora.Location" type="System.Drawing.Point, System.Drawing">
+    <value>441, 32</value>
+  </data>
+  <data name="gp_calculadora.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 120</value>
+  </data>
+  <data name="gp_calculadora.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="gp_calculadora.Text" xml:space="preserve">
+    <value>Calculadora</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.Name" xml:space="preserve">
+    <value>gp_calculadora</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gp_calculadora.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
   <data name="lbl_aguardando.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -641,30 +725,6 @@
   </data>
   <data name="&gt;&gt;num_1.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="gp_calculadora.Location" type="System.Drawing.Point, System.Drawing">
-    <value>441, 32</value>
-  </data>
-  <data name="gp_calculadora.Size" type="System.Drawing.Size, System.Drawing">
-    <value>261, 120</value>
-  </data>
-  <data name="gp_calculadora.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="gp_calculadora.Text" xml:space="preserve">
-    <value>Calculadora</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.Name" xml:space="preserve">
-    <value>gp_calculadora</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gp_calculadora.ZOrder" xml:space="preserve">
-    <value>22</value>
   </data>
   <data name="lbl_cadastro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -999,24 +1059,6 @@
   <data name="&gt;&gt;txt_gambiarra.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="radio_oracle.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="radio_oracle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="radio_oracle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>207, 18</value>
-  </data>
-  <data name="radio_oracle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 17</value>
-  </data>
-  <data name="radio_oracle.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="radio_oracle.Text" xml:space="preserve">
-    <value>Oracle Server</value>
-  </data>
   <data name="&gt;&gt;radio_oracle.Name" xml:space="preserve">
     <value>radio_oracle</value>
   </data>
@@ -1052,6 +1094,36 @@
   </data>
   <data name="&gt;&gt;gp_access.ZOrder" xml:space="preserve">
     <value>11</value>
+  </data>
+  <data name="radio_oracle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radio_oracle.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="radio_oracle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 18</value>
+  </data>
+  <data name="radio_oracle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="radio_oracle.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="radio_oracle.Text" xml:space="preserve">
+    <value>Oracle Server</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Name" xml:space="preserve">
+    <value>radio_oracle</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.Parent" xml:space="preserve">
+    <value>gp_access</value>
+  </data>
+  <data name="&gt;&gt;radio_oracle.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="cmd_editar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1169,6 +1241,9 @@
   </metadata>
   <metadata name="ProjetoBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>174, 17</value>
+  </metadata>
+  <metadata name="NovobancoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <metadata name="NovobancoDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1317,6 +1392,12 @@
   <data name="ExportarToolStripMenuItem.Text" xml:space="preserve">
     <value>Exportar</value>
   </data>
+  <data name="ObterModeloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="ObterModeloToolStripMenuItem.Text" xml:space="preserve">
+    <value>Obter Modelo</value>
+  </data>
   <data name="ImportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
   </data>
@@ -1328,30 +1409,6 @@
   </data>
   <data name="ExcelToolStripMenuItem.Text" xml:space="preserve">
     <value>Excel</value>
-  </data>
-  <data name="RoxoPadrãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="RoxoPadrãoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Roxo (Padrão)</value>
-  </data>
-  <data name="MusgoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="MusgoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Musgo</value>
-  </data>
-  <data name="ClássicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="ClássicoToolStripMenuItem.Text" xml:space="preserve">
-    <value>Clássico</value>
-  </data>
-  <data name="DarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="DarkModeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Dark Mode</value>
   </data>
   <data name="TroqueACorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 20</value>
@@ -1392,12 +1449,36 @@
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
     <value>37</value>
   </data>
-  <data name="lbl_nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 381</value>
+  <data name="RoxoPadrãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="RoxoPadrãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Roxo (Padrão)</value>
+  </data>
+  <data name="MusgoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="MusgoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Musgo</value>
+  </data>
+  <data name="ClássicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="ClássicoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Clássico</value>
+  </data>
+  <data name="DarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="DarkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Dark Mode</value>
   </data>
   <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>638, 17</value>
   </metadata>
+  <data name="lbl_nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 381</value>
+  </data>
   <data name="lbl_nome.Size" type="System.Drawing.Size, System.Drawing">
     <value>1077, 545</value>
   </data>
@@ -1419,6 +1500,9 @@
   <data name="&gt;&gt;lbl_nome.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <metadata name="CrystalReportF1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>638, 17</value>
+  </metadata>
   <data name="cmd_anterior.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1470,6 +1554,9 @@
   <data name="&gt;&gt;cmd_proximo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="OFD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>980, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -5120,6 +5207,18 @@
   </data>
   <data name="&gt;&gt;CrystalReportF1.Type" xml:space="preserve">
     <value>CadastroDeAlunoTeste.CrystalReportF, CrystalReportF.vb.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;OFD.Name" xml:space="preserve">
+    <value>OFD</value>
+  </data>
+  <data name="&gt;&gt;OFD.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ObterModeloToolStripMenuItem.Name" xml:space="preserve">
+    <value>ObterModeloToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ObterModeloToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
