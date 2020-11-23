@@ -390,6 +390,65 @@ Public Class Form1
         Me.Hide()
         Idioma.Show()
     End Sub
+
+    Private Sub cmd_anterior_Click(sender As Object, e As EventArgs) Handles cmd_anterior.Click
+        Try
+            Dim i As Integer = dgv_dados.CurrentRow.Index - 1
+            txt_nome.Text = dgv_dados.Item(1, i).Value
+            txt_animal.Text = dgv_dados.Item(2,i).Value
+            num_idade.Text = dgv_dados.Item(3, i).Value
+            txt_gambiarra.Text = dgv_dados.Item(4, i).Value
+            If txt_gambiarra.Text = "Feminino"
+                radio_fem.Checked = True
+            Else If txt_gambiarra.Text = "Masculino"
+                radio_masc.Checked = True
+            Else If txt_gambiarra.Text = "Outro"
+                radio_outro.Checked = True
+            Else
+                radio_fem.Checked = False
+                radio_masc.Checked = False
+                radio_outro.Checked = False
+            End If
+            cb_estacao.Text = dgv_dados.Item(5, i).Value
+            num_1.Text = dgv_dados.Item(6, i).Value
+            num_2.Text = dgv_dados.Item(7, i).Value
+            num_id.Text = dgv_dados.Item(8, i).Value
+            Me.dgv_dados.CurrentCell = Me.dgv_dados.Rows(i).Cells(0)
+            Me.dgv_dados.Rows(i).Selected = True
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+         
+    End Sub
+
+    Private Sub cmd_proximo_Click(sender As Object, e As EventArgs) Handles cmd_proximo.Click
+        Try
+            Dim i As Integer = dgv_dados.CurrentRow.Index + 1
+            txt_nome.Text = dgv_dados.Item(1, i).Value
+            txt_animal.Text = dgv_dados.Item(2,i).Value
+            num_idade.Text = dgv_dados.Item(3, i).Value
+            txt_gambiarra.Text = dgv_dados.Item(4, i).Value
+            If txt_gambiarra.Text = "Feminino"
+                radio_fem.Checked = True
+            Else If txt_gambiarra.Text = "Masculino"
+                radio_masc.Checked = True
+            Else If txt_gambiarra.Text = "Outro"
+                radio_outro.Checked = True
+            Else
+                radio_fem.Checked = False
+                radio_masc.Checked = False
+                radio_outro.Checked = False
+            End If
+            cb_estacao.Text = dgv_dados.Item(5, i).Value
+            num_1.Text = dgv_dados.Item(6, i).Value
+            num_2.Text = dgv_dados.Item(7, i).Value
+            num_id.Text = dgv_dados.Item(8, i).Value
+            Me.dgv_dados.CurrentCell = Me.dgv_dados.Rows(i).Cells(0)
+            Me.dgv_dados.Rows(i).Selected = True 
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
 End Class
 'trocar sDBstr por conexao
 'cn por conexao
