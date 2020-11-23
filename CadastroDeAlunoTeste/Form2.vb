@@ -60,5 +60,11 @@ Public Class Form2
             lstAnexos.Items.RemoveAt(lstAnexos.SelectedIndex)
         End If
     End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Form1.BackColor = Color.Black
+            Me.BackColor = Color.DarkGray
+        End If
+    End Sub
 End Class
 

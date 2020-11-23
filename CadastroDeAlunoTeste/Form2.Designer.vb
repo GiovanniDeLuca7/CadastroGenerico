@@ -179,6 +179,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form2"
         Me.MenuStrip1.ResumeLayout(false)

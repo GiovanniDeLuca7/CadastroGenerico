@@ -467,4 +467,134 @@ Public Class Form1
             MsgBox(ex.Message)
         End Try
     End Sub
+
+    Private Sub MusgoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MusgoToolStripMenuItem.Click
+        Dim myArgbColor As New Color()
+        myArgbColor = Color.FromArgb(255, 0, 97, 86)
+        Me.BackColor = myArgbColor
+
+        MenuStrip1.BackColor = Color.PaleGreen
+        TroqueACorToolStripMenuItem.BackColor = Color.PaleGreen
+        MandarEmailToolStripMenuItem.ForeColor = Color.Black
+        TroqueACorToolStripMenuItem.ForeColor = Color.Black
+        PrincipalToolStripMenuItem.ForeColor = Color.Black
+
+        cmd_cadastro.BackColor = Color.PaleGreen
+        cmd_limpar.BackColor = Color.PaleGreen
+        cmd_calcular.BackColor = Color.PaleGreen
+        cmd_anterior.BackColor = Color.PaleGreen
+        cmd_proximo.BackColor = Color.PaleGreen
+        cmd_novo.BackColor = Color.PaleGreen
+        cmd_deletar.BackColor = Color.PaleGreen
+        cmd_editar.BackColor = Color.PaleGreen
+        cmd_conectar.BackColor = Color.PaleGreen
+        Button2.BackColor = Color.PaleGreen
+
+        cmd_cadastro.ForeColor = Color.Black
+        cmd_limpar.ForeColor = Color.Black
+        cmd_calcular.ForeColor = Color.Black
+        cmd_anterior.ForeColor = Color.Black
+        cmd_proximo.ForeColor = Color.Black
+        cmd_novo.ForeColor = Color.Black
+        cmd_deletar.ForeColor = Color.Black
+        cmd_editar.ForeColor = Color.Black
+        cmd_conectar.ForeColor = Color.Black
+        Button2.ForeColor = Color.Black
+    End Sub
+
+    Private Sub RoxoPadrãoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RoxoPadrãoToolStripMenuItem.Click
+        MenuStrip1.BackColor = Color.MidnightBlue
+        TroqueACorToolStripMenuItem.BackColor = Color.MidnightBlue 
+        MandarEmailToolStripMenuItem.ForeColor = Color.White
+        TroqueACorToolStripMenuItem.ForeColor = Color.White
+        PrincipalToolStripMenuItem.ForeColor = Color.White
+
+        Me.BackColor = Color.BlueViolet
+        cmd_cadastro.BackColor = Color.MidnightBlue
+        cmd_limpar.BackColor = Color.MidnightBlue
+        cmd_calcular.BackColor = Color.MidnightBlue
+        cmd_anterior.BackColor = Color.MidnightBlue
+        cmd_proximo.BackColor = Color.MidnightBlue
+        cmd_novo.BackColor = Color.MidnightBlue
+        cmd_deletar.BackColor = Color.MidnightBlue
+        cmd_editar.BackColor = Color.MidnightBlue
+        cmd_conectar.BackColor = Color.MidnightBlue
+        Button2.BackColor = Color.MidnightBlue
+
+        cmd_cadastro.ForeColor = Color.White
+        cmd_limpar.ForeColor = Color.White
+        cmd_calcular.ForeColor = Color.White
+        cmd_anterior.ForeColor = Color.White
+        cmd_proximo.ForeColor = Color.White
+        cmd_novo.ForeColor = Color.White
+        cmd_deletar.ForeColor = Color.White
+        cmd_editar.ForeColor = Color.White
+        cmd_conectar.ForeColor = Color.White
+        Button2.ForeColor = Color.White
+    End Sub
+
+    Private Sub DarkModeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DarkModeToolStripMenuItem.Click
+        MenuStrip1.BackColor = Color.DimGray
+        TroqueACorToolStripMenuItem.BackColor = Color.DimGray
+        MandarEmailToolStripMenuItem.ForeColor = Color.White
+        TroqueACorToolStripMenuItem.ForeColor = Color.White
+        PrincipalToolStripMenuItem.ForeColor = Color.White
+
+        Me.BackColor = Color.Black
+        cmd_cadastro.BackColor = Color.DimGray
+        cmd_limpar.BackColor = Color.DimGray
+        cmd_calcular.BackColor = Color.DimGray
+        cmd_anterior.BackColor = Color.DimGray
+        cmd_proximo.BackColor = Color.DimGray
+        cmd_novo.BackColor = Color.DimGray
+        cmd_deletar.BackColor = Color.DimGray
+        cmd_editar.BackColor = Color.DimGray
+        cmd_conectar.BackColor = Color.DimGray
+        Button2.BackColor = Color.DimGray
+
+        cmd_cadastro.ForeColor = Color.White
+        cmd_limpar.ForeColor = Color.White
+        cmd_calcular.ForeColor = Color.White
+        cmd_anterior.ForeColor = Color.White
+        cmd_proximo.ForeColor = Color.White
+        cmd_novo.ForeColor = Color.White
+        cmd_deletar.ForeColor = Color.White
+        cmd_editar.ForeColor = Color.White
+        cmd_conectar.ForeColor = Color.White
+        Button2.ForeColor = Color.White
+    End Sub
+
+    Private Sub ClássicoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ClássicoToolStripMenuItem.Click
+        Me.BackColor = Color.DodgerBlue
+
+        MenuStrip1.BackColor = Color.Silver
+        TroqueACorToolStripMenuItem.BackColor = Color.Silver
+        MandarEmailToolStripMenuItem.ForeColor = Color.Black
+        TroqueACorToolStripMenuItem.ForeColor = Color.Black
+        PrincipalToolStripMenuItem.ForeColor = Color.Black
+
+        cmd_cadastro.BackColor = Color.Silver
+        cmd_limpar.BackColor = Color.Silver
+        cmd_calcular.BackColor = Color.Silver
+        cmd_anterior.BackColor = Color.Silver
+        cmd_proximo.BackColor = Color.Silver
+        cmd_novo.BackColor = Color.Silver
+        cmd_deletar.BackColor = Color.Silver
+        cmd_editar.BackColor = Color.Silver
+        cmd_conectar.BackColor = Color.Silver
+        Button2.BackColor = Color.Silver
+
+        cmd_cadastro.ForeColor = Color.Black
+        cmd_limpar.ForeColor = Color.Black
+        cmd_calcular.ForeColor = Color.Black
+        cmd_anterior.ForeColor = Color.Black
+        cmd_proximo.ForeColor = Color.Black
+        cmd_novo.ForeColor = Color.Black
+        cmd_deletar.ForeColor = Color.Black
+        cmd_editar.ForeColor = Color.Black
+        cmd_conectar.ForeColor = Color.Black
+        Button2.ForeColor = Color.Black
+
+        
+    End Sub
 End Class
