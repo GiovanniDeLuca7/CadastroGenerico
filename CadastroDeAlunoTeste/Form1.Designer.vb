@@ -74,16 +74,19 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.PrincipalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MandarEmailToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExcelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TroqueACorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RoxoPadrãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MusgoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClássicoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DarkModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_data = New System.Windows.Forms.ToolStripMenuItem()
         Me.lbl_nome = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReportF1 = New CadastroDeAlunoTeste.CrystalReportF()
         Me.cmd_anterior = New System.Windows.Forms.Button()
         Me.cmd_proximo = New System.Windows.Forms.Button()
-        Me.DarkModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.gp_calculadora.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -414,7 +417,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.TroqueACorToolStripMenuItem, Me.lbl_data})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.ExcelToolStripMenuItem, Me.TroqueACorToolStripMenuItem, Me.lbl_data})
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
         '
@@ -429,6 +432,23 @@ Partial Class Form1
         Me.MandarEmailToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MandarEmailToolStripMenuItem.Name = "MandarEmailToolStripMenuItem"
         resources.ApplyResources(Me.MandarEmailToolStripMenuItem, "MandarEmailToolStripMenuItem")
+        '
+        'ExcelToolStripMenuItem
+        '
+        Me.ExcelToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExportarToolStripMenuItem, Me.ImportarToolStripMenuItem})
+        Me.ExcelToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ExcelToolStripMenuItem.Name = "ExcelToolStripMenuItem"
+        resources.ApplyResources(Me.ExcelToolStripMenuItem, "ExcelToolStripMenuItem")
+        '
+        'ExportarToolStripMenuItem
+        '
+        Me.ExportarToolStripMenuItem.Name = "ExportarToolStripMenuItem"
+        resources.ApplyResources(Me.ExportarToolStripMenuItem, "ExportarToolStripMenuItem")
+        '
+        'ImportarToolStripMenuItem
+        '
+        Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
+        resources.ApplyResources(Me.ImportarToolStripMenuItem, "ImportarToolStripMenuItem")
         '
         'TroqueACorToolStripMenuItem
         '
@@ -452,6 +472,11 @@ Partial Class Form1
         '
         Me.ClássicoToolStripMenuItem.Name = "ClássicoToolStripMenuItem"
         resources.ApplyResources(Me.ClássicoToolStripMenuItem, "ClássicoToolStripMenuItem")
+        '
+        'DarkModeToolStripMenuItem
+        '
+        Me.DarkModeToolStripMenuItem.Name = "DarkModeToolStripMenuItem"
+        resources.ApplyResources(Me.DarkModeToolStripMenuItem, "DarkModeToolStripMenuItem")
         '
         'lbl_data
         '
@@ -483,11 +508,6 @@ Partial Class Form1
         resources.ApplyResources(Me.cmd_proximo, "cmd_proximo")
         Me.cmd_proximo.Name = "cmd_proximo"
         Me.cmd_proximo.UseVisualStyleBackColor = false
-        '
-        'DarkModeToolStripMenuItem
-        '
-        Me.DarkModeToolStripMenuItem.Name = "DarkModeToolStripMenuItem"
-        resources.ApplyResources(Me.DarkModeToolStripMenuItem, "DarkModeToolStripMenuItem")
         '
         'Form1
         '
@@ -613,4 +633,7 @@ End Sub
     Friend WithEvents MusgoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ClássicoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DarkModeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExcelToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExportarToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ImportarToolStripMenuItem As ToolStripMenuItem
 End Class

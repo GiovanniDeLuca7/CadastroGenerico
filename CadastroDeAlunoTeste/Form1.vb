@@ -10,6 +10,10 @@ Imports System.Threading.Thread
 Imports System.Globalization
 Imports CadastroDeAlunoTeste.My.Resources
 Imports System.Threading
+Imports Syncfusion.XlsIO
+Imports System.Reflection
+
+'Module Program1
 
 Public Class Form1
     Public Property StringPass As String
@@ -468,6 +472,94 @@ Public Class Form1
         End Try
     End Sub
 
+        Private Sub ExportarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExportarToolStripMenuItem.Click
+        Try
+            Using excelEngine As ExcelEngine = New ExcelEngine()
+            Dim application As IApplication = excelEngine.Excel
+            application.DefaultVersion = ExcelVersion.Excel2010
+            Dim workbook As IWorkbook = application.Workbooks.Create(1)
+            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+            worksheet.Range("A1").Text = "Nome:"
+            worksheet.Range("B1").Text = txt_nome.Text
+            worksheet.Range("A2").Text = "Idade:"
+            worksheet.Range("B2").Number = num_idade.Text
+            worksheet.Range("A3").Text = "Animal:"
+            worksheet.Range("B3").Text = txt_animal.Text
+            worksheet.Range("A4").Text = "Genero:"
+            worksheet.Range("B4").Text = txt_gambiarra.Text
+            worksheet.Range("A5").Text = "Estação:"
+            worksheet.Range("B5").Text = cb_estacao.Text
+            worksheet.Range("A6").Text = "Id:"
+            worksheet.Range("B6").Number = num_id.Text
+            worksheet.Range("A7").Text = "Numero 1:"
+            worksheet.Range("B7").Number = num_1.Text
+            worksheet.Range("A8").Text = "Numero 2:"
+            worksheet.Range("B8").Number = num_2.Text
+            worksheet.Range("A9").Text = "Soma:"
+            worksheet.Range("B9").Formula = "SUM(B7:B8)"
+            worksheet.Range("A10").Text = "Subtração:"
+            worksheet.Range("B10").Formula = "B7-B8"
+            worksheet.Pictures.AddPicture(12, 2, "T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\obj\Presysp.png")
+            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Sample.xlsx")
+        End Using
+            MsgBox("O arquivo foi salvo")
+            Shell("C:\Program Files (x86)\Microsoft Office\Office14\EXCEL.EXE ""T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Sample.xlsx""", 1)
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub ImportarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ImportarToolStripMenuItem.Click
+          Try
+            Using excelEngine As ExcelEngine = New ExcelEngine()
+            Dim app As IApplication = excelEngine.Excel
+            app.DefaultVersion = ExcelVersion.Excel2010
+            Dim inputFileName As String = "T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Sample.xlsx"
+            Dim workbook As IWorkbook = app.Workbooks.Open(inputFileName, ExcelOpenType.Automatic)
+            Dim worksheet As IWorksheet = workbook.Worksheets(0)
+            Dim nome As String = worksheet("B1").Text
+            Dim idade As Integer = CInt(worksheet("B2").Number)
+            Dim animal As String = worksheet("B3").Text
+            Dim genero As String = worksheet("B4").Text
+            Dim estacao As String = worksheet("B5").Text
+            Dim id As Integer = CInt(worksheet("B6").Number)
+            Dim num1 As Integer = CInt(worksheet("B7").Number)
+            Dim num2 As Integer = CInt(worksheet("B8").Number)
+            worksheet.EnableSheetCalculations()
+            Dim SomaForm As String = worksheet("B9").CalculatedValue
+            Dim SubForm As String = worksheet("B10").CalculatedValue
+            workbook.SaveAs("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\bin\x86\Output.xlsx")
+            txt_nome.Text = nome
+            num_idade.Text = idade
+            txt_animal.Text = animal
+            If genero = "Masculino"
+                    txt_gambiarra.Text = genero
+                    radio_masc.Checked = true
+            Else If genero = "Feminino"
+                    txt_gambiarra.Text = genero
+                    radio_fem.Checked =  true
+           Else If  genero = "Outro"
+                    txt_gambiarra.Text = genero
+                    radio_outro.Checked = true
+           Else
+                    txt_gambiarra.Text = "N/A"
+                    radio_masc.Checked = False
+                    radio_fem.Checked = False
+                    radio_outro.Checked = False
+            End If
+            cb_estacao.Text = estacao
+            num_id.Text = id
+            num_1.Text = num1
+            num_2.Text = num2
+            lbl_aguardando.Visible = True
+            lbl_aguardando.Text = "Soma: " & SomaForm & ", Subtração: " & SubForm
+            MsgBox("Os dados foram copiados para os campos com sucesso!")
+        End Using
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+    End Sub
+
     Private Sub MusgoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MusgoToolStripMenuItem.Click
         Dim myArgbColor As New Color()
         myArgbColor = Color.FromArgb(255, 0, 97, 86)
@@ -594,7 +686,6 @@ Public Class Form1
         cmd_editar.ForeColor = Color.Black
         cmd_conectar.ForeColor = Color.Black
         Button2.ForeColor = Color.Black
-
-        
     End Sub
+        
 End Class
