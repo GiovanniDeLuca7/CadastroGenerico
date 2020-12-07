@@ -77,6 +77,7 @@ Partial Class Form1
         Me.ExcelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImportarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ObterModeloToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TroqueACorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RoxoPadrãoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MusgoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -88,7 +89,10 @@ Partial Class Form1
         Me.cmd_anterior = New System.Windows.Forms.Button()
         Me.cmd_proximo = New System.Windows.Forms.Button()
         Me.OFD = New System.Windows.Forms.OpenFileDialog()
-        Me.ObterModeloToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TransparenteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_musica = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PararAúdioToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_sistema = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.num_idade,System.ComponentModel.ISupportInitialize).BeginInit
         Me.gp_calculadora.SuspendLayout
         CType(Me.num_2,System.ComponentModel.ISupportInitialize).BeginInit
@@ -419,7 +423,7 @@ Partial Class Form1
         'MenuStrip1
         '
         Me.MenuStrip1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.ExcelToolStripMenuItem, Me.TroqueACorToolStripMenuItem, Me.lbl_data})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.ExcelToolStripMenuItem, Me.TroqueACorToolStripMenuItem, Me.lbl_data, Me.lbl_musica, Me.lbl_sistema})
         resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
         '
@@ -453,10 +457,15 @@ Partial Class Form1
         Me.ImportarToolStripMenuItem.Name = "ImportarToolStripMenuItem"
         resources.ApplyResources(Me.ImportarToolStripMenuItem, "ImportarToolStripMenuItem")
         '
+        'ObterModeloToolStripMenuItem
+        '
+        Me.ObterModeloToolStripMenuItem.Name = "ObterModeloToolStripMenuItem"
+        resources.ApplyResources(Me.ObterModeloToolStripMenuItem, "ObterModeloToolStripMenuItem")
+        '
         'TroqueACorToolStripMenuItem
         '
         Me.TroqueACorToolStripMenuItem.BackColor = System.Drawing.Color.MidnightBlue
-        Me.TroqueACorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RoxoPadrãoToolStripMenuItem, Me.MusgoToolStripMenuItem, Me.ClássicoToolStripMenuItem, Me.DarkModeToolStripMenuItem})
+        Me.TroqueACorToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RoxoPadrãoToolStripMenuItem, Me.MusgoToolStripMenuItem, Me.ClássicoToolStripMenuItem, Me.DarkModeToolStripMenuItem, Me.TransparenteToolStripMenuItem})
         Me.TroqueACorToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.TroqueACorToolStripMenuItem.Name = "TroqueACorToolStripMenuItem"
         resources.ApplyResources(Me.TroqueACorToolStripMenuItem, "TroqueACorToolStripMenuItem")
@@ -517,10 +526,28 @@ Partial Class Form1
         '
         Me.OFD.FileName = "OpenFileDialog1"
         '
-        'ObterModeloToolStripMenuItem
+        'TransparenteToolStripMenuItem
         '
-        Me.ObterModeloToolStripMenuItem.Name = "ObterModeloToolStripMenuItem"
-        resources.ApplyResources(Me.ObterModeloToolStripMenuItem, "ObterModeloToolStripMenuItem")
+        Me.TransparenteToolStripMenuItem.Name = "TransparenteToolStripMenuItem"
+        resources.ApplyResources(Me.TransparenteToolStripMenuItem, "TransparenteToolStripMenuItem")
+        '
+        'lbl_musica
+        '
+        Me.lbl_musica.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PararAúdioToolStripMenuItem})
+        Me.lbl_musica.ForeColor = System.Drawing.Color.White
+        Me.lbl_musica.Name = "lbl_musica"
+        resources.ApplyResources(Me.lbl_musica, "lbl_musica")
+        '
+        'PararAúdioToolStripMenuItem
+        '
+        Me.PararAúdioToolStripMenuItem.Name = "PararAúdioToolStripMenuItem"
+        resources.ApplyResources(Me.PararAúdioToolStripMenuItem, "PararAúdioToolStripMenuItem")
+        '
+        'lbl_sistema
+        '
+        Me.lbl_sistema.ForeColor = System.Drawing.Color.White
+        Me.lbl_sistema.Name = "lbl_sistema"
+        resources.ApplyResources(Me.lbl_sistema, "lbl_sistema")
         '
         'Form1
         '
@@ -651,4 +678,8 @@ End Sub
     Friend WithEvents ImportarToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OFD As OpenFileDialog
     Friend WithEvents ObterModeloToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TransparenteToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lbl_musica As ToolStripMenuItem
+    Friend WithEvents PararAúdioToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents lbl_sistema As ToolStripMenuItem
 End Class

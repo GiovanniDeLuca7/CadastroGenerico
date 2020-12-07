@@ -36,6 +36,7 @@ Public Class Form1
         num_1.Text = ""
         num_2.Text = ""
         num_idade.Text = ""
+        lbl_sistema.Text = My.Computer.Info.OSFullName & ", " & My.Computer.Info.OSPlatform.ToString & ", " & My.Computer.Info.OSVersion.ToString
     End Sub
 
     Public Function GetDatasetProject() As DataSet
@@ -369,6 +370,10 @@ Public Class Form1
        Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("pt-BR")
        Me.Controls.Clear()
        InitializeComponent()
+        num_1.Text = ""
+        num_2.Text = ""
+        num_idade.Text = ""
+        lbl_sistema.Text = My.Computer.Info.OSFullName & ", " & My.Computer.Info.OSPlatform.ToString & ", " & My.Computer.Info.OSVersion.ToString
     End Sub
 
     Private Sub btn_eua_Click(sender As Object, e As EventArgs) Handles btn_eua.Click
@@ -376,6 +381,10 @@ Public Class Form1
         Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("en-US")
         Me.Controls.Clear()
         InitializeComponent()
+        num_1.Text = ""
+        num_2.Text = ""
+        num_idade.Text = ""
+        lbl_sistema.Text = My.Computer.Info.OSFullName & ", " & My.Computer.Info.OSPlatform.ToString & ", " & My.Computer.Info.OSVersion.ToString
     End Sub
 
     Private Sub btn_frc_Click(sender As Object, e As EventArgs) Handles btn_frc.Click
@@ -383,6 +392,10 @@ Public Class Form1
         Thread.CurrentThread.CurrentCulture = New System.Globalization.CultureInfo("fr")
         Me.Controls.Clear()
         InitializeComponent()
+        num_1.Text = ""
+        num_2.Text = ""
+        num_idade.Text = ""
+        lbl_sistema.Text = My.Computer.Info.OSFullName & ", " & My.Computer.Info.OSPlatform.ToString & ", " & My.Computer.Info.OSVersion.ToString
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
@@ -611,6 +624,8 @@ Public Class Form1
         TroqueACorToolStripMenuItem.ForeColor = Color.Black
         PrincipalToolStripMenuItem.ForeColor = Color.Black
         ExcelToolStripMenuItem.ForeColor = Color.Black
+        lbl_musica.ForeColor = Color.Black
+        lbl_sistema.ForeColor = Color.Black
         lbl_data.ForeColor = Color.Black
 
         cmd_cadastro.BackColor = Color.PaleGreen
@@ -643,7 +658,9 @@ Public Class Form1
         TroqueACorToolStripMenuItem.ForeColor = Color.White
         PrincipalToolStripMenuItem.ForeColor = Color.White
         ExcelToolStripMenuItem.ForeColor = Color.White
-         lbl_data.ForeColor = Color.White
+        lbl_musica.ForeColor = Color.White
+        lbl_sistema.ForeColor = Color.White
+        lbl_data.ForeColor = Color.White
 
         Me.BackColor = Color.BlueViolet
         cmd_cadastro.BackColor = Color.MidnightBlue
@@ -676,6 +693,8 @@ Public Class Form1
         TroqueACorToolStripMenuItem.ForeColor = Color.White
         PrincipalToolStripMenuItem.ForeColor = Color.White
         ExcelToolStripMenuItem.ForeColor = Color.White
+        lbl_musica.ForeColor = Color.White
+        lbl_sistema.ForeColor = Color.White
         lbl_data.ForeColor = Color.White
 
         Me.BackColor = Color.Black
@@ -711,6 +730,8 @@ Public Class Form1
         TroqueACorToolStripMenuItem.ForeColor = Color.Black
         PrincipalToolStripMenuItem.ForeColor = Color.Black
         ExcelToolStripMenuItem.ForeColor = Color.Black
+        lbl_musica.ForeColor = Color.Black
+        lbl_sistema.ForeColor = Color.Black
          lbl_data.ForeColor = Color.Black
 
         cmd_cadastro.BackColor = Color.Silver
@@ -736,5 +757,29 @@ Public Class Form1
         Button2.ForeColor = Color.Black
     End Sub
 
-    
+    Private Sub TransparenteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransparenteToolStripMenuItem.Click
+        BackColor = Color.Purple
+        TransparencyKey = BackColor
+        'SetStyle(ControlStyles.SupportsTransparentBackColor, True)
+        
+    End Sub
+
+    Private Sub MúsicaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles lbl_musica.Click
+        My.Computer.Audio.Play("T:\CadastroAlunoGitHub\CadastroDeAlunoTeste\obj\music.wav", AudioPlayMode.BackgroundLoop)
+        Me.Controls.Clear()
+       InitializeComponent()
+        My.Computer.Audio.PlaySystemSound(Media.SystemSounds.Beep)
+        num_1.Text = ""
+        num_2.Text = ""
+        num_idade.Text = ""
+        lbl_sistema.Text = My.Computer.Info.OSFullName & ", " & My.Computer.Info.OSPlatform.ToString & ", " & My.Computer.Info.OSVersion.ToString
+    End Sub
+
+    Private Sub PararAúdioToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PararAúdioToolStripMenuItem.Click
+        My.Computer.Audio.Stop()
+    End Sub
+
+    Private Sub SistemaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles lbl_sistema.Click
+         
+    End Sub
 End Class

@@ -152,16 +152,16 @@
     <value>Message:</value>
   </data>
   <data name="txt_de.Location" type="System.Drawing.Point, System.Drawing">
-    <value>61, 46</value>
+    <value>61, 39</value>
   </data>
   <data name="txt_assunto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 105</value>
+    <value>47, 97</value>
   </data>
   <data name="txt_assunto.Size" type="System.Drawing.Size, System.Drawing">
     <value>198, 20</value>
   </data>
   <data name="txt_mensagem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 137</value>
+    <value>71, 129</value>
   </data>
   <data name="cmd_enviar.Text" xml:space="preserve">
     <value>Envoyer un e-mail</value>

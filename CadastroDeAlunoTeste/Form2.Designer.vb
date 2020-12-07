@@ -48,28 +48,28 @@ Partial Class Form2
         '
         'MenuStrip1
         '
+        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.BackColor = System.Drawing.Color.MidnightBlue
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrincipalToolStripMenuItem, Me.MandarEmailToolStripMenuItem, Me.lbl_data})
-        resources.ApplyResources(Me.MenuStrip1, "MenuStrip1")
         Me.MenuStrip1.Name = "MenuStrip1"
         '
         'PrincipalToolStripMenuItem
         '
+        resources.ApplyResources(Me.PrincipalToolStripMenuItem, "PrincipalToolStripMenuItem")
         Me.PrincipalToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PrincipalToolStripMenuItem.Name = "PrincipalToolStripMenuItem"
-        resources.ApplyResources(Me.PrincipalToolStripMenuItem, "PrincipalToolStripMenuItem")
         '
         'MandarEmailToolStripMenuItem
         '
+        resources.ApplyResources(Me.MandarEmailToolStripMenuItem, "MandarEmailToolStripMenuItem")
         Me.MandarEmailToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.MandarEmailToolStripMenuItem.Name = "MandarEmailToolStripMenuItem"
-        resources.ApplyResources(Me.MandarEmailToolStripMenuItem, "MandarEmailToolStripMenuItem")
         '
         'lbl_data
         '
+        resources.ApplyResources(Me.lbl_data, "lbl_data")
         Me.lbl_data.ForeColor = System.Drawing.Color.White
         Me.lbl_data.Name = "lbl_data"
-        resources.ApplyResources(Me.lbl_data, "lbl_data")
         '
         'Label2
         '
@@ -117,37 +117,37 @@ Partial Class Form2
         '
         'cmd_enviar
         '
+        resources.ApplyResources(Me.cmd_enviar, "cmd_enviar")
         Me.cmd_enviar.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_enviar.ForeColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.cmd_enviar, "cmd_enviar")
         Me.cmd_enviar.Name = "cmd_enviar"
         Me.cmd_enviar.UseVisualStyleBackColor = false
         '
         'txt_info
         '
-        Me.txt_info.BackColor = System.Drawing.Color.White
         resources.ApplyResources(Me.txt_info, "txt_info")
+        Me.txt_info.BackColor = System.Drawing.Color.White
         Me.txt_info.Name = "txt_info"
         '
         'lstAnexos
         '
-        Me.lstAnexos.FormattingEnabled = true
         resources.ApplyResources(Me.lstAnexos, "lstAnexos")
+        Me.lstAnexos.FormattingEnabled = true
         Me.lstAnexos.Name = "lstAnexos"
         '
         'cmd_incluir
         '
+        resources.ApplyResources(Me.cmd_incluir, "cmd_incluir")
         Me.cmd_incluir.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_incluir.ForeColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.cmd_incluir, "cmd_incluir")
         Me.cmd_incluir.Name = "cmd_incluir"
         Me.cmd_incluir.UseVisualStyleBackColor = false
         '
         'cmd_excluir
         '
+        resources.ApplyResources(Me.cmd_excluir, "cmd_excluir")
         Me.cmd_excluir.BackColor = System.Drawing.Color.MidnightBlue
         Me.cmd_excluir.ForeColor = System.Drawing.Color.White
-        resources.ApplyResources(Me.cmd_excluir, "cmd_excluir")
         Me.cmd_excluir.Name = "cmd_excluir"
         Me.cmd_excluir.UseVisualStyleBackColor = false
         '
@@ -159,6 +159,7 @@ Partial Class Form2
         'OFD
         '
         Me.OFD.FileName = "OpenFileDialog1"
+        resources.ApplyResources(Me.OFD, "OFD")
         '
         'Form2
         '

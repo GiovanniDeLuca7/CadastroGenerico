@@ -184,9 +184,6 @@
   <data name="cb_estacao.Location" type="System.Drawing.Point, System.Drawing">
     <value>183, 156</value>
   </data>
-  <data name="gp_calculadora.Text" xml:space="preserve">
-    <value>Calculatrice</value>
-  </data>
   <data name="cmd_calcular.Text" xml:space="preserve">
     <value>Calculer</value>
   </data>
@@ -195,6 +192,9 @@
   </data>
   <data name="lbl_textocalc.Text" xml:space="preserve">
     <value>Entrez deux valeurs:</value>
+  </data>
+  <data name="gp_calculadora.Text" xml:space="preserve">
+    <value>Calculatrice</value>
   </data>
   <data name="cmd_novo.Text" xml:space="preserve">
     <value>Nouveau</value>
@@ -215,7 +215,7 @@
     <value>Remplissez les champs avant de vous inscrire</value>
   </data>
   <data name="cmd_conectar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>762, 170</value>
+    <value>762, 172</value>
   </data>
   <data name="cmd_conectar.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 23</value>
@@ -239,7 +239,7 @@
     <value>Effacer les champs</value>
   </data>
   <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 193</value>
+    <value>768, 196</value>
   </data>
   <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 20</value>
@@ -252,6 +252,54 @@
   </data>
   <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
     <value>Envoyer un e-mail</value>
+  </data>
+  <data name="ExportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="ExportarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Exportation</value>
+  </data>
+  <data name="ObterModeloToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="ObterModeloToolStripMenuItem.Text" xml:space="preserve">
+    <value>Obtenir un Modèle</value>
+  </data>
+  <data name="ImportarToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 22</value>
+  </data>
+  <data name="ImportarToolStripMenuItem.Text" xml:space="preserve">
+    <value>Importer</value>
+  </data>
+  <data name="RoxoPadrãoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 22</value>
+  </data>
+  <data name="RoxoPadrãoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Violet (par défaut)</value>
+  </data>
+  <data name="MusgoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 22</value>
+  </data>
+  <data name="MusgoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mousse</value>
+  </data>
+  <data name="ClássicoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 22</value>
+  </data>
+  <data name="ClássicoToolStripMenuItem.Text" xml:space="preserve">
+    <value>Classique</value>
+  </data>
+  <data name="DarkModeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 22</value>
+  </data>
+  <data name="DarkModeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Mode Sombre</value>
+  </data>
+  <data name="TroqueACorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="TroqueACorToolStripMenuItem.Text" xml:space="preserve">
+    <value>Changer de Couleur!</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

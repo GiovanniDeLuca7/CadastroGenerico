@@ -118,72 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PrincipalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="PrincipalToolStripMenuItem.Text" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 20</value>
-  </data>
-  <data name="MandarEmailToolStripMenuItem.Text" xml:space="preserve">
-    <value>Send e-mail</value>
-  </data>
-  <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 13</value>
-  </data>
-  <data name="Label2.Text" xml:space="preserve">
-    <value>From:</value>
-  </data>
-  <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 13</value>
-  </data>
-  <data name="Label3.Text" xml:space="preserve">
-    <value>To:</value>
-  </data>
-  <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 13</value>
-  </data>
-  <data name="Label4.Text" xml:space="preserve">
-    <value>Subject:</value>
-  </data>
-  <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 13</value>
-  </data>
-  <data name="Label5.Text" xml:space="preserve">
-    <value>Message:</value>
-  </data>
-  <data name="txt_de.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 38</value>
-  </data>
-  <data name="txt_para.Location" type="System.Drawing.Point, System.Drawing">
-    <value>39, 66</value>
-  </data>
-  <data name="txt_mensagem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 131</value>
-  </data>
-  <data name="cmd_enviar.Text" xml:space="preserve">
-    <value>Send e-mail</value>
-  </data>
-  <data name="cmd_incluir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 243</value>
-  </data>
-  <data name="cmd_incluir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 23</value>
-  </data>
-  <data name="cmd_incluir.Text" xml:space="preserve">
-    <value>Add Attachment</value>
-  </data>
-  <data name="cmd_excluir.Location" type="System.Drawing.Point, System.Drawing">
-    <value>397, 282</value>
-  </data>
-  <data name="cmd_excluir.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 23</value>
-  </data>
-  <data name="cmd_excluir.Text" xml:space="preserve">
-    <value>Delete Attachment</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAAAAAAAEAIADXwgAAlgAAAICAAAABACAAKAgBAG3DAABgYAAAAQAgAKiUAACVywEASEgAAAEA
@@ -3717,8 +3651,5 @@
         AAAAAAAAAAAAAAAAAOAHAACAAQAAgAEAAIABAACAAQAAwAMAAMADAADgBwAA4AcAAPAPAAD4HwAA+B8A
         APw/AAD8PwAA+B8AAPgfAAA=
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Sending e-mail</value>
   </data>
 </root>
